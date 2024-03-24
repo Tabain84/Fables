@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Torso : Item
+    public class Torso : BaseItem
     {
         [Constructable]
         public Torso()

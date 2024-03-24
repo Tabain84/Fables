@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class SmugglersToolBox : Item
+    public class SmugglersToolBox : BaseItem
     {
         private int _UsesRemaining;
 

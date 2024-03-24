@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Engines.ShameRevamped
 {
-    public class ShameAltar : Item
+    public class ShameAltar : BaseItem
     {
         public static readonly int CoolDown = 10;
         public static readonly bool AllowParties = false;

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class CrushedGlass : Item, ICommodity
+    public class CrushedGlass : BaseItem, ICommodity
     {
         [Constructable]
         public CrushedGlass()

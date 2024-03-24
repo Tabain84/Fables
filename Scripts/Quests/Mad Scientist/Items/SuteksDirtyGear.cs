@@ -2,7 +2,7 @@ using Server.Items.MusicBox;
 
 namespace Server.Items
 {
-    public class SuteksDirtyGear : Item
+    public class SuteksDirtyGear : BaseItem
     {
         public override int LabelNumber => 1115722;  // Sutek's Dirty Gear
 

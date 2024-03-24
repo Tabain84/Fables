@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BaseUtensil : Item, IResource, IQuality
+    public class BaseUtensil : BaseItem, IResource, IQuality
     {
         private CraftResource _Resource;
         private Mobile _Crafter;

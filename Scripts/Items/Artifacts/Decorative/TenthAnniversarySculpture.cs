@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0x3BB3, 0x3BB4)]
-    public class TenthAnniversarySculpture : Item
+    public class TenthAnniversarySculpture : BaseItem
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1079532;  // 10th Anniversary Sculpture

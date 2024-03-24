@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class CusteauPerronHouseSign : Item
+    public class CusteauPerronHouseSign : BaseItem
     {
         [Constructable]
         public CusteauPerronHouseSign()

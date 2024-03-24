@@ -265,7 +265,7 @@ namespace Server.Engines.VvV
         }
     }
 
-    public class CannonTurretPlans : Item
+    public class CannonTurretPlans : BaseItem
     {
         public override int LabelNumber => 1155503;  // Plans for a Cannon Turret
 

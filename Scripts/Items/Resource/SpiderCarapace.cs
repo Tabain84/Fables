@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SpiderCarapace : Item, ICommodity
+    public class SpiderCarapace : BaseItem, ICommodity
     {
         [Constructable]
         public SpiderCarapace()

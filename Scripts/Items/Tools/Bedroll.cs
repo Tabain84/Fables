@@ -6,7 +6,7 @@ using System;
 namespace Server.Items
 {
     [Flipable(0xA57, 0xA58, 0xA59)]
-    public class Bedroll : Item
+    public class Bedroll : BaseItem
     {
         [Constructable]
         public Bedroll()

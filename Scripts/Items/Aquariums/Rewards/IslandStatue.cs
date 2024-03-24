@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class IslandStatue : Item
+    public class IslandStatue : BaseItem
     {
         [Constructable]
         public IslandStatue()

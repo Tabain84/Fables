@@ -276,7 +276,7 @@ namespace Server.Engines.Quests.RitualQuest
         }
     }
 
-    public class TerMurSnowglobe : Item
+    public class TerMurSnowglobe : BaseItem
     {
         public override int LabelNumber => 1151172;  // Ter Mur Snowglobe
 

@@ -2,7 +2,7 @@ namespace Server.Items
 {
     [Furniture]
     [Flipable(0x9E8E, 0x9E8F, 0x9E90, 0x9E91)]
-    public class WeddingCoveredChair : Item, IDyable
+    public class WeddingCoveredChair : BaseItem, IDyable
     {
         public override int LabelNumber => 1022895; // chair
 

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class ShrineOfSingularity : Item
+    public class ShrineOfSingularity : BaseItem
     {
         private static readonly TimeSpan FailDelay = TimeSpan.FromHours(2);
 

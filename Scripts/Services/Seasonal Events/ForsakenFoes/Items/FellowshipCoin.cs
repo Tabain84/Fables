@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class FellowshipCoin : Item
+    public class FellowshipCoin : BaseItem
     {
         public override int LabelNumber => 1159036;  // The Fellowship Coin
 

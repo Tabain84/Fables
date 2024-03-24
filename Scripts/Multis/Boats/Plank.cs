@@ -8,7 +8,7 @@ namespace Server.Items
 {
     public enum PlankSide { Port, Starboard }
 
-    public class Plank : Item, ILockable
+    public class Plank : BaseItem, ILockable
     {
         private Timer m_CloseTimer;
 

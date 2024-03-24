@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Server.Items
 {
-    public class HarvestMap : Item, IUsesRemaining
+    public class HarvestMap : BaseItem, IUsesRemaining
     {
         public const int DecayPeriod = 24;
 

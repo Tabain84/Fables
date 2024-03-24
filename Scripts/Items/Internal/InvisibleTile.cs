@@ -2,7 +2,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class InvisibleTile : Item
+    public class InvisibleTile : BaseItem
     {
         public override string DefaultName => "Invisible Tile";
 
@@ -45,7 +45,7 @@ namespace Server.Items
         }
     }
 
-    public class RevealTile : Item
+    public class RevealTile : BaseItem
     {
         [Constructable]
         public RevealTile()

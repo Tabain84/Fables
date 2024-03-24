@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class VoidCrystalOfCorruptedArcaneEssence : Item
+    public class VoidCrystalOfCorruptedArcaneEssence : BaseItem
     {
         public override int LabelNumber => 1150321;  // Void Crystal of Corrupted Arcane Essence
 
@@ -26,7 +26,7 @@ namespace Server.Items
         }
     }
 
-    public class VoidCrystalOfCorruptedSpiritualEssence : Item
+    public class VoidCrystalOfCorruptedSpiritualEssence : BaseItem
     {
         public override int LabelNumber => 1150322;  // Void Crystal of Corrupted Spiritual Essence
 
@@ -55,7 +55,7 @@ namespace Server.Items
         }
     }
 
-    public class VoidCrystalOfCorruptedMysticalEssence : Item
+    public class VoidCrystalOfCorruptedMysticalEssence : BaseItem
     {
         public override int LabelNumber => 1150323;  // Void Crystal of Corrupted Mystical Essence
 

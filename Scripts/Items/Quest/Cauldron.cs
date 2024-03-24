@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Cauldron : Item
+    public class Cauldron : BaseItem
     {
         public override int LabelNumber => 1153777;  // a cauldron
 

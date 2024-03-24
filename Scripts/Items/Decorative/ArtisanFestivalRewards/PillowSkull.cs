@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA497, 0xA498)]
-    public class PillowSkull : Item
+    public class PillowSkull : BaseItem
     {
         public override int LabelNumber => 1025015;  // pillow
 

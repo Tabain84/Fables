@@ -79,7 +79,7 @@ namespace Server.Items
         }
     }
 
-    public class BirdLampDeed : Item
+    public class BirdLampDeed : BaseItem
     {
         public override int LabelNumber => 1154188;  // Bird Lamp
 

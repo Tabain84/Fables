@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BlankScroll : Item, ICommodity, ICraftable
+    public class BlankScroll : BaseItem, ICommodity, ICraftable
     {
         [Constructable]
         public BlankScroll()

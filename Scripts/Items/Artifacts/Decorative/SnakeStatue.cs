@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SnakeStatue : Item
+    public class SnakeStatue : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

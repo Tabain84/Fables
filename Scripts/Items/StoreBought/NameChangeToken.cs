@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Items
 {
-    public class NameChangeToken : Item, IPromotionalToken
+    public class NameChangeToken : BaseItem, IPromotionalToken
     {
         public override int LabelNumber => 1070997;  // a promotional token
         public TextDefinition ItemName => 1075247;  // name change

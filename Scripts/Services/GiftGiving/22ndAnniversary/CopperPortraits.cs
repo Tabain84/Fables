@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA3E0, 0xA3E4)]
-    public class CopperPortrait1 : Item
+    public class CopperPortrait1 : BaseItem
     {
         private string _DisplayName;
 
@@ -60,7 +60,7 @@ namespace Server.Items
     }
 
     [Flipable(0xA3E3, 0xA3E7)]
-    public class CopperPortrait2 : Item
+    public class CopperPortrait2 : BaseItem
     {
         private string _DisplayName;
 

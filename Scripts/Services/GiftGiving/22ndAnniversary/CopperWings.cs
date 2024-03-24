@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA3DE, 0xA3DF)]
-    public class CopperWings : Item
+    public class CopperWings : BaseItem
     {
         private string _DisplayName;
 

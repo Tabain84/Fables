@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class FaeryDust : Item, ICommodity
+    public class FaeryDust : BaseItem, ICommodity
     {
 
         [Constructable]

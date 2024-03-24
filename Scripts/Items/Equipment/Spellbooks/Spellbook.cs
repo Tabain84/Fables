@@ -31,7 +31,7 @@ namespace Server.Items
         Exceptional
     }
 
-    public class Spellbook : Item, ISpellbook, ICraftable, ISlayer, IEngravable, IVvVItem, IOwnerRestricted, IWearableDurability
+    public class Spellbook : BaseItem, ISpellbook, ICraftable, ISlayer, IEngravable, IVvVItem, IOwnerRestricted, IWearableDurability
     {
         private static readonly Dictionary<Mobile, List<Spellbook>> m_Table = new Dictionary<Mobile, List<Spellbook>>();
 

@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Furniture]
-    public class Countertop : Item
+    public class Countertop : BaseItem
     {
         public override int LabelNumber => 1125714;  // countertop
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class EnchantedSwitch : Item
+    public class EnchantedSwitch : BaseItem
     {
         [Constructable]
         public EnchantedSwitch()

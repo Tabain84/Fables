@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PowderedIron : Item
+    public class PowderedIron : BaseItem
     {
         [Constructable]
         public PowderedIron()

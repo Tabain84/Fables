@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class MasonryBook : Item
+    public class MasonryBook : BaseItem
     {
         public override int LabelNumber => 1153527;  // Making valuables with Stonecrafting
 

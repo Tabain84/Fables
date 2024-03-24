@@ -119,7 +119,7 @@ namespace Server.Items
     [Furniture]
     [DynamicFliping]
     [Flipable(0x1218, 0x1219, 0x121A, 0x121B)]
-    public class StoneChair : Item
+    public class StoneChair : BaseItem
     {
         [Constructable]
         public StoneChair()

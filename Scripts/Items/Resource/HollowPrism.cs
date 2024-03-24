@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class HollowPrism : Item
+    public class HollowPrism : BaseItem
     {
         [Constructable]
         public HollowPrism()

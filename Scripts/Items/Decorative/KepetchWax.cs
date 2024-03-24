@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class KepetchWax : Item
+    public class KepetchWax : BaseItem
     {
         [Constructable]
         public KepetchWax()

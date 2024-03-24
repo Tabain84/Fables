@@ -3,7 +3,7 @@ using Server.Items;
 
 namespace Server.Multis
 {
-    public abstract class BaseDockedBoat : Item
+    public abstract class BaseDockedBoat : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public int MultiID { get; set; }

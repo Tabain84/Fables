@@ -84,7 +84,7 @@ namespace Server.Items
 namespace Server.Items
 {
 
-    public class ExperimentalRoomBlocker : Item
+    public class ExperimentalRoomBlocker : BaseItem
     {
         private Room m_Room;
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WrongBedrollBase : Item
+    public class WrongBedrollBase : BaseItem
     {
         private Point3D m_PointDest;
         private BedrollSpawner m_Spawner;

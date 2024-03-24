@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class EssenceDiligence : Item, ICommodity
+    public class EssenceDiligence : BaseItem, ICommodity
     {
         [Constructable]
         public EssenceDiligence()

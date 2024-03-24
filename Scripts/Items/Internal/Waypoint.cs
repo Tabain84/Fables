@@ -4,7 +4,7 @@ using Server.Targeting;
 namespace Server.Items
 {
     [Flipable(0x1f14, 0x1f15, 0x1f16, 0x1f17)]
-    public class WayPoint : Item
+    public class WayPoint : BaseItem
     {
         private WayPoint m_Next;
         [Constructable]

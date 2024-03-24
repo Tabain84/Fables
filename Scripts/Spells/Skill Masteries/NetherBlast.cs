@@ -184,7 +184,7 @@ namespace Server.Spells.SkillMasteries
         }
 
         [DispellableField]
-        public class InternalItem : Item
+        public class InternalItem : BaseItem
         {
             public override bool BlocksFit => true;
 

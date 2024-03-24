@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class Whirlpool : Item
+    public class Whirlpool : BaseItem
     {
         public override int LabelNumber => 1033459;  // whirlpool
 

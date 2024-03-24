@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class CoilsFang : Item
+    public class CoilsFang : BaseItem
     {
         [Constructable]
         public CoilsFang()

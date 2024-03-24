@@ -17,7 +17,7 @@ namespace Server.Items
     }
 
     [Flipable(0x992D, 0x992E)]
-    public class PumpkinCarvingKit : Item
+    public class PumpkinCarvingKit : BaseItem
     {
         public override int LabelNumber => 1154271;  // Jack O' Lantern Carving Kit
 

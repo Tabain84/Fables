@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA35D, 0xA35E)]
-    public class CopperSunflower : Item
+    public class CopperSunflower : BaseItem
     {
         private string _DisplayName;
 

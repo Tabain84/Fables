@@ -243,7 +243,7 @@ namespace Server.Items
     }
 
     [Flipable(0xA2C8, 0xA2C9)]
-    public class PirateWallMap : Item
+    public class PirateWallMap : BaseItem
     {
         public override int LabelNumber => 1158938;  // Pirate Wall Map
 
@@ -282,7 +282,7 @@ namespace Server.Items
     }
 
     [Flipable(0xA2C6, 0xA2C7)]
-    public class MysteriousStatue : Item
+    public class MysteriousStatue : BaseItem
     {
         public override int LabelNumber => 1158935; // Mysterious Statue
 
@@ -341,7 +341,7 @@ namespace Server.Items
     }
 
     [Flipable(0x4C26, 0x4C27)]
-    public class DecorativeWoodCarving : Item
+    public class DecorativeWoodCarving : BaseItem
     {
         public string _ShipName;
 

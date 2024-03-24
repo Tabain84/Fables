@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class LibraryApplication : Item
+    public class LibraryApplication : BaseItem
     {
         [Constructable]
         public LibraryApplication()

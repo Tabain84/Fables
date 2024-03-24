@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ChangelingStatue : Item
+    public class ChangelingStatue : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

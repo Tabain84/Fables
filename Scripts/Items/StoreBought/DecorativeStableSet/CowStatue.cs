@@ -8,7 +8,7 @@ namespace Server.Items
 {
     [Furniture]
     [Flipable(0xA50F, 0xA510)]
-    public class CowStatue : Item, ISecurable
+    public class CowStatue : BaseItem, ISecurable
     {
         public override int LabelNumber => 1072494;  // Cow
 

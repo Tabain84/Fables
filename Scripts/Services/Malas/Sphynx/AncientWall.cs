@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class AncientWall : Item
+    public class AncientWall : BaseItem
     {
         [Constructable]
         public AncientWall()

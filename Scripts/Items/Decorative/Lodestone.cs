@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Lodestone : Item, ICommodity
+    public class Lodestone : BaseItem, ICommodity
     {
         [Constructable]
         public Lodestone()

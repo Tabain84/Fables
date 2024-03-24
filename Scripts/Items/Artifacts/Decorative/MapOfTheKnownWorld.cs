@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0x3BB6, 0x3BB7)]
-    public class MapOfTheKnownWorld : Item, ISecurable
+    public class MapOfTheKnownWorld : BaseItem, ISecurable
     {
         private SecureLevel m_Level;
 

@@ -114,7 +114,7 @@ namespace Server.Items
     }
 
     [Flipable(0x4BD9, 0x4BDA)]
-    public class HornOfPlenty : Item, IUsesRemaining
+    public class HornOfPlenty : BaseItem, IUsesRemaining
     {
         public override int LabelNumber => 1153503;  // Horn of Plenty
 

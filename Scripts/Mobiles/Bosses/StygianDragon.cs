@@ -291,7 +291,7 @@ namespace Server.Mobiles
         #endregion
 
         #region Fire Field
-        public class FireField : Item
+        public class FireField : BaseItem
         {
             private readonly Mobile m_Owner;
             private readonly Timer m_Timer;

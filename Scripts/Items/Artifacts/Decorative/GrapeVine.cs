@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class GrapeVine : Item
+    public class GrapeVine : BaseItem
     {
         public override bool IsArtifact => true;
         private DateTime m_NextHarvest;

@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class SnowPileDeco : Item
+    public class SnowPileDeco : BaseItem
     {
         public override double DefaultWeight => 2.0;
 

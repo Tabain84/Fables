@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class CastleTrapDoor : Item
+    public class CastleTrapDoor : BaseItem
     {
         private Point3D _PointDest;
         private Map _Map;

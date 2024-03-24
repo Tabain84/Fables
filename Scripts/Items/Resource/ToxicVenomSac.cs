@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ToxicVenomSac : Item, ICommodity
+    public class ToxicVenomSac : BaseItem, ICommodity
     {
         [Constructable]
         public ToxicVenomSac()

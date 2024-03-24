@@ -2,7 +2,7 @@ using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    public class AlterContract : Item
+    public class AlterContract : BaseItem
     {
         private RepairSkillType m_Type;
         private string m_CrafterName;

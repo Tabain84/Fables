@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.Plants
 {
-    public class MaginciaPlantSystem : Item
+    public class MaginciaPlantSystem : BaseItem
     {
         public static readonly bool Enabled = true;
         public static readonly int PlantDelay = 4;

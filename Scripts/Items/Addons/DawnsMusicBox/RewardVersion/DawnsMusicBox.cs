@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace Server.Items.MusicBox
 {
     [Flipable(0x2AF9, 0x2AFD)]
-    public class DawnsMusicBox : Item, ISecurable, IRewardItem
+    public class DawnsMusicBox : BaseItem, ISecurable, IRewardItem
     {
         public static readonly int MusicRange = 10;
         private List<MusicName> m_Tracks;

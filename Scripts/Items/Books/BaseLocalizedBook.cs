@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public abstract class BaseLocalizedBook : Item
+    public abstract class BaseLocalizedBook : BaseItem
     {
         public virtual object Title => "a book";
         public virtual object Author => "unknown";

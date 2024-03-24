@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class CreepingVine : Item
+    public class CreepingVine : BaseItem
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1112401;

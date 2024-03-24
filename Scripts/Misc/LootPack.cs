@@ -647,62 +647,62 @@ namespace Server
             return new LootPack(new[] { new LootPackEntry(spawn, steal, items, chance, amount) });
         }
 
-        public static LootPack LootItem<T>() where T : Item
+        public static LootPack LootItem<T>() where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(false, false, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, 100.0, 1) });
         }
 
-        public static LootPack LootItem<T>(bool resource) where T : Item
+        public static LootPack LootItem<T>(bool resource) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(false, resource, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, 100.0, 1) });
         }
 
-        public static LootPack LootItem<T>(double chance) where T : Item
+        public static LootPack LootItem<T>(double chance) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(false, false, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, chance, 1) });
         }
 
-        public static LootPack LootItem<T>(double chance, bool resource) where T : Item
+        public static LootPack LootItem<T>(double chance, bool resource) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(false, resource, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, chance, 1) });
         }
 
-        public static LootPack LootItem<T>(bool onSpawn, bool onSteal) where T : Item
+        public static LootPack LootItem<T>(bool onSpawn, bool onSteal) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(onSpawn, onSteal, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, 100.0, 1) });
         }
 
-        public static LootPack LootItem<T>(int amount) where T : Item
+        public static LootPack LootItem<T>(int amount) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(false, false, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, 100.0, amount) });
         }
 
-        public static LootPack LootItem<T>(int min, int max) where T : Item
+        public static LootPack LootItem<T>(int min, int max) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(false, false, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, 100.0, Utility.RandomMinMax(min, max)) });
         }
 
-        public static LootPack LootItem<T>(int min, int max, bool resource) where T : Item
+        public static LootPack LootItem<T>(int min, int max, bool resource) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(false, resource, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, 100.0, Utility.RandomMinMax(min, max)) });
         }
 
-        public static LootPack LootItem<T>(int min, int max, bool spawnTime, bool onSteal) where T : Item
+        public static LootPack LootItem<T>(int min, int max, bool spawnTime, bool onSteal) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(spawnTime, onSteal, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, 100.0, Utility.RandomMinMax(min, max)) });
         }
 
-        public static LootPack LootItem<T>(int amount, bool resource) where T : Item
+        public static LootPack LootItem<T>(int amount, bool resource) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(false, resource, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, 100.0, amount) });
         }
 
-        public static LootPack LootItem<T>(double chance, int amount) where T : Item
+        public static LootPack LootItem<T>(double chance, int amount) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(false, false, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, chance, amount) });
         }
 
-        public static LootPack LootItem<T>(double chance, int amount, bool spawnTime, bool onSteal) where T : Item
+        public static LootPack LootItem<T>(double chance, int amount, bool spawnTime, bool onSteal) where T : BaseItem
         {
             return new LootPack(new[] { new LootPackEntry(spawnTime, onSteal, new LootPackItem[] { new LootPackItem(typeof(T), 1) }, chance, amount) });
         }

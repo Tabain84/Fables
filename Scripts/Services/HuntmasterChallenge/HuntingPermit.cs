@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class HuntingPermit : Item
+    public class HuntingPermit : BaseItem
     {
         private static readonly List<HuntingPermit> m_Permits = new List<HuntingPermit>();
         public static List<HuntingPermit> Permits => m_Permits;

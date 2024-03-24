@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Engines.VvV
 {
-    public class ManaSpike : Item
+    public class ManaSpike : BaseItem
     {
         public override int LabelNumber => 1155508;
 

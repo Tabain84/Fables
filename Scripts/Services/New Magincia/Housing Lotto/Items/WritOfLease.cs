@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Engines.NewMagincia
 {
-    public class WritOfLease : Item
+    public class WritOfLease : BaseItem
     {
         public override int LabelNumber => 1150489;  // a writ of lease
 

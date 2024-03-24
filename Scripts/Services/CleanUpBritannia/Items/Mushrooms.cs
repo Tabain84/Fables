@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class Mushrooms1 : Item
+    public class Mushrooms1 : BaseItem
     {
         [Constructable]
         public Mushrooms1()
@@ -29,7 +29,7 @@
         }
     }
 
-    public class Mushrooms2 : Item
+    public class Mushrooms2 : BaseItem
     {
         [Constructable]
         public Mushrooms2()
@@ -58,7 +58,7 @@
         }
     }
 
-    public class Mushrooms3 : Item
+    public class Mushrooms3 : BaseItem
     {
         [Constructable]
         public Mushrooms3()
@@ -87,7 +87,7 @@
         }
     }
 
-    public class Mushrooms4 : Item
+    public class Mushrooms4 : BaseItem
     {
         [Constructable]
         public Mushrooms4()

@@ -3,7 +3,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class HitchingRope : Item
+    public class HitchingRope : BaseItem
     {
         [Constructable]
         public HitchingRope()

@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class PresentationStone : Item
+    public class PresentationStone : BaseItem
     {
         public override int LabelNumber => 1154745;  // Presentation Stone
 

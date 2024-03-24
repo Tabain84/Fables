@@ -8,7 +8,7 @@ using System;
 namespace Server.Items
 {
     [Flipable(0xA1E4, 0xA1E5)]
-    public class StarChart : Item, ICraftable
+    public class StarChart : BaseItem, ICraftable
     {
         private int _Constellation;
         private string _Name;

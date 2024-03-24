@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ValentinesTable : Item
+    public class ValentinesTable : BaseItem
     {
         public override int LabelNumber => 1098492;  // table
 
@@ -39,7 +39,7 @@ namespace Server.Items
     }
 
     [Flipable(0xA05C, 0xA05D, 0xA05E, 0xA05F)]
-    public class ValentinesChair : Item
+    public class ValentinesChair : BaseItem
     {
         public override int LabelNumber => 1098456;  // chair
 

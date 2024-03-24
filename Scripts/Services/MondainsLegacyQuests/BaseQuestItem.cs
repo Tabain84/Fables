@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.Quests
 {
-    public abstract class BaseQuestItem : Item
+    public abstract class BaseQuestItem : BaseItem
     {
         private bool m_InDelivery;
         private int m_Duration;

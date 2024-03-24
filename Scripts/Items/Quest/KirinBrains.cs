@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class KirinBrains : Item
+    public class KirinBrains : BaseItem
     {
         [Constructable]
         public KirinBrains()

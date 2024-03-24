@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class StringOfPartsOfParoxysmusVictims : Item
+    public class StringOfPartsOfParoxysmusVictims : BaseItem
     {
         [Constructable]
         public StringOfPartsOfParoxysmusVictims()

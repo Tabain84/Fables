@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class TombOfKingsSecretDoor : Item
+    public class TombOfKingsSecretDoor : BaseItem
     {
         public override int LabelNumber => 1020233;  // secret door
 

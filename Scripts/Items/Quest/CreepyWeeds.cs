@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class CreepyWeeds : Item
+    public class CreepyWeeds : BaseItem
     {
         [Constructable]
         public CreepyWeeds()

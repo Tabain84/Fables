@@ -71,7 +71,7 @@ namespace Server.Items
     }
 
     [Flipable(0xEDD, 0xEDE)]
-    public class HouseRaffleStone : Item
+    public class HouseRaffleStone : BaseItem
     {
         public static readonly TimeSpan DefaultDuration = TimeSpan.FromDays(7.0);
         public static readonly TimeSpan ExpirationTime = TimeSpan.FromDays(30.0);

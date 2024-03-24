@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ParrotWafer : Item
+    public class ParrotWafer : BaseItem
     {
         [Constructable]
         public ParrotWafer()

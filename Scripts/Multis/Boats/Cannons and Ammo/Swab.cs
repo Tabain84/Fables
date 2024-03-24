@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class Swab : Item
+    public class Swab : BaseItem
     {
         [Constructable]
         public Swab()

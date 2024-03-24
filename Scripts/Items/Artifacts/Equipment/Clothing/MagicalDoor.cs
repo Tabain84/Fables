@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class MagicalDoor : Item
+    public class MagicalDoor : BaseItem
     {
         [Constructable]
         public MagicalDoor() : this(Utility.RandomList(7905, 7914, 7923, 7932))

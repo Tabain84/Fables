@@ -15,7 +15,7 @@ namespace Server.Items
     }
 
     [Flipable(0x14fc, 0x14fb)]
-    public class Lockpick : Item
+    public class Lockpick : BaseItem
     {
         public virtual bool IsSkeletonKey => false;
         public virtual int SkillBonus => 0;

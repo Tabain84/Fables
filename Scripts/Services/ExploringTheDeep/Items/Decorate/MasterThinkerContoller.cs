@@ -14,7 +14,7 @@ namespace Server.Items
         Book
     };
 
-    public class MasterThinkerContoller : Item
+    public class MasterThinkerContoller : BaseItem
     {
         public static void Initialize()
         {
@@ -105,7 +105,7 @@ namespace Server.Items
         }
     }
 
-    public class MasterThinkerDecor : Item
+    public class MasterThinkerDecor : BaseItem
     {
         private MasterThinkerContoller m_Controller;
         private DecorType m_Type;

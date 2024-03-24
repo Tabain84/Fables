@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Items
 {
-    public class DragonBardingDeed : Item, ICraftable
+    public class DragonBardingDeed : BaseItem, ICraftable
     {
         private bool m_Exceptional;
         private Mobile m_Crafter;

@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Engines.MyrmidexInvasion
 {
-    public class AllegianceIdol : Item
+    public class AllegianceIdol : BaseItem
     {
         private Allegiance _AllegianceType;
 

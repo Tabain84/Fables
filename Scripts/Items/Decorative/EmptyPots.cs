@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SmallEmptyPot : Item
+    public class SmallEmptyPot : BaseItem
     {
         [Constructable]
         public SmallEmptyPot()
@@ -29,7 +29,7 @@ namespace Server.Items
         }
     }
 
-    public class LargeEmptyPot : Item
+    public class LargeEmptyPot : BaseItem
     {
         [Constructable]
         public LargeEmptyPot()

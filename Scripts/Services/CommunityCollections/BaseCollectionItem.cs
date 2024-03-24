@@ -8,7 +8,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-	public abstract class BaseCollectionItem : Item, IComunityCollection
+	public abstract class BaseCollectionItem : BaseItem, IComunityCollection
 	{
 		#region IComunityCollection
 

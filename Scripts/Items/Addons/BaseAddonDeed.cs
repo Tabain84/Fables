@@ -6,7 +6,7 @@ using System;
 namespace Server.Items
 {
     [Flipable(0x14F0, 0x14EF)]
-    public abstract class BaseAddonDeed : Item, ICraftable
+    public abstract class BaseAddonDeed : BaseItem, ICraftable
     {
         private CraftResource m_Resource;
         private bool m_ReDeed;

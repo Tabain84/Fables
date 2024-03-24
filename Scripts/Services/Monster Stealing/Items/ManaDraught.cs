@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [TypeAlias("drNO.ThieveItems.ManaDraught")]
-    public class ManaDraught : Item
+    public class ManaDraught : BaseItem
     {
         private static readonly Dictionary<PlayerMobile, DateTime> DaughtUsageList = new Dictionary<PlayerMobile, DateTime>();
         private static TimeSpan Cooldown = TimeSpan.FromMinutes(10);

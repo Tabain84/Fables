@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public abstract class BaseDecorationArtifact : Item, IArtifact
+    public abstract class BaseDecorationArtifact : BaseItem, IArtifact
     {
         public override bool IsArtifact => true;
         public virtual bool ShowArtifactRarity => true;

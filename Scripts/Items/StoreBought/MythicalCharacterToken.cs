@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class MythicCharacterToken : Item, IPromotionalToken
+    public class MythicCharacterToken : BaseItem, IPromotionalToken
     {
         public override int LabelNumber => 1070997;  // a promotional token
         public TextDefinition ItemName => 1152353;  // Mythic Character Token

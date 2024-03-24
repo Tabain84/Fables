@@ -163,7 +163,7 @@ namespace Server.Items
 
     // old classes
     [TypeAlias("Server.Items.DragonHead")]
-    public class DragonHeadOld : Item, IAddon
+    public class DragonHeadOld : BaseItem, IAddon
     {
         public override bool IsArtifact => true;
 
@@ -240,7 +240,7 @@ namespace Server.Items
     }
 
     [TypeAlias("Server.Items.DragonHeadDeed")]
-    public class DragonHeadDeedOld : Item
+    public class DragonHeadDeedOld : BaseItem
     {
         public override int LabelNumber => 1028756;  // dragon head
 

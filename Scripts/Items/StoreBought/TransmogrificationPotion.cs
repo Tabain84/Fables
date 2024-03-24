@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class TransmogrificationPotion : Item
+    public class TransmogrificationPotion : BaseItem
     {
         public override int LabelNumber => 1159501;  // Transmogrification Potion
         

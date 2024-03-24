@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WallBlood : Item
+    public class WallBlood : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

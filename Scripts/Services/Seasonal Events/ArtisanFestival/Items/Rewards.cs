@@ -118,7 +118,7 @@ namespace Server.Engines.ArtisanFestival
         }
     }
 
-    public class RewardPillow : Item, IFlipable
+    public class RewardPillow : BaseItem, IFlipable
     {
         public override int LabelNumber => 1125137;
 
@@ -200,7 +200,7 @@ namespace Server.Engines.ArtisanFestival
         }
     }
 
-    public class RewardPainting : Item, IFlipable
+    public class RewardPainting : BaseItem, IFlipable
     {
         public override int LabelNumber => 1125147;
 
@@ -282,7 +282,7 @@ namespace Server.Engines.ArtisanFestival
         }
     }
 
-    public class RewardSculpture : Item
+    public class RewardSculpture : BaseItem
     {
         public override int LabelNumber => 1125080;
 

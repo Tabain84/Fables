@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Engines.VvV
 {
-    public class VvVSigil : Item, IRevealableItem
+    public class VvVSigil : BaseItem, IRevealableItem
     {
         public const int OwnershipHue = 0xB;
 

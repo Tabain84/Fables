@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ReflectiveWolfEye : Item, ICommodity
+    public class ReflectiveWolfEye : BaseItem, ICommodity
     {
         [Constructable]
         public ReflectiveWolfEye()

@@ -603,7 +603,7 @@ namespace Server.Mobiles
         }
     }
 
-    public class MountItem : Item, IMountItem
+    public class MountItem : BaseItem, IMountItem
     {
         private BaseMount m_Mount;
         public MountItem(BaseMount mount, int itemID)

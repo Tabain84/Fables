@@ -6,7 +6,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class Banner : Item, IAddon, IDyable, IRewardItem
+    public class Banner : BaseItem, IAddon, IDyable, IRewardItem
     {
         private bool m_IsRewardItem;
         [Constructable]
@@ -121,7 +121,7 @@ namespace Server.Items
         }
     }
 
-    public class BannerDeed : Item, IRewardItem
+    public class BannerDeed : BaseItem, IRewardItem
     {
         private bool m_IsRewardItem;
         [Constructable]

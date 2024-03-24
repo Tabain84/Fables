@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class BlackthornDungeonTeleporter : Item
+    public class BlackthornDungeonTeleporter : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public Point3D Dest { get; set; }

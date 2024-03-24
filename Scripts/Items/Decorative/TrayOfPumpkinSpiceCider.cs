@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x9D30, 0x9D31)]
-    public class TrayOfPumpkinSpiceCider : Item
+    public class TrayOfPumpkinSpiceCider : BaseItem
     {
         public override int LabelNumber => 1124264;  // Tray of Pumpkin Spice Cider
 

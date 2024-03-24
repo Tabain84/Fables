@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class RaptorTeeth : Item, ICommodity
+    public class RaptorTeeth : BaseItem, ICommodity
     {
         [Constructable]
         public RaptorTeeth()

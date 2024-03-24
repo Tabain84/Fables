@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class PoolOfAcid : Item
+    public class PoolOfAcid : BaseItem
     {
         private readonly TimeSpan m_Duration;
         private readonly int m_MinDamage;

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SilverSerpentVenom : Item, ICommodity
+    public class SilverSerpentVenom : BaseItem, ICommodity
     {
         TextDefinition ICommodity.Description => LabelNumber;
         bool ICommodity.IsDeedable => true;

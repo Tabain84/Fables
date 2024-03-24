@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AnniversaryPlate : Item
+    public class AnniversaryPlate : BaseItem
     {
         public override int LabelNumber => 1156149;  // An Ornately Decorated Commemorative Plate
 

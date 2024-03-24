@@ -3,7 +3,7 @@ using Server.Regions;
 
 namespace Server.Items
 {
-    public class DecorativeCarpet : Item, IDyable
+    public class DecorativeCarpet : BaseItem, IDyable
     {
         public override int Hue
         {

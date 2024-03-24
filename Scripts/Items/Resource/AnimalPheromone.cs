@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AnimalPheromone : Item
+    public class AnimalPheromone : BaseItem
     {
         [Constructable]
         public AnimalPheromone()

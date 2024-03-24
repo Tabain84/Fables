@@ -66,3 +66,6 @@
 
 # Exclude Data Files
 /Data/PVPTournamentSystemData
+/DataFiles/
+.editorconfig
+/.vscode/

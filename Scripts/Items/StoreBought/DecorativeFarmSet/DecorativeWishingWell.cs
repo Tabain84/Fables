@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA300, 0xA301)]
-    public class DecorativeWishingWell : Item
+    public class DecorativeWishingWell : BaseItem
     {
         public override int LabelNumber => 1125752; // well
 

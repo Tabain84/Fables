@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ChagaMushroom : Item, ICommodity
+    public class ChagaMushroom : BaseItem, ICommodity
     {
         [Constructable]
         public ChagaMushroom()

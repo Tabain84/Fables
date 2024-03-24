@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class HalloweenPumpkin : Item
+    public class HalloweenPumpkin : BaseItem
     {
         private static readonly string[] m_Staff =
         {

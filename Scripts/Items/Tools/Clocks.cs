@@ -22,7 +22,7 @@ namespace Server.Items
     }
 
     [Flipable(0x104B, 0x104C)]
-    public class Clock : Item, ISecurable
+    public class Clock : BaseItem, ISecurable
     {
         public const double SecondsPerUOMinute = 5.0;
         public const double MinutesPerUODay = SecondsPerUOMinute * 24;

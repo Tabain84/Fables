@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class MysticalPolymorphTotem : Item
+    public class MysticalPolymorphTotem : BaseItem
     {
         public override int LabelNumber => 1158780;  // Mystical Polymorph Totem
 

@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Furniture]
-    public class TallMusicStandLeft : Item
+    public class TallMusicStandLeft : BaseItem
     {
         [Constructable]
         public TallMusicStandLeft()
@@ -29,7 +29,7 @@ namespace Server.Items
     }
 
     [Furniture]
-    public class TallMusicStandRight : Item
+    public class TallMusicStandRight : BaseItem
     {
         [Constructable]
         public TallMusicStandRight()
@@ -57,7 +57,7 @@ namespace Server.Items
     }
 
     [Furniture]
-    public class ShortMusicStandLeft : Item
+    public class ShortMusicStandLeft : BaseItem
     {
         [Constructable]
         public ShortMusicStandLeft()
@@ -85,7 +85,7 @@ namespace Server.Items
     }
 
     [Furniture]
-    public class ShortMusicStandRight : Item
+    public class ShortMusicStandRight : BaseItem
     {
         [Constructable]
         public ShortMusicStandRight()

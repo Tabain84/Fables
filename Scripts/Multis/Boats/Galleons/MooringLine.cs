@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class MooringLine : Item
+    public class MooringLine : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public BaseBoat Boat { get; private set; }

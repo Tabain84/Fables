@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PowderOfFortKeg : Item
+    public class PowderOfFortKeg : BaseItem
     {
         private int _Charges;
 

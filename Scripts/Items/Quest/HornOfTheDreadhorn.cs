@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x315C, 0x315D)]
-    public class HornOfTheDreadhorn : Item
+    public class HornOfTheDreadhorn : BaseItem
     {
         [Constructable]
         public HornOfTheDreadhorn()

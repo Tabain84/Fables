@@ -6,7 +6,7 @@ using System;
 
 namespace Server.Items
 {
-    public class SpecialFishingNet : Item
+    public class SpecialFishingNet : BaseItem
     {
         private static readonly int[] m_Hues = new int[]
         {

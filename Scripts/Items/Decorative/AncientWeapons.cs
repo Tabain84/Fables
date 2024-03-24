@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA33B, 0xA33C)]
-    public class AncientWeapon1 : Item
+    public class AncientWeapon1 : BaseItem
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1125811;  // ancient weapon
@@ -33,7 +33,7 @@ namespace Server.Items
     }
 
     [Flipable(0xA33D, 0xA33E)]
-    public class AncientWeapon2 : Item
+    public class AncientWeapon2 : BaseItem
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1125811;  // ancient weapon
@@ -65,7 +65,7 @@ namespace Server.Items
     }
 
     [Flipable(0xA33F, 0xA340)]
-    public class AncientWeapon3 : Item
+    public class AncientWeapon3 : BaseItem
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1125811;  // ancient weapon

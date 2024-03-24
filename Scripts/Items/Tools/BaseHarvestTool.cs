@@ -16,7 +16,7 @@ namespace Server.Items
         StoneOnly,
     }
 
-    public abstract class BaseHarvestTool : Item, IUsesRemaining, ICraftable, IHarvestTool
+    public abstract class BaseHarvestTool : BaseItem, IUsesRemaining, ICraftable, IHarvestTool
     {
         private Mobile m_Crafter;
         private ItemQuality m_Quality;

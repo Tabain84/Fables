@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SlithTongue : Item, ICommodity
+    public class SlithTongue : BaseItem, ICommodity
     {
         [Constructable]
         public SlithTongue()

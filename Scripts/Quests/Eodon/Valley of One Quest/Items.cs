@@ -39,7 +39,7 @@ namespace Server.Items
         }
     }
 
-    public class MosaicOfHeluzz : Item
+    public class MosaicOfHeluzz : BaseItem
     {
         public override int LabelNumber => 1156467;   // Mosaic of Heluzz
 
@@ -67,7 +67,7 @@ namespace Server.Items
         }
     }
 
-    public class TotemOfFabozz : Item
+    public class TotemOfFabozz : BaseItem
     {
         public override int LabelNumber => 1156468;   // Totem Of Faboz
 
@@ -95,7 +95,7 @@ namespace Server.Items
         }
     }
 
-    public class FiresOfKukuzz : Item
+    public class FiresOfKukuzz : BaseItem
     {
         public override int LabelNumber => 1156469;   // Fires of Kukuzz
 
@@ -122,7 +122,7 @@ namespace Server.Items
         }
     }
 
-    public class SkullOfMotazz : Item
+    public class SkullOfMotazz : BaseItem
     {
         public override int LabelNumber => 1156470;   // The Skull of Motazz
 
@@ -150,7 +150,7 @@ namespace Server.Items
         }
     }
 
-    public class SkullOfAphazz : Item
+    public class SkullOfAphazz : BaseItem
     {
         public override int LabelNumber => 1156471;   // The Skull of Aphazz
 
@@ -498,7 +498,7 @@ namespace Server.Items
         }
     }
 
-    public class LavaRockDisplay : Item
+    public class LavaRockDisplay : BaseItem
     {
         public override int LabelNumber => 1124033;   // lava rock display
 

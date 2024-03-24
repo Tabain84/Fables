@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Vase : Item
+    public class Vase : BaseItem
     {
         [Constructable]
         public Vase()
@@ -29,7 +29,7 @@ namespace Server.Items
         }
     }
 
-    public class LargeVase : Item
+    public class LargeVase : BaseItem
     {
         [Constructable]
         public LargeVase()
@@ -58,7 +58,7 @@ namespace Server.Items
         }
     }
 
-    public class SmallUrn : Item
+    public class SmallUrn : BaseItem
     {
         [Constructable]
         public SmallUrn()

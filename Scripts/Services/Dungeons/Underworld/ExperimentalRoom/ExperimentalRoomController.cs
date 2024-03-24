@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class ExperimentalRoomController : Item
+    public class ExperimentalRoomController : BaseItem
     {
         private static ExperimentalRoomController m_Instance;
         public static ExperimentalRoomController Instance => m_Instance;

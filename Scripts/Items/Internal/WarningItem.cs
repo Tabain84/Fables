@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class WarningItem : Item
+    public class WarningItem : BaseItem
     {
         private string m_WarningString;
         private int m_WarningNumber;

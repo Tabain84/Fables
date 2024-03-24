@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BridesLetter : Item
+    public class BridesLetter : BaseItem
     {
         [Constructable]
         public BridesLetter()

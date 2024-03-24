@@ -1873,7 +1873,7 @@ namespace Server.Mobiles
             return true;
         }
 
-        private class TransferItem : Item
+        private class TransferItem : BaseItem
         {
             public static bool IsInCombat(BaseCreature creature)
             {

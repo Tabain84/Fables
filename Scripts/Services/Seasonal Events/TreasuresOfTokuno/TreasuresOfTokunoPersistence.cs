@@ -1,7 +1,7 @@
 namespace Server.Misc
 {
     [TypeAlias("Server.Misc.TreasuresOfTokunoPersistance")]
-    public class TreasuresOfTokunoPersistence : Item
+    public class TreasuresOfTokunoPersistence : BaseItem
     {
         private static TreasuresOfTokunoPersistence m_Instance;
         public TreasuresOfTokunoPersistence()

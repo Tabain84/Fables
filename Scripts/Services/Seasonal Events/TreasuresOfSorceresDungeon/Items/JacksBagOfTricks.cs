@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class JacksBagOfTricks : Item
+    public class JacksBagOfTricks : BaseItem
     {
         public override int LabelNumber => 1157656;  // Jack's Bag of Tricks
 
@@ -89,7 +89,7 @@ namespace Server.Items
     }
 
     [Flipable(0x1E90, 0x1E91)]
-    public class RancidReindeerMeat : Item
+    public class RancidReindeerMeat : BaseItem
     {
         public override int LabelNumber => 1157634;  // Rancid Reindeer Meat
 
@@ -127,7 +127,7 @@ namespace Server.Items
     }
 
     [Flipable(0x9DC3, 0x9DC4)]
-    public class GlassyCandyCane : Item
+    public class GlassyCandyCane : BaseItem
     {
         public override int LabelNumber => 1157636;  // Glass Candy Cane
 
@@ -157,7 +157,7 @@ namespace Server.Items
     }
 
     [Flipable(0x312D, 0x312E)]
-    public class NamedSeveredElfEars : Item
+    public class NamedSeveredElfEars : BaseItem
     {
         private string _Name;
 
@@ -247,7 +247,7 @@ namespace Server.Items
     }
 
     [Flipable(0x48E2, 0x48E3)]
-    public class InsultingDoll : Item
+    public class InsultingDoll : BaseItem
     {
         public override int LabelNumber => 1157641;  // Insulting Doll
 
@@ -284,7 +284,7 @@ namespace Server.Items
         }
     }
 
-    public class SpikedEggnog : Item
+    public class SpikedEggnog : BaseItem
     {
         public override int LabelNumber => 1157647;  // Spiked Egg Nog
 

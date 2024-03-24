@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Tourmaline : Item, IGem
+    public class Tourmaline : BaseItem, IGem
     {
         [Constructable]
         public Tourmaline()

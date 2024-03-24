@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class GobletOfCelebration : Item
+    public class GobletOfCelebration : BaseItem
     {
         public override int LabelNumber => 1075430;  // Goblet of Celebration
 

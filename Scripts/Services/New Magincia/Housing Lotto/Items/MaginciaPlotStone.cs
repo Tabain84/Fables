@@ -1,6 +1,6 @@
 namespace Server.Engines.NewMagincia
 {
-    public class MaginciaPlotStone : Item
+    public class MaginciaPlotStone : BaseItem
     {
         public override bool ForceShowProperties => true;
 

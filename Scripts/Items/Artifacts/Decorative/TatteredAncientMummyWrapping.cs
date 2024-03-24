@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TatteredAncientMummyWrapping : Item
+    public class TatteredAncientMummyWrapping : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

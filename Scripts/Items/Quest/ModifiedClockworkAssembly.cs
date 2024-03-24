@@ -12,7 +12,7 @@ namespace Server.Items
     }
 
     [Flipable(0x1EA8, 0x1EAC)]
-    public class ModifiedClockworkAssembly : Item, ICraftable
+    public class ModifiedClockworkAssembly : BaseItem, ICraftable
     {
         private class GolemInfo
         {

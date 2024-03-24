@@ -71,7 +71,7 @@ namespace Server.Items
         }
     }
 
-    public class SutekIngredientItem : Item
+    public class SutekIngredientItem : BaseItem
     {
         public override int LabelNumber => m_TextId;
         public override bool ForceShowProperties => true;

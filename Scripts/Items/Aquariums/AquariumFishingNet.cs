@@ -146,7 +146,7 @@ namespace Server.Items
     }
 
     // Legacy code
-    public class AquariumFishingNet : Item
+    public class AquariumFishingNet : BaseItem
     {
         public AquariumFishingNet()
         {

@@ -3,7 +3,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class PoppiesDust : Item, IUsesRemaining
+    public class PoppiesDust : BaseItem, IUsesRemaining
     {
         public override int LabelNumber => 1095223;  // poppies dust
 

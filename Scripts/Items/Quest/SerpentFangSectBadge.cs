@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SerpentFangSectBadge : Item
+    public class SerpentFangSectBadge : BaseItem
     {
         [Constructable]
         public SerpentFangSectBadge()

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WindSpirit : Item
+    public class WindSpirit : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class BaseStatuette : Item
+    public class BaseStatuette : BaseItem
     {
         private bool m_TurnedOn;
         [Constructable]

@@ -5,7 +5,7 @@ namespace Server.Items
         bool IsShipwreckedItem { get; set; }
     }
 
-    public class ShipwreckedItem : Item, IDyable, IShipwreckedItem, IFlipable
+    public class ShipwreckedItem : BaseItem, IDyable, IShipwreckedItem, IFlipable
     {
         private bool m_IsBarnacleItem;
 

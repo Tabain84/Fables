@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class ExplosiveGoo : Item
+    public class ExplosiveGoo : BaseItem
     {
         public override int LabelNumber => 1157463;  // Explosive Goo
 

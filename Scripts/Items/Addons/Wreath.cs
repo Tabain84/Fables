@@ -6,7 +6,7 @@ using System;
 
 namespace Server.Items
 {
-    public class WreathAddon : Item, IDyable, IAddon
+    public class WreathAddon : BaseItem, IDyable, IAddon
     {
         [Constructable]
         public WreathAddon()
@@ -170,7 +170,7 @@ namespace Server.Items
     }
 
     [Flipable(0x14F0, 0x14EF)]
-    public class WreathDeed : Item
+    public class WreathDeed : BaseItem
     {
         [Constructable]
         public WreathDeed()

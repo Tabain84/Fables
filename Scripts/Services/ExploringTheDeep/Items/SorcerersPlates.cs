@@ -6,7 +6,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class SorcerersPlateController : Item
+    public class SorcerersPlateController : BaseItem
     {
         public static readonly string EntityName = "sorcerersplate";
 
@@ -164,7 +164,7 @@ namespace Server.Items
         }
     }
 
-    public class SorcerersPlate : Item
+    public class SorcerersPlate : BaseItem
     {
         private SorcerersPlateController m_Controller;
         private RegsType m_Type;

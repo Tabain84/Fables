@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Saltpeter : Item, ICommodity
+    public class Saltpeter : BaseItem, ICommodity
     {
         public override int LabelNumber => 1116302;  // saltpeter
 

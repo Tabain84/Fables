@@ -4,7 +4,7 @@ using System;
 namespace Server.Items
 {
     [Flipable(0x9DB1, 0x9DB2)]
-    public class KotlAutomatonHead : Item, ICraftable
+    public class KotlAutomatonHead : BaseItem, ICraftable
     {
         private bool _Activated;
         private CraftResource _Resource;

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SnowyTree : Item
+    public class SnowyTree : BaseItem
     {
         [Constructable]
         public SnowyTree()

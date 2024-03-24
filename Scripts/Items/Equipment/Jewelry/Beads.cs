@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Beads : Item
+    public class Beads : BaseItem
     {
         [Constructable]
         public Beads()

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class GoldBranch : Item
+    public class GoldBranch : BaseItem
     {
         public override int LabelNumber => 1158835;  // branch
 
@@ -28,7 +28,7 @@ namespace Server.Items
         }
     }
 
-    public class SilverBranch : Item
+    public class SilverBranch : BaseItem
     {
         public override int LabelNumber => 1158835;  // branch
 

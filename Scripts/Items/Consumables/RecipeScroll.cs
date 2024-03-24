@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class RecipeScroll : Item
+    public class RecipeScroll : BaseItem
     {
         private int m_RecipeID;
         public RecipeScroll(Recipe r)

@@ -28,7 +28,7 @@ namespace Server.Engines.Shadowguard
     }
 
     [DeleteConfirm("Are you sure you want to delete this? Deleting this will delete any saved encounter data your players have.")]
-    public class ShadowguardController : Item
+    public class ShadowguardController : BaseItem
 	{
 		[ConfigProperty("Shadowguard.ReadyDuration")]
 		public static TimeSpan ReadyDuration { get => Config.Get("Shadowguard.ReadyDuration", TimeSpan.FromSeconds(30.0)); set => Config.Set("Shadowguard.ReadyDuration", value.TotalSeconds); }

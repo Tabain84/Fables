@@ -153,7 +153,7 @@ namespace Server.Items
         }
     }
 
-    public class WinchAssemblyLever : Item
+    public class WinchAssemblyLever : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public WinchAssembly Winch { get; set; }
@@ -480,7 +480,7 @@ namespace Server.Items
         }
     }
 
-    public class ExitTeleporter : Item
+    public class ExitTeleporter : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public PeerlessAltar Altar { get; set; }

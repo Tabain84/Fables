@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Server.Engines.VvV
 {
-    public class VvVTrapKit : Item
+    public class VvVTrapKit : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public DeploymentType DeploymentType { get; set; }

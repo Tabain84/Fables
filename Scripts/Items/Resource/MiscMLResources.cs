@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Blight : Item, ICommodity
+    public class Blight : BaseItem, ICommodity
     {
         [Constructable]
         public Blight()
@@ -39,7 +39,7 @@ namespace Server.Items
         }
     }
 
-    public class LuminescentFungi : Item, ICommodity
+    public class LuminescentFungi : BaseItem, ICommodity
     {
         [Constructable]
         public LuminescentFungi()
@@ -78,7 +78,7 @@ namespace Server.Items
         }
     }
 
-    public class CapturedEssence : Item, ICommodity
+    public class CapturedEssence : BaseItem, ICommodity
     {
         [Constructable]
         public CapturedEssence()
@@ -117,7 +117,7 @@ namespace Server.Items
         }
     }
 
-    public class EyeOfTheTravesty : Item, ICommodity
+    public class EyeOfTheTravesty : BaseItem, ICommodity
     {
         [Constructable]
         public EyeOfTheTravesty()
@@ -162,7 +162,7 @@ namespace Server.Items
         }
     }
 
-    public class Corruption : Item, ICommodity
+    public class Corruption : BaseItem, ICommodity
     {
         [Constructable]
         public Corruption()
@@ -207,7 +207,7 @@ namespace Server.Items
         }
     }
 
-    public class DreadHornMane : Item, ICommodity
+    public class DreadHornMane : BaseItem, ICommodity
     {
         [Constructable]
         public DreadHornMane()
@@ -252,7 +252,7 @@ namespace Server.Items
         }
     }
 
-    public class ParasiticPlant : Item, ICommodity
+    public class ParasiticPlant : BaseItem, ICommodity
     {
         [Constructable]
         public ParasiticPlant()
@@ -297,7 +297,7 @@ namespace Server.Items
         }
     }
 
-    public class Muculent : Item, ICommodity
+    public class Muculent : BaseItem, ICommodity
     {
         [Constructable]
         public Muculent()
@@ -342,7 +342,7 @@ namespace Server.Items
         }
     }
 
-    public class DiseasedBark : Item, ICommodity
+    public class DiseasedBark : BaseItem, ICommodity
     {
         [Constructable]
         public DiseasedBark()
@@ -387,7 +387,7 @@ namespace Server.Items
         }
     }
 
-    public class BarkFragment : Item, ICommodity
+    public class BarkFragment : BaseItem, ICommodity
     {
         [Constructable]
         public BarkFragment()
@@ -432,7 +432,7 @@ namespace Server.Items
         }
     }
 
-    public class GrizzledBones : Item, ICommodity
+    public class GrizzledBones : BaseItem, ICommodity
     {
         [Constructable]
         public GrizzledBones()
@@ -480,7 +480,7 @@ namespace Server.Items
         }
     }
 
-    public class LardOfParoxysmus : Item, ICommodity
+    public class LardOfParoxysmus : BaseItem, ICommodity
     {
         [Constructable]
         public LardOfParoxysmus()
@@ -525,7 +525,7 @@ namespace Server.Items
         }
     }
 
-    public class PerfectEmerald : Item, ICommodity
+    public class PerfectEmerald : BaseItem, ICommodity
     {
         [Constructable]
         public PerfectEmerald()
@@ -570,7 +570,7 @@ namespace Server.Items
         }
     }
 
-    public class DarkSapphire : Item, ICommodity
+    public class DarkSapphire : BaseItem, ICommodity
     {
         [Constructable]
         public DarkSapphire()
@@ -615,7 +615,7 @@ namespace Server.Items
         }
     }
 
-    public class Turquoise : Item, ICommodity
+    public class Turquoise : BaseItem, ICommodity
     {
         [Constructable]
         public Turquoise()
@@ -660,7 +660,7 @@ namespace Server.Items
         }
     }
 
-    public class EcruCitrine : Item, ICommodity
+    public class EcruCitrine : BaseItem, ICommodity
     {
         [Constructable]
         public EcruCitrine()
@@ -705,7 +705,7 @@ namespace Server.Items
         }
     }
 
-    public class WhitePearl : Item, ICommodity
+    public class WhitePearl : BaseItem, ICommodity
     {
         [Constructable]
         public WhitePearl()
@@ -750,7 +750,7 @@ namespace Server.Items
         }
     }
 
-    public class FireRuby : Item, ICommodity
+    public class FireRuby : BaseItem, ICommodity
     {
         [Constructable]
         public FireRuby()
@@ -795,7 +795,7 @@ namespace Server.Items
         }
     }
 
-    public class BlueDiamond : Item, ICommodity
+    public class BlueDiamond : BaseItem, ICommodity
     {
         [Constructable]
         public BlueDiamond()
@@ -840,7 +840,7 @@ namespace Server.Items
         }
     }
 
-    public class BrilliantAmber : Item, ICommodity
+    public class BrilliantAmber : BaseItem, ICommodity
     {
         [Constructable]
         public BrilliantAmber()
@@ -885,7 +885,7 @@ namespace Server.Items
         }
     }
 
-    public class Scourge : Item, ICommodity
+    public class Scourge : BaseItem, ICommodity
     {
         [Constructable]
         public Scourge()
@@ -932,7 +932,7 @@ namespace Server.Items
     }
 
     [TypeAlias("Server.Items.Putrefication")]
-    public class Putrefaction : Item, ICommodity
+    public class Putrefaction : BaseItem, ICommodity
     {
         [Constructable]
         public Putrefaction()
@@ -978,7 +978,7 @@ namespace Server.Items
         }
     }
 
-    public class Taint : Item, ICommodity
+    public class Taint : BaseItem, ICommodity
     {
         [Constructable]
         public Taint()
@@ -1025,7 +1025,7 @@ namespace Server.Items
     }
 
     [Flipable(0x315A, 0x315B)]
-    public class PristineDreadHorn : Item, ICommodity
+    public class PristineDreadHorn : BaseItem, ICommodity
     {
 		[Constructable]
 		public PristineDreadHorn()
@@ -1070,7 +1070,7 @@ namespace Server.Items
         }
     }
 
-    public class SwitchItem : Item, ICommodity
+    public class SwitchItem : BaseItem, ICommodity
     {
         [Constructable]
         public SwitchItem()

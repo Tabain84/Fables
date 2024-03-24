@@ -2,7 +2,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class RunedSwitch : Item
+    public class RunedSwitch : BaseItem
     {
         [Constructable]
         public RunedSwitch()

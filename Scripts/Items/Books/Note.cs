@@ -2,7 +2,7 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public class Note : Item
+    public class Note : BaseItem
     {
         private string m_String;
         public string NoteString { get { return m_String; } set { m_String = value; } }

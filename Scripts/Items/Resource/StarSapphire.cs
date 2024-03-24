@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class StarSapphire : Item, IGem
+    public class StarSapphire : BaseItem, IGem
     {
         [Constructable]
         public StarSapphire()

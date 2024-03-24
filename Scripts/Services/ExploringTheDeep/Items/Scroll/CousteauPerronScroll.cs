@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class CousteauPerronScroll : Item
+    public class CousteauPerronScroll : BaseItem
     {
         public override int LabelNumber => 1023637;  // scroll
 

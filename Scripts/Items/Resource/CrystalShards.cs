@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class CrystalShards : Item, ICommodity
+    public class CrystalShards : BaseItem, ICommodity
     {
         [Constructable]
         public CrystalShards()

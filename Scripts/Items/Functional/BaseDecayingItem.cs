@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BaseDecayingItem : Item
+    public class BaseDecayingItem : BaseItem
     {
         public virtual int Lifespan => 0;
         public virtual bool UseSeconds => true;

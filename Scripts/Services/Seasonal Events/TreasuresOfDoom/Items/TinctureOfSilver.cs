@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class TinctureOfSilver : Item
+    public class TinctureOfSilver : BaseItem
     {
         public override int LabelNumber => 1155619;  // Tincture of Silver
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BasinOfCrystalClearWater : Item
+    public class BasinOfCrystalClearWater : BaseItem
     {
         [Constructable]
         public BasinOfCrystalClearWater()

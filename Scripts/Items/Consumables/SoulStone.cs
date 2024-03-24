@@ -11,7 +11,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class SoulStone : Item, ISecurable
+    public class SoulStone : BaseItem, ISecurable
     {
         public override int LabelNumber => 1030899;// soulstone
 

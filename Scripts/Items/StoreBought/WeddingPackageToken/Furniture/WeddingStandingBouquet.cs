@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WeddingStandingBouquet : Item, IDyable
+    public class WeddingStandingBouquet : BaseItem, IDyable
     {
         public override int LabelNumber => 1023127; // flowers
 

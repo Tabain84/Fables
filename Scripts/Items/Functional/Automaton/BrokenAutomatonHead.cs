@@ -3,7 +3,7 @@ using System;
 namespace Server.Items
 {
     [Flipable(0x9DB1, 0x9DB2)]
-    public class BrokenAutomatonHead : Item
+    public class BrokenAutomatonHead : BaseItem
     {
         public static int RepairAmount = 75;
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class InfusedAlchemistsGem : Item
+    public class InfusedAlchemistsGem : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

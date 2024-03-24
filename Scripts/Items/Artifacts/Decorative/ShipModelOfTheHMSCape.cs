@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ShipModelOfTheHMSCape : Item
+    public class ShipModelOfTheHMSCape : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

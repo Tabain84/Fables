@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class UndeadGargoyleMedallions : Item
+    public class UndeadGargoyleMedallions : BaseItem
     {
         [Constructable]
         public UndeadGargoyleMedallions()

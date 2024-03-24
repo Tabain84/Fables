@@ -137,7 +137,7 @@ namespace Server.Engines.SorcerersDungeon
         }
     }
 
-    public class UnholyPumpkin : Item, ICarvable
+    public class UnholyPumpkin : BaseItem, ICarvable
     {
         private SpawnTimer m_Timer;
 

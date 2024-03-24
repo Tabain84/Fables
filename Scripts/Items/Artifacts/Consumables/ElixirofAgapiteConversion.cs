@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ElixirofAgapiteConversion : Item
+    public class ElixirofAgapiteConversion : BaseItem
     {
         public override int LabelNumber => 1113008;  // Elixir of Agapite Conversion
 

@@ -22,7 +22,7 @@ namespace Server.Engines.Despise
         Aggressive
     }
 
-    public class WispOrb : Item
+    public class WispOrb : BaseItem
     {
         public override int LabelNumber => 1153273;  // A Wisp Orb
 

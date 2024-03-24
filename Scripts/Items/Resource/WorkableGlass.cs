@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WorkableGlass : Item, ICommodity
+    public class WorkableGlass : BaseItem, ICommodity
     {
         TextDefinition ICommodity.Description => LabelNumber;
         bool ICommodity.IsDeedable => true;

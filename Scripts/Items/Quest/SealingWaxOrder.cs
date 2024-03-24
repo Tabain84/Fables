@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SealingWaxOrder : Item
+    public class SealingWaxOrder : BaseItem
     {
         [Constructable]
         public SealingWaxOrder()

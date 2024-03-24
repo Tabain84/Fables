@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class MelisandesHairDye : Item
+    public class MelisandesHairDye : BaseItem
     {
         [Constructable]
         public MelisandesHairDye()

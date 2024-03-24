@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class HoveringWisp : Item
+    public class HoveringWisp : BaseItem
     {
         [Constructable]
         public HoveringWisp()

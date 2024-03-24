@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class GenderChangeToken : Item, IPromotionalToken
+    public class GenderChangeToken : BaseItem, IPromotionalToken
     {
         public override int LabelNumber => 1070997;  // a promotional token
         public TextDefinition ItemName => 1075252;  // gender change

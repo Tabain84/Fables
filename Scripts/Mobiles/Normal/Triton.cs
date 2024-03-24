@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    public class TritonStatue : Item, ICreatureStatuette
+    public class TritonStatue : BaseItem, ICreatureStatuette
     {
         public override int LabelNumber => 1158929;  // Triton
 

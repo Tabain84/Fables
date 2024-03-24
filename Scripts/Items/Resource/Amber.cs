@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Amber : Item, ICommodity
+    public class Amber : BaseItem, ICommodity
     {
         [Constructable]
         public Amber()

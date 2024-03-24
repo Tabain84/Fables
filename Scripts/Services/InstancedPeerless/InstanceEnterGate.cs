@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.InstancedPeerless
 {
-    public class InstanceEnterGate : Item
+    public class InstanceEnterGate : BaseItem
     {
         private readonly PeerlessInstance m_Instance;
         private readonly List<Mobile> m_AllowedPlayers;

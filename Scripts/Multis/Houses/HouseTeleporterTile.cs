@@ -662,7 +662,7 @@ namespace Server.Multis
         }
     }
 
-    public class HouseTeleporterInstructions : Item
+    public class HouseTeleporterInstructions : BaseItem
     {
         public override int LabelNumber => 1115122; // Care Instructions
 

@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class AbyssalHairDye : Item
+    public class AbyssalHairDye : BaseItem
     {
         [Constructable]
         public AbyssalHairDye()

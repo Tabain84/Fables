@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Arrow : Item, ICommodity
+    public class Arrow : BaseItem, ICommodity
     {
         [Constructable]
         public Arrow()

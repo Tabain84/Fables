@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class LetterOfIntroduction : Item
+    public class LetterOfIntroduction : BaseItem
     {
         public override int LabelNumber => 1113243;  // Laifem's Letter of Introduction
 
@@ -30,7 +30,7 @@ namespace Server.Items
         }
     }
 
-    public class MasteringWeaving : Item
+    public class MasteringWeaving : BaseItem
     {
         public override int LabelNumber => 1113244;  // Mastering the Art of Weaving
 

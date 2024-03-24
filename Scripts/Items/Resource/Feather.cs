@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Feather : Item, ICommodity
+    public class Feather : BaseItem, ICommodity
     {
         [Constructable]
         public Feather()

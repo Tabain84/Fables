@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class AncientShipModelOfTheHMSCape : Item
+    public class AncientShipModelOfTheHMSCape : BaseItem
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1063476;

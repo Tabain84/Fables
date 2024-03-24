@@ -1,6 +1,6 @@
 namespace Server.Engines.Quests.Doom
 {
-    public class GrandGrimoire : Item
+    public class GrandGrimoire : BaseItem
     {
         [Constructable]
         public GrandGrimoire()

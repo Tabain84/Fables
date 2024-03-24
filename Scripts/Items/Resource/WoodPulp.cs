@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WoodPulp : Item
+    public class WoodPulp : BaseItem
     {
         [Constructable]
         public WoodPulp()

@@ -1,6 +1,6 @@
 namespace Server.Engines.Quests.Hag
 {
-    public class MoonfireBrew : Item
+    public class MoonfireBrew : BaseItem
     {
         [Constructable]
         public MoonfireBrew()

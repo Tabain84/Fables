@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class MedusaLightScales : Item
+    public class MedusaLightScales : BaseItem
     {
         [Constructable]
         public MedusaLightScales()

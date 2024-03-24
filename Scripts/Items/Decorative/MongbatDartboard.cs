@@ -4,7 +4,7 @@ using Server.Network;
 namespace Server.Items
 {
     [Flipable(0x1950, 0x1953)]
-    public class MongbatDartboard : Item
+    public class MongbatDartboard : BaseItem
     {
         public override int LabelNumber => 1075498;  // Mongbat Dartboard
 

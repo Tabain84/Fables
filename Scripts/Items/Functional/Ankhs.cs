@@ -94,7 +94,7 @@ namespace Server.Items
         }
     }
 
-    public class AnkhWest : Item
+    public class AnkhWest : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -187,7 +187,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private AnkhWest m_Item;
             public InternalItem(bool bloodied, AnkhWest item)
@@ -276,7 +276,7 @@ namespace Server.Items
     }
 
     [TypeAlias("Server.Items.AnkhEast")]
-    public class AnkhNorth : Item
+    public class AnkhNorth : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -370,7 +370,7 @@ namespace Server.Items
         }
 
         [TypeAlias("Server.Items.AnkhEast+InternalItem")]
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private AnkhNorth m_Item;
             public InternalItem(bool bloodied, AnkhNorth item)
@@ -457,7 +457,7 @@ namespace Server.Items
             }
         }
 
-        private class MemorialStone : Item
+        private class MemorialStone : BaseItem
         {
             public override int LabelNumber => 1071563;  // Memorial Stone
 

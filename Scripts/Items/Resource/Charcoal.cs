@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Charcoal : Item, ICommodity
+    public class Charcoal : BaseItem, ICommodity
     {
         public override int LabelNumber => 1116303;  // charcoal
 

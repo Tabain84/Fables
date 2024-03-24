@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.TreasuresOfKotlCity
 {
-    public class KotlBattleSimulator : Item, ISpawner
+    public class KotlBattleSimulator : BaseItem, ISpawner
     {
         public static KotlBattleSimulator Instance { get; set; }
 

@@ -1,7 +1,7 @@
 ﻿namespace Server.Items
 {
     [Flipable(0x2D71, 0x2D72)]
-    public class OrnateElvenTapestry : Item
+    public class OrnateElvenTapestry : BaseItem
     {
         [Constructable]
         public OrnateElvenTapestry()

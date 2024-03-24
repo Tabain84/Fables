@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class SherryTheMouseStatue : Item
+    public class SherryTheMouseStatue : BaseItem
     {
         public override int LabelNumber => 1080171;  // Sherry the Mouse Statue
         private Timer m_NewsTimer;

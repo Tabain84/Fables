@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class MirrorOfPurification : Item
+    public class MirrorOfPurification : BaseItem
     {
         [Constructable]
         public MirrorOfPurification()

@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class FireHorn : Item
+    public class FireHorn : BaseItem
     {
         [Constructable]
         public FireHorn()

@@ -125,7 +125,7 @@ namespace Server.Items
 		DateTime LastMoved { get; set; }
 	}
 
-	public class DailyRocks : Item, IDailyRare
+	public class DailyRocks : BaseItem, IDailyRare
 	{
 		[Constructable]
 		public DailyRocks()
@@ -153,7 +153,7 @@ namespace Server.Items
 		}
 	}
 
-	public class DailyRock : Item, IDailyRare
+	public class DailyRock : BaseItem, IDailyRare
 	{
 		[Constructable]
 		public DailyRock()
@@ -181,7 +181,7 @@ namespace Server.Items
 		}
 	}
 
-	public class DailyFullJars : Item, IDailyRare
+	public class DailyFullJars : BaseItem, IDailyRare
 	{
 		[Constructable]
 		public DailyFullJars()
@@ -209,7 +209,7 @@ namespace Server.Items
 		}
 	}
 
-	public class DailyBrokenChair : Item, IDailyRare
+	public class DailyBrokenChair : BaseItem, IDailyRare
 	{
 		[Constructable]
 		public DailyBrokenChair()
@@ -237,7 +237,7 @@ namespace Server.Items
 		}
 	}
 
-	public class DailySeaweed : Item, IDailyRare
+	public class DailySeaweed : BaseItem, IDailyRare
 	{
 		[Constructable]
 		public DailySeaweed()

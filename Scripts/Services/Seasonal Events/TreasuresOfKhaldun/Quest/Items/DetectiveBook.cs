@@ -2,7 +2,7 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public class DetectiveBook : Item
+    public class DetectiveBook : BaseItem
     {
         [Constructable]
         public DetectiveBook() : base(4082)

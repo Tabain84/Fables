@@ -13,7 +13,7 @@ namespace Server.Items
         string EngravedText { get; set; }
     }
 
-    public class BaseEngravingTool : Item, IUsesRemaining, IRewardItem
+    public class BaseEngravingTool : BaseItem, IUsesRemaining, IRewardItem
     {
         private int m_UsesRemaining;
         private bool m_IsRewardItem;

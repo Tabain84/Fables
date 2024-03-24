@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class EssenceOrder : Item, ICommodity
+    public class EssenceOrder : BaseItem, ICommodity
     {
         [Constructable]
         public EssenceOrder()

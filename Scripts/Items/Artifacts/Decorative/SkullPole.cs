@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SkullPole : Item
+    public class SkullPole : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

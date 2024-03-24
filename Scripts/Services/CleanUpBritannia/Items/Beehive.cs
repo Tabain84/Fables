@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class Beehive : Item, ISecurable
+    public class Beehive : BaseItem, ISecurable
     {
         private static readonly TimeSpan m_SpawnTime = TimeSpan.FromHours(4.0);
 

@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Items
 {
-    public class StaghornFernAddon : Item
+    public class StaghornFernAddon : BaseItem
     {
         public override int LabelNumber => 1154460;  // Staghorn Fern
 
@@ -81,7 +81,7 @@ namespace Server.Items
     }
 
     [Flipable(0x14F0, 0x14EF)]
-    public class StaghornFernDeed : Item
+    public class StaghornFernDeed : BaseItem
     {
         public override int LabelNumber => 1154460;  // Staghorn Fern
 

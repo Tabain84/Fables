@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class QuestHintItem : Item
+    public class QuestHintItem : BaseItem
     {
         private int m_Number;
         private string m_String;

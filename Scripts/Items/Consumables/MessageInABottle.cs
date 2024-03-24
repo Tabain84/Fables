@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class MessageInABottle : Item
+    public class MessageInABottle : BaseItem
     {
         private Map m_TargetMap;
         private int m_Level;

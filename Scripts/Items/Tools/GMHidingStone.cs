@@ -33,7 +33,7 @@ namespace Server.Items
         Hell
     }
 
-    public class GMHidingStone : Item
+    public class GMHidingStone : BaseItem
     {
         private StoneEffect mAppearEffect;
         private StoneEffect mHideEffect;

@@ -40,7 +40,7 @@ namespace Server.Items
         void DoAreaMessage(int cliloc, int range, Mobile from);
     }
 
-    public abstract class BaseCannon : Item, IShipCannon
+    public abstract class BaseCannon : BaseItem, IShipCannon
     {
         private int m_Hits;
         private bool m_Cleaned;

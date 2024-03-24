@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA4E8, 0xA4E9)]
-    public class DecorativeWallHook : Item
+    public class DecorativeWallHook : BaseItem
     {
         public override int LabelNumber => 1159469;  // decorative wall hook
 

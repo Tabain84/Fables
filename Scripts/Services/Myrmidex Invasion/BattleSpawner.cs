@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Server.Engines.MyrmidexInvasion
 {
-    public class BattleSpawner : Item
+    public class BattleSpawner : BaseItem
     {
         public const int MaxWaves = 2;
         public const int WaveCount = 15;

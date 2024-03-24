@@ -4,7 +4,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class NaturalDye : Item, IPigmentHue
+    public class NaturalDye : BaseItem, IPigmentHue
     {
         private PlantPigmentHue m_Hue;
         private int m_UsesRemaining;

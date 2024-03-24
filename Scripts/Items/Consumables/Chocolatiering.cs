@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class CocoaLiquor : Item, IQuality
+    public class CocoaLiquor : BaseItem, IQuality
     {
         public override int LabelNumber => 1080007;  // Cocoa liquor
         public override double DefaultWeight => 1.0;
@@ -65,7 +65,7 @@ namespace Server.Items
         }
     }
 
-    public class SackOfSugar : Item
+    public class SackOfSugar : BaseItem
     {
         public override int LabelNumber => 1080003;  // Sack of sugar
         public override double DefaultWeight => 1.0;
@@ -103,7 +103,7 @@ namespace Server.Items
         }
     }
 
-    public class CocoaButter : Item, IQuality
+    public class CocoaButter : BaseItem, IQuality
     {
         private ItemQuality _Quality;
 
@@ -161,7 +161,7 @@ namespace Server.Items
         }
     }
 
-    public class SweetCocoaButter : Item, IQuality
+    public class SweetCocoaButter : BaseItem, IQuality
     {
         private ItemQuality _Quality;
 
@@ -218,7 +218,7 @@ namespace Server.Items
         }
     }
 
-    public class Vanilla : Item
+    public class Vanilla : BaseItem
     {
         public override int LabelNumber => 1080009;  // Vanilla
         public override double DefaultWeight => 1.0;
@@ -256,7 +256,7 @@ namespace Server.Items
         }
     }
 
-    public class CocoaPulp : Item
+    public class CocoaPulp : BaseItem
     {
         public override int LabelNumber => 1080530;  // cocoa pulp
         public override double DefaultWeight => 1.0;

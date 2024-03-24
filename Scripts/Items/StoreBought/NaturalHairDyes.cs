@@ -22,7 +22,7 @@ namespace Server.Items
         DuskBlack,
     }
 
-    public class NaturalHairDye : Item
+    public class NaturalHairDye : BaseItem
     {
         private HairDyeType m_Type;
         private TextDefinition m_Label;

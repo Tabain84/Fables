@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WolfStatue : Item
+    public class WolfStatue : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

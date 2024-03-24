@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    public class LasherStatue : Item, ICreatureStatuette
+    public class LasherStatue : BaseItem, ICreatureStatuette
     {
         public override int LabelNumber => 1157214;  // Lasher
 

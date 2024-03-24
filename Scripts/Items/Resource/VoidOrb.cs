@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class VoidOrb : Item, ICommodity
+    public class VoidOrb : BaseItem, ICommodity
     {
         [Constructable]
         public VoidOrb()

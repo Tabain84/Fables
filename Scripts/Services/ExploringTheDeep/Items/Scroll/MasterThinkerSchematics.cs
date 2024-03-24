@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class MasterThinkerSchematics : Item
+    public class MasterThinkerSchematics : BaseItem
     {
         public override int LabelNumber => 1023637;  // scroll
 

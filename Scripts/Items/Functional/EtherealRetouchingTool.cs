@@ -4,7 +4,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class EtherealRetouchingTool : Item, IRewardItem
+    public class EtherealRetouchingTool : BaseItem, IRewardItem
     {
         public override int LabelNumber => 1113814;  // Retouching Tool
 

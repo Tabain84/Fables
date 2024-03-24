@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA339, 0xA33A)]
-    public class DecorativeHourglass : Item
+    public class DecorativeHourglass : BaseItem
     {
         public override int LabelNumber => 1125809;  // hourglass
 

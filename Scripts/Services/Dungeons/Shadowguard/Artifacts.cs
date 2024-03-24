@@ -984,7 +984,7 @@ namespace Server.Items
         }
     }
 
-    public class UnstableTimeRift : Item
+    public class UnstableTimeRift : BaseItem
     {
         public override int LabelNumber => 1156320;  // An Unstable Time Rift
 

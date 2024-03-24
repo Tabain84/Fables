@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public abstract class BaseWindChimes : Item
+    public abstract class BaseWindChimes : BaseItem
     {
         private static readonly int[] m_Sounds = new int[] { 0x505, 0x506, 0x507 };
         private bool m_TurnedOn;

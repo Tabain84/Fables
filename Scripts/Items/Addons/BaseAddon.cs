@@ -26,7 +26,7 @@ namespace Server.Items
         bool CouldFit(IPoint3D p, Map map);
     }
 
-    public abstract class BaseAddon : Item, IChopable, IAddon
+    public abstract class BaseAddon : BaseItem, IChopable, IAddon
     {
         #region Mondain's Legacy
         private CraftResource m_Resource;

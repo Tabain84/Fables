@@ -252,7 +252,7 @@ namespace Server.Mobiles
             Blessed = false;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             public override int LabelNumber => 1027025;
 

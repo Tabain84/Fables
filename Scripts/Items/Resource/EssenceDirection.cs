@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class EssenceDirection : Item, ICommodity
+    public class EssenceDirection : BaseItem, ICommodity
     {
         [Constructable]
         public EssenceDirection()

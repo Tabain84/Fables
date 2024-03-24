@@ -4,7 +4,7 @@ namespace Server.Items
 {
     // This item is no longer used.
     [Flipable(0x1f14, 0x1f15, 0x1f16, 0x1f17)]
-    public class ShipRune : Item
+    public class ShipRune : BaseItem
     {
         private BaseGalleon m_Galleon;
 

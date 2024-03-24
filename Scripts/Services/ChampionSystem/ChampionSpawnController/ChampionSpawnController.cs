@@ -3,7 +3,7 @@ using System.Collections;
 namespace Server.Engines.CannedEvil
 {
     // This class is only here to remove legacy controller items
-    public class ChampionSpawnController : Item
+    public class ChampionSpawnController : BaseItem
     {
         public ChampionSpawnController(Serial serial)
             : base(serial)

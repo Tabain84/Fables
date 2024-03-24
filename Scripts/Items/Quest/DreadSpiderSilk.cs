@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class DreadSpiderSilk : Item
+    public class DreadSpiderSilk : BaseItem
     {
         [Constructable]
         public DreadSpiderSilk()

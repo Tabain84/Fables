@@ -4,7 +4,7 @@ using System;
 namespace Server.Items
 {
     [Flipable(7845, 7846)]
-    public class LargeFishingNet : Item
+    public class LargeFishingNet : BaseItem
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1149955;

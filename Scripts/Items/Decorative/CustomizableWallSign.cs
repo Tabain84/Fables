@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0x4B20, 0x4B21)]
-    public class CustomizableWallSign : Item, ICustomizableMessageItem
+    public class CustomizableWallSign : BaseItem, ICustomizableMessageItem
     {
 		public string[] Lines => TooltipsBase;
 

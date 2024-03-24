@@ -199,7 +199,7 @@ namespace Server.Mobiles
 
 namespace Server.Items
 {
-    public class NiporailemsTreasure : Item
+    public class NiporailemsTreasure : BaseItem
     {
         public override int LabelNumber => ItemID == 0xEEF
                     ? 1112113  // Niporailem's Treasure
@@ -300,7 +300,7 @@ namespace Server.Items
         }
     }
 
-    public class TreasureSand : Item
+    public class TreasureSand : BaseItem
     {
         public override int LabelNumber => 1112115;  // Treasure Sand
 

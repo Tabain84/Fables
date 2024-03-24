@@ -10,7 +10,7 @@ namespace Server.Items
         NorthBox   // Mastermind
     }
 
-    public class PuzzleBox : Item
+    public class PuzzleBox : BaseItem
     {
         private PuzzleType m_PuzzleType;
 

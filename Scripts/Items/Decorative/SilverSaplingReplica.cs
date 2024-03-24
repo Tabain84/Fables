@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class SilverSaplingReplica : Item
+    public class SilverSaplingReplica : BaseItem
     {
         public override int LabelNumber => ItemID == 17095 ? 1095967 : 1095968;  // silver sapling replica - potted silver sapling replica
 
@@ -32,7 +32,7 @@ namespace Server.Items
         }
     }
 
-    public class SilverSaplingReplicaDeed : Item
+    public class SilverSaplingReplicaDeed : BaseItem
     {
         public override int LabelNumber => 1113934;  // Silver Sapling Deed
 

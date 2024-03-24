@@ -46,7 +46,7 @@ namespace Server.Items
         FearEssence
     }
 
-    public abstract class BasePotion : Item, ICraftable, ICommodity
+    public abstract class BasePotion : BaseItem, ICraftable, ICommodity
     {
         private PotionEffect m_PotionEffect;
 

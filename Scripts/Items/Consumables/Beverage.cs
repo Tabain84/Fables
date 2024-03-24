@@ -748,7 +748,7 @@ namespace Server.Items
         }
     }
 
-    public abstract class BaseBeverage : Item, IHasQuantity, ICraftable, IResource, IQuality
+    public abstract class BaseBeverage : BaseItem, IHasQuantity, ICraftable, IResource, IQuality
     {
         private BeverageType m_Content;
         private int m_Quantity;

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class DecorativeVines : Item
+    public class DecorativeVines : BaseItem
     {
         [Constructable]
         public DecorativeVines()

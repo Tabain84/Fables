@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class ShackledHeartOfThePumpkinKing : Item
+    public class ShackledHeartOfThePumpkinKing : BaseItem
     {
         public override int LabelNumber => 1157653;  // Shackled Heart of the Pumpkin King
 

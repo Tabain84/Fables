@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class DecorativeButterChurn : Item
+    public class DecorativeButterChurn : BaseItem
     {
         public override int LabelNumber => 1125749; // churn
 

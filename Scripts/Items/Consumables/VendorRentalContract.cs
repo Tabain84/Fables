@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class VendorRentalContract : Item
+    public class VendorRentalContract : BaseItem
     {
 		public override int LabelNumber => 1062332;// a vendor rental contract
 		

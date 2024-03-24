@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SmallPieceofBlackrock : Item, ICommodity
+    public class SmallPieceofBlackrock : BaseItem, ICommodity
     {
         [Constructable]
         public SmallPieceofBlackrock() : this(1)

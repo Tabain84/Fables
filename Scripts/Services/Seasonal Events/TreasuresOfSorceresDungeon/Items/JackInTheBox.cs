@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class DecoJackInTheBox : Item
+    public class DecoJackInTheBox : BaseItem
     {
         public override int LabelNumber => 1157655;  // Jack in the Box
 

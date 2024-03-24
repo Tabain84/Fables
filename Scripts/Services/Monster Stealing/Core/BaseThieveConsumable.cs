@@ -27,7 +27,7 @@ namespace Server.Items
         }
     }
 
-    public abstract class BaseThieveConsumable : Item
+    public abstract class BaseThieveConsumable : BaseItem
     {
         public BaseThieveConsumable(int itemId)
             : base(itemId)

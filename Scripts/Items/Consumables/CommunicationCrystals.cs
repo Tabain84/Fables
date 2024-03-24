@@ -40,7 +40,7 @@ namespace Server.Items
         }
     }
 
-    public class BroadcastCrystal : Item
+    public class BroadcastCrystal : BaseItem
     {
         public static readonly int MaxCharges = 2000;
         private int m_Charges;
@@ -280,7 +280,7 @@ namespace Server.Items
         }
     }
 
-    public class ReceiverCrystal : Item
+    public class ReceiverCrystal : BaseItem
     {
         private BroadcastCrystal m_Sender;
         [Constructable]

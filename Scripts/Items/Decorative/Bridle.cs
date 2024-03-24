@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [TypeAlias("Server.Items.DecoBridle")]
-    public class DecoBridleSouth : Item
+    public class DecoBridleSouth : BaseItem
     {
         [Constructable]
         public DecoBridleSouth()
@@ -30,7 +30,7 @@ namespace Server.Items
     }
 
     [TypeAlias("Server.Items.DecoBridle2")]
-    public class DecoBridleEast : Item
+    public class DecoBridleEast : BaseItem
     {
         [Constructable]
         public DecoBridleEast()

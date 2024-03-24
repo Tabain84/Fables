@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class HolidaysSign : Item, IFlipable
+    public class HolidaysSign : BaseItem, IFlipable
     {
         public override int LabelNumber => 1024759;  // sign
 

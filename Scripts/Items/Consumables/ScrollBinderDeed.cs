@@ -12,7 +12,7 @@ namespace Server.Items
         SOT
     }
 
-    public class ScrollBinderDeed : Item
+    public class ScrollBinderDeed : BaseItem
     {
         private BinderType m_BinderType;
         private SkillName m_Skill;

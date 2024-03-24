@@ -2,7 +2,7 @@ using Server.Engines.Points;
 
 namespace Server.Items
 {
-    public class ShameCrystal : Item
+    public class ShameCrystal : BaseItem
     {
         public override int LabelNumber => 1151624;  // Crystal of Shame
 

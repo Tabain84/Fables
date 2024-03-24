@@ -286,7 +286,7 @@ namespace Server.Items
         }
     }
 
-    public class BeaconItem : Item
+    public class BeaconItem : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public Beacon Beacon { get; set; }

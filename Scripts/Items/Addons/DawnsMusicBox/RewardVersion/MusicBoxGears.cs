@@ -3,7 +3,7 @@ using Server.Targeting;
 namespace Server.Items.MusicBox
 {
     [Flipable(0x1053, 0x1054)]
-    public class MusicBoxGears : Item
+    public class MusicBoxGears : BaseItem
     {
         private readonly MusicName m_Music;
         [Constructable]

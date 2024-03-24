@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class Dices : Item, ITelekinesisable, ISecurable
+    public class Dices : BaseItem, ITelekinesisable, ISecurable
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public SecureLevel Level { get; set; }

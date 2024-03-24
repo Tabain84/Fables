@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class FlameOfChaos : Item
+    public class FlameOfChaos : BaseItem
     {
         public override int LabelNumber => 1112128;  // Flame of Chaos
 

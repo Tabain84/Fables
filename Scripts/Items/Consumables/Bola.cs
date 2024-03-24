@@ -6,7 +6,7 @@ using System;
 
 namespace Server.Items
 {
-    public class Bola : Item
+    public class Bola : BaseItem
     {
         [Constructable]
         public Bola()

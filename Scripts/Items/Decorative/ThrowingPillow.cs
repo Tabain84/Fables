@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ThrowPillow : Item, IDyable
+    public class ThrowPillow : BaseItem, IDyable
     {
         public override int LabelNumber => 1075496;  // Throw Pillow
 

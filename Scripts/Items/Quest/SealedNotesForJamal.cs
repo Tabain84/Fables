@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SealedNotesForJamal : Item
+    public class SealedNotesForJamal : BaseItem
     {
         [Constructable]
         public SealedNotesForJamal()

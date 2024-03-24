@@ -489,7 +489,7 @@ namespace Server.Engines.Doom
         }
     }
 
-    public class Sapphired20 : Item
+    public class Sapphired20 : BaseItem
     {
         public override int LabelNumber => 1080096;  // Star Sapphire d20
 
@@ -536,7 +536,7 @@ namespace Server.Engines.Doom
         }
     }
 
-    public class DisplayStatue : Item
+    public class DisplayStatue : BaseItem
     {
         private MonsterStatuetteInfo _Info;
 
@@ -609,7 +609,7 @@ namespace Server.Engines.Doom
         }
     }
 
-    public class UOBoard : Item
+    public class UOBoard : BaseItem
     {
         private int _Index;
 

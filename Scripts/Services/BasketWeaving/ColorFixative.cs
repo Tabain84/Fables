@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ColorFixative : Item
+    public class ColorFixative : BaseItem
     {
         [Constructable]
         public ColorFixative()

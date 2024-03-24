@@ -47,7 +47,7 @@ namespace Server.Items
         }
     }
 
-    public class RecipeBook : Item, ISecurable
+    public class RecipeBook : BaseItem, ISecurable
     {
         public override int LabelNumber => 1125598;  // recipe book
 

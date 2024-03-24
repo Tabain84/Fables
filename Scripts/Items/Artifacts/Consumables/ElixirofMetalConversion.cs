@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ElixirofMetalConversion : Item
+    public class ElixirofMetalConversion : BaseItem
     {
         public override int LabelNumber => 1113011;  // Elixir of Metal Conversion
 

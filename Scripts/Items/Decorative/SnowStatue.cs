@@ -4,7 +4,7 @@ using Server.Network;
 namespace Server.Items
 {
     [Flipable(0x456E, 0x456F)]
-    public class SnowStatuePegasus : Item
+    public class SnowStatuePegasus : BaseItem
     {
         [Constructable]
         public SnowStatuePegasus()
@@ -35,7 +35,7 @@ namespace Server.Items
     }
 
     [Flipable(0x4578, 0x4579)]
-    public class SnowStatueSeahorse : Item
+    public class SnowStatueSeahorse : BaseItem
     {
         [Constructable]
         public SnowStatueSeahorse()
@@ -66,7 +66,7 @@ namespace Server.Items
     }
 
     [Flipable(0x457A, 0x457B)]
-    public class SnowStatueMermaid : Item
+    public class SnowStatueMermaid : BaseItem
     {
         [Constructable]
         public SnowStatueMermaid()
@@ -97,7 +97,7 @@ namespace Server.Items
     }
 
     [Flipable(0x457C, 0x457D)]
-    public class SnowStatueGriffon : Item
+    public class SnowStatueGriffon : BaseItem
     {
         [Constructable]
         public SnowStatueGriffon()
@@ -127,7 +127,7 @@ namespace Server.Items
         }
     }
 
-    public class SnowStatueDeed : Item
+    public class SnowStatueDeed : BaseItem
     {
         [Constructable]
         public SnowStatueDeed()

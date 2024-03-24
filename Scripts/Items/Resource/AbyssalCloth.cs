@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x1765, 0x1767)]
-    public class AbyssalCloth : Item, ICommodity, IScissorable
+    public class AbyssalCloth : BaseItem, ICommodity, IScissorable
     {
         [Constructable]
         public AbyssalCloth()

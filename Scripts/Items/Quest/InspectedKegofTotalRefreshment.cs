@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class InspectedKegofTotalRefreshment : Item
+    public class InspectedKegofTotalRefreshment : BaseItem
     {
         [Constructable]
         public InspectedKegofTotalRefreshment()

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BlackrockMoonstone : Item
+    public class BlackrockMoonstone : BaseItem
     {
         public override int LabelNumber => 1156993;  // Black Moonstone
 

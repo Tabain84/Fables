@@ -22,7 +22,7 @@ namespace Server.Engines.VvV
         Tripwire = 1154940
     }
 
-    public class VvVTrap : Item, IRevealableItem
+    public class VvVTrap : BaseItem, IRevealableItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public Mobile Owner { get; set; }

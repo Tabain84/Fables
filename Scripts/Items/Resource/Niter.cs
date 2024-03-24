@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
 
-    public class NiterDeposit : Item
+    public class NiterDeposit : BaseItem
     {
         public enum NiterSize
         {

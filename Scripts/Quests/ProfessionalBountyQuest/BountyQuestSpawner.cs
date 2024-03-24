@@ -10,7 +10,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.Quests
 {
-    public class BountyQuestSpawner : Item
+    public class BountyQuestSpawner : BaseItem
     {
         public static void Configure()
         {

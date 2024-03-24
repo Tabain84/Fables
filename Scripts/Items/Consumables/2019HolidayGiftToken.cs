@@ -39,7 +39,7 @@ namespace Server.Items
         JollyHolidayTree = 3
     }
 
-    public class HolidayGiftToken2019 : Item, IRewardOption
+    public class HolidayGiftToken2019 : BaseItem, IRewardOption
     {
         public override int LabelNumber => 1159257;  // 2019 Holiday Gift Token
 

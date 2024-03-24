@@ -3,7 +3,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class AcidPopper : Item
+    public class AcidPopper : BaseItem
     {
         public override int LabelNumber => 1095058;  // Acid Popper
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SteamPoweredBeverageMaker : Item
+    public class SteamPoweredBeverageMaker : BaseItem
     {
         public override int LabelNumber => 1123598;  // Steam Powered Beverage Maker
 

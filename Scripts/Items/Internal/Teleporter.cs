@@ -16,7 +16,7 @@ namespace Server.Items
         void DoTeleport(Mobile m);
     }
 
-    public class Teleporter : Item, ITeleporter
+    public class Teleporter : BaseItem, ITeleporter
     {
         private bool m_Active, m_Creatures, m_CombatCheck, m_CriminalCheck;
         private Point3D m_PointDest;
@@ -996,7 +996,7 @@ namespace Server.Items
         }
     }
 
-    public class TimeoutGoal : Item
+    public class TimeoutGoal : BaseItem
     {
         private TimeoutTeleporter m_Teleporter;
 

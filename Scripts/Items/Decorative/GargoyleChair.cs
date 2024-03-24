@@ -2,7 +2,7 @@ namespace Server.Items
 {
     [Furniture]
     [Flipable(0x4023, 0x4024)]
-    public class GargoyleChair : Item
+    public class GargoyleChair : BaseItem
     {
         [Constructable]
         public GargoyleChair()

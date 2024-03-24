@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Server.Engines.Despise
 {
-    public class DespiseController : Item
+    public class DespiseController : BaseItem
     {
         public static void Initialize()
         {

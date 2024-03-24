@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SalivasFeather : Item
+    public class SalivasFeather : BaseItem
     {
         [Constructable]
         public SalivasFeather()

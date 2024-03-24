@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Obelisk : Item
+    public class Obelisk : BaseItem
     {
         [Constructable]
         public Obelisk()

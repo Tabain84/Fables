@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TreefellowWood : Item
+    public class TreefellowWood : BaseItem
     {
         [Constructable]
         public TreefellowWood()

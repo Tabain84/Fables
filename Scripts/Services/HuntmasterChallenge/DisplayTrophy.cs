@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class HuntingDisplayTrophy : Item
+    public class HuntingDisplayTrophy : BaseItem
     {
         private HuntType m_HuntType;
 

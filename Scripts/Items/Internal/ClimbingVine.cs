@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ClimbingVine : Item
+    public class ClimbingVine : BaseItem
     {
         public override int LabelNumber => 1023307;  // vines
 

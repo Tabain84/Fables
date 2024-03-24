@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class VileTentacles : Item, ICommodity
+    public class VileTentacles : BaseItem, ICommodity
     {
         public override int LabelNumber => 1113333;  // vile tentacles
         public override double DefaultWeight => 0.1;

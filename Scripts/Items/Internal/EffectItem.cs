@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class EffectItem : Item
+    public class EffectItem : BaseItem
     {
         public static readonly TimeSpan DefaultDuration = TimeSpan.FromSeconds(5.0);
         private static readonly List<EffectItem> m_Free = new List<EffectItem>();// List of available EffectItems

@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class DeathCertificate : Item
+    public class DeathCertificate : BaseItem
     {
         public override int LabelNumber => 1116716;
 

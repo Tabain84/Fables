@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Engines.Astronomy
 {
-    public class ConstellationLedger : Item
+    public class ConstellationLedger : BaseItem
     {
         public override int LabelNumber => 1158520;  // Constellation Ledger
 

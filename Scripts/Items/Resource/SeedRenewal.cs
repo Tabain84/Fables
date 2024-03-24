@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [TypeAlias("Server.Items.SeedRenewal")]
-    public class SeedOfRenewal : Item, ICommodity
+    public class SeedOfRenewal : BaseItem, ICommodity
     {
         [Constructable]
         public SeedOfRenewal()

@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class FukiyaDarts : Item, ICraftable, INinjaAmmo
+    public class FukiyaDarts : BaseItem, ICraftable, INinjaAmmo
     {
         private int m_UsesRemaining;
         private Poison m_Poison;

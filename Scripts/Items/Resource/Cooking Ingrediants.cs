@@ -2,7 +2,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class MentoSeasoning : Item
+    public class MentoSeasoning : BaseItem
     {
         public override int LabelNumber => 1116299; // Mento Seasoning
 
@@ -30,7 +30,7 @@ namespace Server.Items
         }
     }
 
-    public class SamuelsSecretSauce : Item
+    public class SamuelsSecretSauce : BaseItem
     {
         public override int LabelNumber => 1116338; // Samuel's Secret Sauce
 
@@ -58,7 +58,7 @@ namespace Server.Items
         }
     }
 
-    public class DarkTruffle : Item
+    public class DarkTruffle : BaseItem
     {
         public override int LabelNumber => 1116300; // dark truffle
 
@@ -87,7 +87,7 @@ namespace Server.Items
         }
     }
 
-    public class FreshGinger : Item
+    public class FreshGinger : BaseItem
     {
         public override int LabelNumber => 1031235; // Fresh Ginger
 
@@ -115,7 +115,7 @@ namespace Server.Items
         }
     }
 
-    public class FishOilFlask : Item
+    public class FishOilFlask : BaseItem
     {
         public override int LabelNumber => 1150863; // fish oil flask
 
@@ -174,7 +174,7 @@ namespace Server.Items
         }
     }
 
-    public class Salt : Item
+    public class Salt : BaseItem
     {
         public override int LabelNumber => 1159201; // salt
 
@@ -202,7 +202,7 @@ namespace Server.Items
         }
     }
 
-    public class FreshSeasoning : Item
+    public class FreshSeasoning : BaseItem
     {
         public override int LabelNumber => 1159200; // fresh seasoning
 

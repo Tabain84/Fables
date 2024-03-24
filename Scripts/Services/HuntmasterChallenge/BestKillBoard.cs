@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class BestKillBoard : Item
+    public class BestKillBoard : BaseItem
     {
         public override string DefaultName => "Top 10 Kill Board";
 

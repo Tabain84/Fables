@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class UnicornRibs : Item
+    public class UnicornRibs : BaseItem
     {
         [Constructable]
         public UnicornRibs()

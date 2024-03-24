@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class ScaleCollar : Item
+    public class ScaleCollar : BaseItem
     {
         public override int LabelNumber => 1112480;  //a scale collar
 

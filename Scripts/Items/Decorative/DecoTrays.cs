@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class DecoTray : Item
+    public class DecoTray : BaseItem
     {
         [Constructable]
         public DecoTray()
@@ -30,7 +30,7 @@ namespace Server.Items
         }
     }
 
-    public class DecoTray2 : Item
+    public class DecoTray2 : BaseItem
     {
         [Constructable]
         public DecoTray2()

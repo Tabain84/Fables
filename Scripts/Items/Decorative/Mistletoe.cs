@@ -6,7 +6,7 @@ using System;
 
 namespace Server.Items
 {
-    public class MistletoeAddon : Item, IDyable, IAddon
+    public class MistletoeAddon : BaseItem, IDyable, IAddon
     {
         [Constructable]
         public MistletoeAddon()
@@ -170,7 +170,7 @@ namespace Server.Items
     }
 
     [Flipable(0x14F0, 0x14EF)]
-    public class MistletoeDeed : Item
+    public class MistletoeDeed : BaseItem
     {
         [Constructable]
         public MistletoeDeed()

@@ -126,7 +126,7 @@ namespace Server.Items
         }
     }
 
-    public class ParoxysmusIronGate : Item
+    public class ParoxysmusIronGate : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public PeerlessAltar Altar { get; set; }

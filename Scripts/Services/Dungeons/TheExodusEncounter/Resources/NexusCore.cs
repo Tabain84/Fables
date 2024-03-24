@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class NexusCore : Item
+    public class NexusCore : BaseItem
     {
         [Constructable]
         public NexusCore() : base(0x4B82)

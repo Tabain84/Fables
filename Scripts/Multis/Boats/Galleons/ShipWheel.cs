@@ -2,7 +2,7 @@ using Server.Multis;
 
 namespace Server.Items
 {
-    public class ShipWheel : Item, IGalleonFixture
+    public class ShipWheel : BaseItem, IGalleonFixture
     {
         public override int LabelNumber => 1149698;  // wheel
 

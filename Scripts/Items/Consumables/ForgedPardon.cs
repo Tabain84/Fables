@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class ForgedPardon : Item
+    public class ForgedPardon : BaseItem
     {
         public static Dictionary<Mobile, DateTime> Table => m_Table;
         private static readonly Dictionary<Mobile, DateTime> m_Table = new Dictionary<Mobile, DateTime>();

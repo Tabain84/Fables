@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class GamblingStone : Item
+    public class GamblingStone : BaseItem
     {
         private int m_GamblePot = 2500;
         [Constructable]

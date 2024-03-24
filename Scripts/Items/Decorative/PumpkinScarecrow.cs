@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class PumpkinScarecrow : Item
+    public class PumpkinScarecrow : BaseItem
     {
         [Constructable]
         public PumpkinScarecrow()

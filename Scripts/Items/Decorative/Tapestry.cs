@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Tapestry1N : Item
+    public class Tapestry1N : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -55,7 +55,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry1N m_Item;
             public InternalItem(Tapestry1N item)
@@ -111,7 +111,7 @@ namespace Server.Items
         }
     }
 
-    public class Tapestry2N : Item
+    public class Tapestry2N : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -166,7 +166,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry2N m_Item;
             public InternalItem(Tapestry2N item)
@@ -222,7 +222,7 @@ namespace Server.Items
         }
     }
 
-    public class Tapestry2W : Item
+    public class Tapestry2W : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -277,7 +277,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry2W m_Item;
             public InternalItem(Tapestry2W item)
@@ -333,7 +333,7 @@ namespace Server.Items
         }
     }
 
-    public class Tapestry3N : Item
+    public class Tapestry3N : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -388,7 +388,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry3N m_Item;
             public InternalItem(Tapestry3N item)
@@ -444,7 +444,7 @@ namespace Server.Items
         }
     }
 
-    public class Tapestry3W : Item
+    public class Tapestry3W : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -499,7 +499,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry3W m_Item;
             public InternalItem(Tapestry3W item)
@@ -555,7 +555,7 @@ namespace Server.Items
         }
     }
 
-    public class Tapestry4N : Item
+    public class Tapestry4N : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -610,7 +610,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry4N m_Item;
             public InternalItem(Tapestry4N item)
@@ -666,7 +666,7 @@ namespace Server.Items
         }
     }
 
-    public class Tapestry4W : Item
+    public class Tapestry4W : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -721,7 +721,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry4W m_Item;
             public InternalItem(Tapestry4W item)
@@ -777,7 +777,7 @@ namespace Server.Items
         }
     }
 
-    public class Tapestry5N : Item
+    public class Tapestry5N : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -832,7 +832,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry5N m_Item;
             public InternalItem(Tapestry5N item)
@@ -888,7 +888,7 @@ namespace Server.Items
         }
     }
 
-    public class Tapestry5W : Item
+    public class Tapestry5W : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -943,7 +943,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry5W m_Item;
             public InternalItem(Tapestry5W item)
@@ -999,7 +999,7 @@ namespace Server.Items
         }
     }
 
-    public class Tapestry6N : Item
+    public class Tapestry6N : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -1054,7 +1054,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry6N m_Item;
             public InternalItem(Tapestry6N item)
@@ -1110,7 +1110,7 @@ namespace Server.Items
         }
     }
 
-    public class Tapestry6W : Item
+    public class Tapestry6W : BaseItem
     {
         private InternalItem m_Item;
         [Constructable]
@@ -1165,7 +1165,7 @@ namespace Server.Items
             m_Item = reader.ReadItem() as InternalItem;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private Tapestry6W m_Item;
             public InternalItem(Tapestry6W item)

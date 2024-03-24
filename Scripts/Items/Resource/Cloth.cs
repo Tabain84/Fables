@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x1766, 0x1768)]
-    public class Cloth : Item, IScissorable, IDyable, ICommodity
+    public class Cloth : BaseItem, IScissorable, IDyable, ICommodity
     {
         [Constructable]
         public Cloth()
@@ -60,7 +60,7 @@ namespace Server.Items
         }
     }
 
-    public class CutUpCloth : Item
+    public class CutUpCloth : BaseItem
     {
         public override int LabelNumber => 1044458;  // cut-up cloth
 
@@ -103,7 +103,7 @@ namespace Server.Items
         }
     }
 
-    public class CombineCloth : Item
+    public class CombineCloth : BaseItem
     {
         public override int LabelNumber => 1044459;  // combine cloth
 

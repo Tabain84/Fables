@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class CompletedTuitionReimbursementForm : Item
+    public class CompletedTuitionReimbursementForm : BaseItem
     {
         [Constructable]
         public CompletedTuitionReimbursementForm()

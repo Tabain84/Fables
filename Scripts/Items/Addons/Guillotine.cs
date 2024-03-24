@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class Guillotine : Item
+    public class Guillotine : BaseItem
     {
         private DateTime m_NextUse;
         [Constructable]

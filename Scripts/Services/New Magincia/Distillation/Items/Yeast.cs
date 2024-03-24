@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Yeast : Item
+    public class Yeast : BaseItem
     {
         private int m_BacterialResistance;
 

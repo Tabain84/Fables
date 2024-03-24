@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public abstract class BasePigmentsOfTokuno : Item, IUsesRemaining
+    public abstract class BasePigmentsOfTokuno : BaseItem, IUsesRemaining
     {
         public override int LabelNumber => 1070933;// Pigments of Tokuno
 

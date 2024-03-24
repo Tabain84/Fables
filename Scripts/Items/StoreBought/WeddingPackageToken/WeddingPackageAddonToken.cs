@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WeddingPackageAddonToken : Item
+    public class WeddingPackageAddonToken : BaseItem
     {
         public override int LabelNumber => 1157342; // Wedding Package Addon Token
 

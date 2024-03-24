@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ForgedArtwork : Item
+    public class ForgedArtwork : BaseItem
     {
         public override int LabelNumber => 1151750;  // Forged Artwork from King Blackthorn's Collection
 

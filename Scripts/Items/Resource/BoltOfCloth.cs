@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BoltOfCloth : Item, IScissorable, IDyable, ICommodity
+    public class BoltOfCloth : BaseItem, IScissorable, IDyable, ICommodity
     {
         [Constructable]
         public BoltOfCloth()

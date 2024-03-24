@@ -1,6 +1,6 @@
 namespace Server.Engines.VvV
 {
-    public class EssenceOfCourage : Item
+    public class EssenceOfCourage : BaseItem
     {
         public override int LabelNumber => 1155554;  // Essence of Courage
 

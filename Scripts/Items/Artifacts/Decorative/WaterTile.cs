@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WaterTile : Item
+    public class WaterTile : BaseItem
     {
         [Constructable]
         public WaterTile()

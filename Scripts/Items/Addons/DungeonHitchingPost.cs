@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0x14E7, 0x14E8)]
-    public class DungeonHitchingPost : Item
+    public class DungeonHitchingPost : BaseItem
     {
         public override int LabelNumber => 1025351; // hitching post
 

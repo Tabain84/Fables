@@ -3,7 +3,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class PersonalBlessDeed : Item
+    public class PersonalBlessDeed : BaseItem
     {
         private Mobile m_Owner;
         [Constructable]

@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class SorcerersScroll : Item
+    public class SorcerersScroll : BaseItem
     {
         public override int LabelNumber => 1023637;  // scroll
 

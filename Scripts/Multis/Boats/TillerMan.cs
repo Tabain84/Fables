@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class TillerMan : Item
+    public class TillerMan : BaseItem
     {
         public virtual bool Babbles => true;
         public BaseBoat Boat { get; private set; }

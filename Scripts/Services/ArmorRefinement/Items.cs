@@ -43,7 +43,7 @@ namespace Server.Items
         GargishStone
     }
 
-    public class RefinementComponent : Item
+    public class RefinementComponent : BaseItem
     {
         private RefinementType m_RefinementType;
         private RefinementCraftType m_CraftType;
@@ -286,7 +286,7 @@ namespace Server.Items
         }
     }
 
-    public class RefinementItem : Item
+    public class RefinementItem : BaseItem
     {
         private RefinementType m_RefinementType;
         private RefinementCraftType m_CraftType;
@@ -592,7 +592,7 @@ namespace Server.Items
         }
     }
 
-    public class LeatherBraid : Item
+    public class LeatherBraid : BaseItem
     {
         public override int LabelNumber => 1154003; // Leather braid
 
@@ -627,7 +627,7 @@ namespace Server.Items
         }
     }
 
-    public class MalleableAlloy : Item
+    public class MalleableAlloy : BaseItem
     {
         public override int LabelNumber => 1154005; // Melleable Alloy
 
@@ -664,7 +664,7 @@ namespace Server.Items
         }
     }
 
-    public class SolventFlask : Item
+    public class SolventFlask : BaseItem
     {
         public override int LabelNumber => 1154004; // Solvent Flask
 

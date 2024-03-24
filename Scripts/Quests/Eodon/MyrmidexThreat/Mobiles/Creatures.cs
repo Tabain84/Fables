@@ -311,7 +311,7 @@ namespace Server.Mobiles
             }
         }
 
-        public class OozeItem : Item
+        public class OozeItem : BaseItem
         {
             public override int LabelNumber => 1156831;  // Noxious Goo
 

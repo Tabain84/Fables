@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.NewMagincia
 {
-    public class PlotSign : Item
+    public class PlotSign : BaseItem
     {
         public static readonly int RuneCost = 100;
 

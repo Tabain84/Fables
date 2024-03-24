@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class EssencePersistence : Item, ICommodity
+    public class EssencePersistence : BaseItem, ICommodity
     {
         [Constructable]
         public EssencePersistence()

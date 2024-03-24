@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class VoidCore : Item, ICommodity
+    public class VoidCore : BaseItem, ICommodity
     {
         public override int LabelNumber => 1113334;  // void core
         public override double DefaultWeight => 0.1;

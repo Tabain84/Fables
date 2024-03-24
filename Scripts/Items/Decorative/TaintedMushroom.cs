@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TaintedMushroom : Item
+    public class TaintedMushroom : BaseItem
     {
         [Constructable]
         public TaintedMushroom()

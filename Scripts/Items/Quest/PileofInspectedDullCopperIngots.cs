@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PileofInspectedDullCopperIngots : Item
+    public class PileofInspectedDullCopperIngots : BaseItem
     {
         [Constructable]
         public PileofInspectedDullCopperIngots()

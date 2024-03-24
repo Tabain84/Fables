@@ -14,7 +14,7 @@ namespace Server.Items
         Crab
     }
 
-    public class FishTrophyDeed : Item
+    public class FishTrophyDeed : BaseItem
     {
         private int m_Weight;
         private Mobile m_Fisher;

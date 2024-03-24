@@ -79,7 +79,7 @@ namespace Server.Spells.Third
         }
 
         [DispellableField]
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             private readonly Mobile m_Caster;
             private Timer m_Timer;

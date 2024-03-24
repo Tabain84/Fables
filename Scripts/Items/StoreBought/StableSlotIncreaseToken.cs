@@ -6,7 +6,7 @@ using System;
 
 namespace Server.Items
 {
-    public class StableSlotIncreaseToken : Item, IAccountRestricted, IPromotionalToken
+    public class StableSlotIncreaseToken : BaseItem, IAccountRestricted, IPromotionalToken
     {
         public const int SlotIncrease = 3;
         public const int MaxPerChar = 21;

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class LuckyDagger : Item
+    public class LuckyDagger : BaseItem
     {
         public override int LabelNumber => 1151983;  // Lucky Dagger
 

@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class TripartiteKey : Item
+    public class TripartiteKey : BaseItem
     {
         [Constructable]
         public TripartiteKey()

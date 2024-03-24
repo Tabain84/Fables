@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class DoomPlaque : Item
+    public class DoomPlaque : BaseItem
     {
         public override int LabelNumber => 1155662;  // Plaque
         public override bool ForceShowProperties => true;

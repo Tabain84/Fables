@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class SBMessageTrigger : Item
+    public class SBMessageTrigger : BaseItem
     {
         private FlameOfOrder m_Flame;
 

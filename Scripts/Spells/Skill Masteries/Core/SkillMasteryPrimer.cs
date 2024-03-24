@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class SkillMasteryPrimer : Item
+    public class SkillMasteryPrimer : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public SkillName Skill { get; private set; }

@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class Matchcord : Item, ICommodity
+    public class Matchcord : BaseItem, ICommodity
     {
         public override int LabelNumber => 1095184;
 

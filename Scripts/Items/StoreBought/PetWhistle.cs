@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class PetWhistle : Item
+    public class PetWhistle : BaseItem
     {
         public override int LabelNumber => 1126239;  // whistle
 

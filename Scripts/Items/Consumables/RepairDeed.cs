@@ -16,7 +16,7 @@ namespace Server.Items
         Glassblowing
     }
 
-    public class RepairDeed : Item
+    public class RepairDeed : BaseItem
     {
         private RepairSkillType m_Skill;
         private double m_SkillLevel;

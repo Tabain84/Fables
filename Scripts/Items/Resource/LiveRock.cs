@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class LiveRock : Item, ICommodity
+    public class LiveRock : BaseItem, ICommodity
     {
         public override int LabelNumber => 1125985;  // live rock
 

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0x1173, 0x1174)]
-    public class AncestralGravestone : Item
+    public class AncestralGravestone : BaseItem
     {
         public override int LabelNumber => 1071096;  // Ancestral Gravestone
 

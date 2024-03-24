@@ -621,7 +621,7 @@ namespace Server.Items
         }
     }
 
-    public class StoneCrabMeat : Item
+    public class StoneCrabMeat : BaseItem
     {
         public override int LabelNumber => 1116317;
 
@@ -646,7 +646,7 @@ namespace Server.Items
         }
     }
 
-    public class SpiderCrabMeat : Item
+    public class SpiderCrabMeat : BaseItem
     {
         public override int LabelNumber => 1116320;
 
@@ -672,7 +672,7 @@ namespace Server.Items
         }
     }
 
-    public class BlueLobsterMeat : Item
+    public class BlueLobsterMeat : BaseItem
     {
         public override int LabelNumber => 1116318;
 

@@ -8,7 +8,7 @@ namespace Server.Items
 {
     public delegate void InstrumentPickedCallback(Mobile from, BaseInstrument instrument);
 
-    public abstract class BaseInstrument : Item, ISlayer, IQuality, IResource
+    public abstract class BaseInstrument : BaseItem, ISlayer, IQuality, IResource
     {
         public static readonly double MaxBardingDifficulty = 160.0;
 

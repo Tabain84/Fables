@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0xA513, 0xA514)]
-    public class ChickenStatue : Item, ISecurable
+    public class ChickenStatue : BaseItem, ISecurable
     {
         public override int LabelNumber => 1126283;  // chicken
 

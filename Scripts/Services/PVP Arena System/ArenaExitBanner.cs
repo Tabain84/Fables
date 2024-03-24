@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Engines.ArenaSystem
 {
-    public class ArenaExitBanner : Item
+    public class ArenaExitBanner : BaseItem
     {
         public override bool ForceShowProperties => true;
         public override int LabelNumber => 1116111;  // Arena Exit Banner

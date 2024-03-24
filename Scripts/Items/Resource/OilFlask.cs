@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class EmptyOilFlask : Item
+    public class EmptyOilFlask : BaseItem
     {
         public override int LabelNumber => 1150866;  // empty oil flask
 
@@ -37,7 +37,7 @@ namespace Server.Items
     }
 
     [TypeAlias("Server.Items.FlaskOfOil ")]
-    public class OilFlask : Item
+    public class OilFlask : BaseItem
     {
         [Constructable]
         public OilFlask()

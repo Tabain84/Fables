@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class HABPromotionalToken : Item, IAccountRestricted
+    public class HABPromotionalToken : BaseItem, IAccountRestricted
     {
         public override int LabelNumber => 1070997;  // A promotional token
 

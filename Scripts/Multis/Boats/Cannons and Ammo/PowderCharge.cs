@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PowderCharge : Item, ICommodity
+    public class PowderCharge : BaseItem, ICommodity
     {
         public override int LabelNumber => 1116160;  // powder charge
 
@@ -39,7 +39,7 @@ namespace Server.Items
         }
     }
 
-    public class LightPowderCharge : Item, ICommodity
+    public class LightPowderCharge : BaseItem, ICommodity
     {
         public override int LabelNumber => 1116159;
 
@@ -77,7 +77,7 @@ namespace Server.Items
         }
     }
 
-    public class HeavyPowderCharge : Item, ICommodity
+    public class HeavyPowderCharge : BaseItem, ICommodity
     {
         public override int LabelNumber => 1116160;
 

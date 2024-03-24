@@ -11,7 +11,7 @@ using Server.SkillHandlers;
 
 namespace Server.Engines.Khaldun
 {
-    public class DamagedHeadstone : Item, IForensicTarget
+    public class DamagedHeadstone : BaseItem, IForensicTarget
     {
         public override int LabelNumber => 1158561;  // damaged headstone
 

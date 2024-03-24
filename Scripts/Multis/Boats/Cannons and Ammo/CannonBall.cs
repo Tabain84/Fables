@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Cannonball : Item, ICommodity, ICannonAmmo
+    public class Cannonball : BaseItem, ICommodity, ICannonAmmo
     {
         public override int LabelNumber => 1116266;
         public override double DefaultWeight => 1.0;
@@ -127,7 +127,7 @@ namespace Server.Items
         }
     }
 
-    public class LightCannonball : Item, ICommodity, ICannonAmmo
+    public class LightCannonball : BaseItem, ICommodity, ICannonAmmo
     {
         public override int LabelNumber => 1116266;
         public override double DefaultWeight => 1.0;
@@ -172,7 +172,7 @@ namespace Server.Items
         }
     }
 
-    public class HeavyCannonball : Item, ICommodity, ICannonAmmo
+    public class HeavyCannonball : BaseItem, ICommodity, ICannonAmmo
     {
         public override int LabelNumber => 1116267;
         public override double DefaultWeight => 1.0;

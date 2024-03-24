@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Fish : Item, ICarvable
+    public class Fish : BaseItem, ICarvable
     {
         [Constructable]
         public Fish()

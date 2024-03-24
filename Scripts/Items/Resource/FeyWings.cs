@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class FeyWings : Item, ICommodity
+    public class FeyWings : BaseItem, ICommodity
     {
         public override int LabelNumber => 1113332;  // fey wings
         public override double DefaultWeight => 0.1;

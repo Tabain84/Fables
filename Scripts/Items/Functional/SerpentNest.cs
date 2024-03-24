@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class SerpentNest : Item
+    public class SerpentNest : BaseItem
     {
         public override int LabelNumber => 1112582;  // a serpent's nest
 

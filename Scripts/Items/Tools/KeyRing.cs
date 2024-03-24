@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class KeyRing : Item, IResource, IQuality
+    public class KeyRing : BaseItem, IResource, IQuality
     {
         private CraftResource _Resource;
         private Mobile _Crafter;

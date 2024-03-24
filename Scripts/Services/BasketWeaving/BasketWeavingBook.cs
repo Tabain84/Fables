@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class BasketWeavingBook : Item
+    public class BasketWeavingBook : BaseItem
     {
         public override int LabelNumber => 1153529;  // Making valuables with Basket Weaving
 

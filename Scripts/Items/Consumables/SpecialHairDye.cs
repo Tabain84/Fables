@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class SpecialHairDye : Item
+    public class SpecialHairDye : BaseItem
     {
         public override int LabelNumber => 1074402;  // Special Hair Dye
 

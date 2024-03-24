@@ -2,7 +2,7 @@ namespace Server.Items
 {
     [Furniture]
     [Flipable(0xA588, 0xA58E)]
-    public class DecorativeMagicBookStand : Item
+    public class DecorativeMagicBookStand : BaseItem
     {
         public override int LabelNumber => 1072874;  // Book Stand
 

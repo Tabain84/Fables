@@ -198,7 +198,7 @@ namespace Server.Mobiles
             item.MoveToWorld(new Point3D(p), Map);
         }
 
-        private class ManaDrainItem : Item
+        private class ManaDrainItem : BaseItem
         {
             public Item Static { get; private set; }
             public Mobile Owner { get; private set; }

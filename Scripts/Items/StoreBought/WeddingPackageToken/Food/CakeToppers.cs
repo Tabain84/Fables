@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x9EC1, 0x9EC2)]
-    public class MaleTopper : Item
+    public class MaleTopper : BaseItem
     {
         public override int LabelNumber => 1124665; // Cake Topper
 
@@ -31,7 +31,7 @@ namespace Server.Items
     }
 	
 	[Flipable(0x9EC3, 0x9EC4)]
-    public class FemaleTopper : Item
+    public class FemaleTopper : BaseItem
     {
         public override int LabelNumber => 1124665; // Cake Topper
 

@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class SacredQuestBlocker : Item
+    public class SacredQuestBlocker : BaseItem
     {
         [Constructable]
         public SacredQuestBlocker()

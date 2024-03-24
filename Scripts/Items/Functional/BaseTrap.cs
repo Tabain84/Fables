@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public abstract class BaseTrap : Item
+    public abstract class BaseTrap : BaseItem
     {
         private DateTime m_NextPassiveTrigger, m_NextActiveTrigger;
         public BaseTrap(int itemID)

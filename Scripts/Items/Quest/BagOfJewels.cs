@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BagOfJewels : Item
+    public class BagOfJewels : BaseItem
     {
         public override int LabelNumber => 1075307;  // Bag of Jewels
         public override bool HiddenQuestItemHue => true;

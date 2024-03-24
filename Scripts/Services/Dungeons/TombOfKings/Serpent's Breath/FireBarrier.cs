@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class FireBarrier : Item
+    public class FireBarrier : BaseItem
     {
         private static readonly string _TimerID = "FireBarrierTimer";
 

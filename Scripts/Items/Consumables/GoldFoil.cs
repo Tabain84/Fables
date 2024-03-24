@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class GoldFoil : Item
+    public class GoldFoil : BaseItem
     {
         public override int LabelNumber => 1124032;  // foil sheet
 

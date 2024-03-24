@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class ValentineBear : Item, ICustomizableMessageItem, IFlipable
+    public class ValentineBear : BaseItem, ICustomizableMessageItem, IFlipable
     {
         private string m_OwnerName;
 

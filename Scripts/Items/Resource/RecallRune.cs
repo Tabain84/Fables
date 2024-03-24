@@ -12,7 +12,7 @@ namespace Server.Items
     }
 
     [Flipable(0x1f14, 0x1f15, 0x1f16, 0x1f17)]
-    public class RecallRune : Item
+    public class RecallRune : BaseItem
     {
         public override int LabelNumber => Type == RecallRuneType.Normal ? 1060577 : Type == RecallRuneType.Shop ? 1151508 : 1149570;  // Recall Rune - Shop Recall Rune - Ship Recall Rune
 

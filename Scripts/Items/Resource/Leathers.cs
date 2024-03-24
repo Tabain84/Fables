@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public abstract class BaseLeather : Item, ICommodity
+    public abstract class BaseLeather : BaseItem, ICommodity
     {
         protected virtual CraftResource DefaultResource => CraftResource.RegularLeather;
 

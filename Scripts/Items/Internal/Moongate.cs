@@ -13,7 +13,7 @@ using System;
 namespace Server.Items
 {
     [DispellableField]
-    public class Moongate : Item
+    public class Moongate : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public Point3D Target { get; set; }

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class CrystalBallOfKnowledge : Item
+    public class CrystalBallOfKnowledge : BaseItem
     {
         private static readonly SkillName[] _ExcludedSkills =
         {

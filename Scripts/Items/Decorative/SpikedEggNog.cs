@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class SpikedEggNog : Item, ISecurable
+    public class SpikedEggNog : BaseItem, ISecurable
     {
         public override int LabelNumber => 1157647;  // Spiked Egg Nog
 

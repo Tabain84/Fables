@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class TableLamp : Item
+    public class TableLamp : BaseItem
     {
         [Constructable]
         public TableLamp()

@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class Globe : Item, IResource, IQuality
+    public class Globe : BaseItem, IResource, IQuality
     {
         private CraftResource _Resource;
         private Mobile _Crafter;

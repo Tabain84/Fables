@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class YuccaTree : Item
+    public class YuccaTree : BaseItem
     {
         [Constructable]
         public YuccaTree()

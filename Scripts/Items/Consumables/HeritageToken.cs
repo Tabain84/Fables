@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class HeritageToken : Item
+    public class HeritageToken : BaseItem
     {
         [Constructable]
         public HeritageToken()

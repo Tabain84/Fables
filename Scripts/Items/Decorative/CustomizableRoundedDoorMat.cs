@@ -13,7 +13,7 @@ namespace Server.Items
 
     [Furniture]
     [Flipable(0x4790, 0x4791)]
-    public class CustomizableRoundedDoorMat : Item, IDyable, ICustomizableMessageItem
+    public class CustomizableRoundedDoorMat : BaseItem, IDyable, ICustomizableMessageItem
 	{
 		public string[] Lines => TooltipsBase;
 

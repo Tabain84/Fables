@@ -300,7 +300,7 @@ namespace Server.Engines.Shadowguard
         }
     }
 
-    public class ShadowguardCypress : Item
+    public class ShadowguardCypress : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public OrchardEncounter Encounter { get; set; }
@@ -387,7 +387,7 @@ namespace Server.Engines.Shadowguard
                 Encounter.CheckEncounter();
         }
 
-        public class ShadowguardCypressFoilage : Item
+        public class ShadowguardCypressFoilage : BaseItem
         {
             public ShadowguardCypress Tree { get; set; }
 
@@ -584,7 +584,7 @@ namespace Server.Engines.Shadowguard
         }
     }
 
-    public class CursedSuitOfArmor : Item
+    public class CursedSuitOfArmor : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public ShadowguardEncounter Encounter { get; set; }
@@ -622,7 +622,7 @@ namespace Server.Engines.Shadowguard
         }
     }
 
-    public class PurifyingFlames : Item
+    public class PurifyingFlames : BaseItem
     {
         public override int LabelNumber => 1156217;  // Purifying Flames
 
@@ -803,7 +803,7 @@ namespace Server.Engines.Shadowguard
         }
     }
 
-    public class ShadowguardSpigot : Item
+    public class ShadowguardSpigot : BaseItem
     {
         public override int LabelNumber => 1156275;  // A Spigot
 
@@ -839,7 +839,7 @@ namespace Server.Engines.Shadowguard
         }
     }
 
-    public class ShadowguardDrain : Item
+    public class ShadowguardDrain : BaseItem
     {
         public override int LabelNumber => 1156272;  // A Drain
 
@@ -991,7 +991,7 @@ namespace Server.Engines.Shadowguard
         }
     }
 
-    public class TatteredBook : Item
+    public class TatteredBook : BaseItem
     {
         public override int LabelNumber => 1156215;  // a tattered book
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class EyeOfNavrey : Item
+    public class EyeOfNavrey : BaseItem
     {
         [Constructable]
         public EyeOfNavrey()

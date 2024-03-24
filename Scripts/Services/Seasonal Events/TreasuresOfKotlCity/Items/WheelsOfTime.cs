@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Engines.TreasuresOfKotlCity
 {
-    public class WheelsOfTime : Item
+    public class WheelsOfTime : BaseItem
     {
         public static TimeSpan TimeWarpDuration = TimeSpan.FromHours(2); // Duration in which you have to activate spawn to do the spawn
 

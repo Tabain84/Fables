@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ParoxysmusDinner : Item
+    public class ParoxysmusDinner : BaseItem
     {
         [Constructable]
         public ParoxysmusDinner()

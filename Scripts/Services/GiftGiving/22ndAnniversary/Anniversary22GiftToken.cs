@@ -2,7 +2,7 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public class Anniversary22GiftToken : Item, IRewardOption
+    public class Anniversary22GiftToken : BaseItem, IRewardOption
     {
         public override int LabelNumber => 1159145;  // 22nd Anniversary Gift Token
 

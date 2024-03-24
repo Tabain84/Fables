@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Wasabi : Item
+    public class Wasabi : BaseItem
     {
         [Constructable]
         public Wasabi()
@@ -60,7 +60,7 @@ namespace Server.Items
         }
     }
 
-    public class EmptyBentoBox : Item
+    public class EmptyBentoBox : BaseItem
     {
         [Constructable]
         public EmptyBentoBox()
@@ -205,7 +205,7 @@ namespace Server.Items
         }
     }
 
-    public class GreenTeaBasket : Item
+    public class GreenTeaBasket : BaseItem
     {
         [Constructable]
         public GreenTeaBasket()

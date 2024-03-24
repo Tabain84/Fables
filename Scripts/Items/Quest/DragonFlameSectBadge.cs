@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class DragonFlameSectBadge : Item
+    public class DragonFlameSectBadge : BaseItem
     {
         [Constructable]
         public DragonFlameSectBadge()

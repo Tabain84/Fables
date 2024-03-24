@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x1B17, 0x1B18)]
-    public class RibCage : Item, IScissorable
+    public class RibCage : BaseItem, IScissorable
     {
         [Constructable]
         public RibCage()

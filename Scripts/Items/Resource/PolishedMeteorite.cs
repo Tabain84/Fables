@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PolishedMeteorite : Item
+    public class PolishedMeteorite : BaseItem
     {
         public override int LabelNumber => 1158693;  // polished meteorite
 

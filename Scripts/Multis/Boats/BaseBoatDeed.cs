@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Server.Multis
 {
-    public abstract class BaseBoatDeed : Item
+    public abstract class BaseBoatDeed : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public int MultiID { get; set; }

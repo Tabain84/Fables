@@ -4,7 +4,7 @@ using Server.SkillHandlers;
 
 namespace Server.Items
 {
-    public class AncientClayVase : Item, ICarvable
+    public class AncientClayVase : BaseItem, ICarvable
     {
         public override int LabelNumber => 1155625;  // Ancient Clay Vase
         public bool DoomEvent { get; set; }

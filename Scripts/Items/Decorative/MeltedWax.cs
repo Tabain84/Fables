@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class MeltedWax : Item
+    public class MeltedWax : BaseItem
     {
         [Constructable]
         public MeltedWax()

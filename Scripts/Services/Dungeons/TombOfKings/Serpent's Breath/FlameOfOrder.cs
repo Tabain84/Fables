@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class FlameOfOrder : Item
+    public class FlameOfOrder : BaseItem
     {
         public override int LabelNumber => 1112127;  // Flame of Order
 

@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BlanketOfDarkness : Item
+    public class BlanketOfDarkness : BaseItem
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1152304;  // Blanket Of Darkness	

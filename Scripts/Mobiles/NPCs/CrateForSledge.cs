@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class CrateForSledge : Item
+    public class CrateForSledge : BaseItem
     {
         [Constructable]
         public CrateForSledge()

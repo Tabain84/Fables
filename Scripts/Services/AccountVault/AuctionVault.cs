@@ -5,7 +5,7 @@ using Server.Engines.Auction;
 
 namespace Server.AccountVault
 {
-    public class AuctionVault : Item, IAuctionItem
+    public class AuctionVault : BaseItem, IAuctionItem
     {
         private Auction _Auction;
 

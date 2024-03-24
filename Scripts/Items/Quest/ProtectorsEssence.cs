@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ProtectorsEssence : Item
+    public class ProtectorsEssence : BaseItem
     {
         [Constructable]
         public ProtectorsEssence()

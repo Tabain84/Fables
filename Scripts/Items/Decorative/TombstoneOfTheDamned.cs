@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TombstoneOfTheDamned : Item
+    public class TombstoneOfTheDamned : BaseItem
     {
         [Constructable]
         public TombstoneOfTheDamned()

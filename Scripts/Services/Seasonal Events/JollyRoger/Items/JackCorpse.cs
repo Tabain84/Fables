@@ -4,7 +4,7 @@ using Server.SkillHandlers;
 
 namespace Server.Items
 {
-    public class JackCorpse : Item, IForensicTarget
+    public class JackCorpse : BaseItem, IForensicTarget
     {
         public static JackCorpse InstanceTram { get; set; }
         public static JackCorpse InstanceFel { get; set; }

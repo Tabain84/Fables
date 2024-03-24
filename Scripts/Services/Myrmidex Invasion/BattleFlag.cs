@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Server.Engines.MyrmidexInvasion
 {
-    public class BattleFlag : Item
+    public class BattleFlag : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public BattleSpawner BattleSpawner { get; set; }

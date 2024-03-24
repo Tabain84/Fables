@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [TypeAlias("Server.Items.Dressform")]
-    public class DressformFront : Item
+    public class DressformFront : BaseItem
     {
         [Constructable]
         public DressformFront()
@@ -28,7 +28,7 @@ namespace Server.Items
         }
     }
 
-    public class DressformSide : Item
+    public class DressformSide : BaseItem
     {
         [Constructable]
         public DressformSide()

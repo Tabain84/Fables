@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class MysteriousTunnel : Item
+    public class MysteriousTunnel : BaseItem
     {
         public override int LabelNumber => 1152265;  // mysterious tunnel       
         private Point3D m_PointDest;

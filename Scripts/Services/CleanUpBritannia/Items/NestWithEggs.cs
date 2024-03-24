@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class NestWithEggs : Item
+    public class NestWithEggs : BaseItem
     {
         [Constructable]
         public NestWithEggs()

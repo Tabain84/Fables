@@ -14,7 +14,7 @@ namespace Server.Items
         void Complete(Mobile m);
     }
 
-    public class SliderTrapTrainingKit : Item, ISliderKit, IRemoveTrapTrainingKit
+    public class SliderTrapTrainingKit : BaseItem, ISliderKit, IRemoveTrapTrainingKit
     {
         public override int LabelNumber => 1159016;  // Slider Trap Training Kit
 

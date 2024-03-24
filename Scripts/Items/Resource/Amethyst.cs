@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Amethyst : Item, IGem
+    public class Amethyst : BaseItem, IGem
     {
         [Constructable]
         public Amethyst()

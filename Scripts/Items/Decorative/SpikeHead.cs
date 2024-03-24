@@ -2,7 +2,7 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public class SpikeHead : Item
+    public class SpikeHead : BaseItem
     {
         public int GumpID { get; set; }
 

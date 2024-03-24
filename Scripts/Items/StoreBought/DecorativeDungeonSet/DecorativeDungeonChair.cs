@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA4EA, 0xA4EB)]
-    public class DecorativeDungeonChair : Item
+    public class DecorativeDungeonChair : BaseItem
     {
         public override int LabelNumber => 1159470;  // decorative dungeon chair
 

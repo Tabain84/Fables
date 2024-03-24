@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class BedrollSpawner : Item
+    public class BedrollSpawner : BaseItem
     {
         public static Point3D[] m_RoomDestinations = new Point3D[]
         {

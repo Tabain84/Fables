@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class StoneMiningBook : Item
+    public class StoneMiningBook : BaseItem
     {
         public override int LabelNumber => 1153530;  // Mining For Quality Stone
 

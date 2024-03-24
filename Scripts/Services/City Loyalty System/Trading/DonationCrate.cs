@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.CityLoyalty
 {
-    public class CityDonationItem : Item
+    public class CityDonationItem : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public CityLoyaltySystem CitySystem { get { return CityLoyaltySystem.GetCityInstance(City); } set { } }

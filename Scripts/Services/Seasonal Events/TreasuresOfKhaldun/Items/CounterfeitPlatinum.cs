@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class CounterfeitPlatinum : Item
+    public class CounterfeitPlatinum : BaseItem
     {
         public override int LabelNumber => 1158686;  // counterfeit platinum
 

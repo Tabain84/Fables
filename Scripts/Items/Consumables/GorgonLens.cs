@@ -12,7 +12,7 @@ namespace Server.Items
         Limited   //From anyother type of scales
     }
 
-    public class GorgonLense : Item, ICraftable
+    public class GorgonLense : BaseItem, ICraftable
     {
         public override int LabelNumber => 1112625;  //  Gorgon Lense
 

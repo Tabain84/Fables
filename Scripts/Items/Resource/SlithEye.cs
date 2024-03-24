@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SlithEye : Item
+    public class SlithEye : BaseItem
     {
         [Constructable]
         public SlithEye()

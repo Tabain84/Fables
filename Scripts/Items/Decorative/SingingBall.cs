@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class SingingBall : Item, ISecurable
+    public class SingingBall : BaseItem, ISecurable
     {
         public override int LabelNumber => 1041245;  // Singing Ball
 

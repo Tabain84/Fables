@@ -4,7 +4,7 @@ using Server.Items;
 namespace Server.Engines.VvV
 {
     [Flipable(39339, 39340)]
-    public class DespiseBanner : Item
+    public class DespiseBanner : BaseItem
     {
         public override int LabelNumber => 1123363;
 

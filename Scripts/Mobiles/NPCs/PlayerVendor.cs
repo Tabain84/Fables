@@ -1523,7 +1523,7 @@ namespace Server.Mobiles
         public static List<PlayerVendor> PlayerVendors { get; set; } = new List<PlayerVendor>();
     }
 
-    public class PlayerVendorPlaceholder : Item
+    public class PlayerVendorPlaceholder : BaseItem
     {
         private readonly ExpireTimer m_Timer;
 

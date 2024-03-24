@@ -2,7 +2,7 @@
 
 namespace Server.Engines.TombOfKings
 {
-    public class ChamberBarrier : Item
+    public class ChamberBarrier : BaseItem
     {
         private Blocker m_Blocker;
         private LOSBlocker m_LOSBlocker;

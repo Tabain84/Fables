@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class CircuitTrapTrainingKit : Item, ICircuitTrap, IRemoveTrapTrainingKit
+    public class CircuitTrapTrainingKit : BaseItem, ICircuitTrap, IRemoveTrapTrainingKit
     {
         public override int LabelNumber => 1159014;  // Circuit Trap Training Kit
 

@@ -4,7 +4,7 @@
 
 namespace Server.Items
 {
-    public class NaxMarker : Item
+    public class NaxMarker : BaseItem
     {
         [Constructable]
         public NaxMarker()

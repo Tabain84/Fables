@@ -17,7 +17,7 @@ namespace Server.Engines.VoidPool
         Elemental
     }
 
-    public class VoidPoolController : Item
+    public class VoidPoolController : BaseItem
     {
         public static VoidPoolController InstanceTram { get; set; }
         public static VoidPoolController InstanceFel { get; set; }

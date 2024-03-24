@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Engines.Points
 {
-    public class PointExchanceStone : Item
+    public class PointExchanceStone : BaseItem
     {
         public override int LabelNumber => 1158449;  // Cleanup Point Exchange
         public override bool ForceShowProperties => true;

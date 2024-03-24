@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.NewMagincia
 {
-    public class MaginciaBazaar : Item
+    public class MaginciaBazaar : BaseItem
     {
         public static readonly int DefaultComissionFee = 5;
         public static TimeSpan GetShortAuctionTime => TimeSpan.FromMinutes(Utility.RandomMinMax(690, 750));

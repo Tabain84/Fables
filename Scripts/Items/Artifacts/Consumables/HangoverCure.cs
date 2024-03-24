@@ -1,6 +1,6 @@
 namespace Server.Engines.Quests.Hag
 {
-    public class HangoverCure : Item
+    public class HangoverCure : BaseItem
     {
         public override bool IsArtifact => true;
         private int m_Uses;

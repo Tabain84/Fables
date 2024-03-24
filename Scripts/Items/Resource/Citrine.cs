@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Citrine : Item, IGem
+    public class Citrine : BaseItem, IGem
     {
         [Constructable]
         public Citrine()

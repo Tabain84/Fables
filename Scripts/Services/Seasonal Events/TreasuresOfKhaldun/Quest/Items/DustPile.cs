@@ -5,7 +5,7 @@ using Server.SkillHandlers;
 
 namespace Server.Engines.Khaldun
 {
-    public class DustPile : Item, IForensicTarget
+    public class DustPile : BaseItem, IForensicTarget
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public TrapDoor Door { get; set; }

@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x46AE, 0x46AF)]
-    public class KrampusPunishinList : Item
+    public class KrampusPunishinList : BaseItem
     {
         private string _Name;
 

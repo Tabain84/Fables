@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ShimmeringCrystals : Item
+    public class ShimmeringCrystals : BaseItem
     {
         private static readonly int[] m_ItemIDs = new int[]
         {

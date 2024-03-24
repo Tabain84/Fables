@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class ScouringToxin : Item, IUsesRemaining, ICommodity
+    public class ScouringToxin : BaseItem, IUsesRemaining, ICommodity
     {
         public override int LabelNumber => 1112292;  // scouring toxin
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Bluekeyfragment : Item
+    public class Bluekeyfragment : BaseItem
     {
         [Constructable]
         public Bluekeyfragment()

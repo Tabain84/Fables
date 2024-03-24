@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public abstract class BaseRewardTitleDeed : Item
+    public abstract class BaseRewardTitleDeed : BaseItem
     {
         public override int LabelNumber => 1155604;  // A Deed for a Reward Title
         public abstract TextDefinition Title { get; }

@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x9BCC, 0x9BCD)]
-    public class TigerPelt : Item, ICommodity
+    public class TigerPelt : BaseItem, ICommodity
     {
         public override int LabelNumber => 1123908;
 
@@ -44,7 +44,7 @@ namespace Server.Items
         }
     }
 
-    public class WhiteTigerPelt : Item, ICommodity
+    public class WhiteTigerPelt : BaseItem, ICommodity
     {
         public override int LabelNumber => 1156201;
 
@@ -87,7 +87,7 @@ namespace Server.Items
         }
     }
 
-    public class BlackTigerPelt : Item, ICommodity
+    public class BlackTigerPelt : BaseItem, ICommodity
     {
         public override int LabelNumber => 1156200;
 
@@ -130,7 +130,7 @@ namespace Server.Items
         }
     }
 
-    public class DragonTurtleScute : Item, ICommodity
+    public class DragonTurtleScute : BaseItem, ICommodity
     {
         public override int LabelNumber => 1123910;
 

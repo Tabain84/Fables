@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class HornAbyssalInferno : Item
+    public class HornAbyssalInferno : BaseItem
     {
         [Constructable]
         public HornAbyssalInferno()

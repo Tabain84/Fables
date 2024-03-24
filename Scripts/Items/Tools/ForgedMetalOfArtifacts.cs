@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class ForgedMetalOfArtifacts : Item
+    public class ForgedMetalOfArtifacts : BaseItem
     {
         private int m_UsesRemaining;
 

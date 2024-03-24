@@ -8,7 +8,7 @@ using System;
 
 namespace Server.Items
 {
-    public class SpecialSalvageHook : Item
+    public class SpecialSalvageHook : BaseItem
     {
         private static readonly int[] m_Hues = new int[]
         {

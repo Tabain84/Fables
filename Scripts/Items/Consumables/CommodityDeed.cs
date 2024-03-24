@@ -97,7 +97,7 @@ namespace Server.Items
         }
     }
 
-    public class CommodityDeed : Item
+    public class CommodityDeed : BaseItem
     {
         public CommodityDeed(Item commodity)
             : base(0x14F0)

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Bone : Item, ICommodity
+    public class Bone : BaseItem, ICommodity
     {
         [Constructable]
         public Bone()

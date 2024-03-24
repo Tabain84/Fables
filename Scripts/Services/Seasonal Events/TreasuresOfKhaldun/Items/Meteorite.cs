@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Meteorite : Item
+    public class Meteorite : BaseItem
     {
         private bool _Polished;
 

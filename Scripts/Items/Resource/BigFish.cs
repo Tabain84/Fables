@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BigFish : Item, ICarvable
+    public class BigFish : BaseItem, ICarvable
     {
         #region Old Item Serialization Vars used for RedHerring and MudPuppy
         /* DO NOT USE! Only used in serialization of special scrolls that originally derived from Item */

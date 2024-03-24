@@ -5,7 +5,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class DecorativeShardShield : Item, IAddon
+    public class DecorativeShardShield : BaseItem, IAddon
     {
         public override bool IsArtifact => true;
 
@@ -89,7 +89,7 @@ namespace Server.Items
         }
     }
 
-    public class DecorativeShardShieldDeed : Item
+    public class DecorativeShardShieldDeed : BaseItem
     {
         public override int LabelNumber => 1153729;  // Deed for a Decorative Shard Shield
 

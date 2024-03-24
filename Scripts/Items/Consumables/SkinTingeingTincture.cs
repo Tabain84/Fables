@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class SkinTingeingTincture : Item
+    public class SkinTingeingTincture : BaseItem
     {
         public override int LabelNumber => 1114770;  //Skin Tingeing Tincture
 

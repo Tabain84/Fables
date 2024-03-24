@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class HealingStone : Item
+    public class HealingStone : BaseItem
     {
         private Mobile m_Caster;
         private int m_LifeForce;

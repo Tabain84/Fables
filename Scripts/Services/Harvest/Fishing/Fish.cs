@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BaseHighseasFish : Item, ICarvable, ICommodity
+    public class BaseHighseasFish : BaseItem, ICarvable, ICommodity
     {
         TextDefinition ICommodity.Description => LabelNumber;
         bool ICommodity.IsDeedable => true;

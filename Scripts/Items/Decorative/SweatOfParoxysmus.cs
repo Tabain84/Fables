@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SweatOfParoxysmus : Item
+    public class SweatOfParoxysmus : BaseItem
     {
         [Constructable]
         public SweatOfParoxysmus()

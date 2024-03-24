@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class GlobOfMonstreousInterredGrizzle : Item
+    public class GlobOfMonstreousInterredGrizzle : BaseItem
     {
         [Constructable]
         public GlobOfMonstreousInterredGrizzle()

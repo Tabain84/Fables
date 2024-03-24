@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class SpellScroll : Item, ICommodity
+    public class SpellScroll : BaseItem, ICommodity
     {
         private int m_SpellID;
         public SpellScroll(Serial serial)

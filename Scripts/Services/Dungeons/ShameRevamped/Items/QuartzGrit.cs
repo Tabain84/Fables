@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class QuartzGrit : Item
+    public class QuartzGrit : BaseItem
     {
         public override int LabelNumber => 1151808;  // Quartz Grit
 

@@ -4,7 +4,7 @@ using Server.Targeting;
 namespace Server.Items
 {
     [Flipable(0x182E, 0x182F, 0x1830, 0x1831)]
-    public class SmallFlask : Item
+    public class SmallFlask : BaseItem
     {
         [Constructable]
         public SmallFlask()
@@ -35,7 +35,7 @@ namespace Server.Items
     }
 
     [Flipable(0x182A, 0x182B, 0x182C, 0x182D)]
-    public class MediumFlask : Item
+    public class MediumFlask : BaseItem
     {
         [Constructable]
         public MediumFlask()
@@ -66,7 +66,7 @@ namespace Server.Items
     }
 
     [Flipable(0x183B, 0x183C, 0x183D)]
-    public class LargeFlask : Item
+    public class LargeFlask : BaseItem
     {
         [Constructable]
         public LargeFlask()
@@ -97,7 +97,7 @@ namespace Server.Items
     }
 
     [Flipable(0x1832, 0x1833, 0x1834, 0x1835, 0x1836, 0x1837)]
-    public class CurvedFlask : Item
+    public class CurvedFlask : BaseItem
     {
         [Constructable]
         public CurvedFlask()
@@ -128,7 +128,7 @@ namespace Server.Items
     }
 
     [Flipable(0x1838, 0x1839, 0x183A)]
-    public class LongFlask : Item
+    public class LongFlask : BaseItem
     {
         [Constructable]
         public LongFlask()
@@ -159,7 +159,7 @@ namespace Server.Items
     }
 
     [Flipable(0x1810, 0x1811)]
-    public class SpinningHourglass : Item, IFlipable
+    public class SpinningHourglass : BaseItem, IFlipable
     {
         public override int LabelNumber => 1044592;  // gargoyle hourglass
 
@@ -203,7 +203,7 @@ namespace Server.Items
         }
     }
 
-    public class GreenBottle : Item
+    public class GreenBottle : BaseItem
     {
         [Constructable]
         public GreenBottle()
@@ -233,7 +233,7 @@ namespace Server.Items
         }
     }
 
-    public class RedBottle : Item
+    public class RedBottle : BaseItem
     {
         [Constructable]
         public RedBottle()
@@ -263,7 +263,7 @@ namespace Server.Items
         }
     }
 
-    public class SmallBrownBottle : Item
+    public class SmallBrownBottle : BaseItem
     {
         [Constructable]
         public SmallBrownBottle()
@@ -293,7 +293,7 @@ namespace Server.Items
         }
     }
 
-    public class SmallGreenBottle : Item
+    public class SmallGreenBottle : BaseItem
     {
         [Constructable]
         public SmallGreenBottle()
@@ -323,7 +323,7 @@ namespace Server.Items
         }
     }
 
-    public class SmallVioletBottle : Item
+    public class SmallVioletBottle : BaseItem
     {
         [Constructable]
         public SmallVioletBottle()
@@ -353,7 +353,7 @@ namespace Server.Items
         }
     }
 
-    public class TinyYellowBottle : Item
+    public class TinyYellowBottle : BaseItem
     {
         [Constructable]
         public TinyYellowBottle()
@@ -384,7 +384,7 @@ namespace Server.Items
     }
 
     //remove 
-    public class SmallBlueFlask : Item
+    public class SmallBlueFlask : BaseItem
     {
         [Constructable]
         public SmallBlueFlask()
@@ -414,7 +414,7 @@ namespace Server.Items
         }
     }
 
-    public class SmallYellowFlask : Item
+    public class SmallYellowFlask : BaseItem
     {
         [Constructable]
         public SmallYellowFlask()
@@ -444,7 +444,7 @@ namespace Server.Items
         }
     }
 
-    public class SmallRedFlask : Item
+    public class SmallRedFlask : BaseItem
     {
         [Constructable]
         public SmallRedFlask()
@@ -474,7 +474,7 @@ namespace Server.Items
         }
     }
 
-    public class SmallEmptyFlask : Item
+    public class SmallEmptyFlask : BaseItem
     {
         [Constructable]
         public SmallEmptyFlask()
@@ -504,7 +504,7 @@ namespace Server.Items
         }
     }
 
-    public class YellowBeaker : Item
+    public class YellowBeaker : BaseItem
     {
         [Constructable]
         public YellowBeaker()
@@ -534,7 +534,7 @@ namespace Server.Items
         }
     }
 
-    public class RedBeaker : Item
+    public class RedBeaker : BaseItem
     {
         [Constructable]
         public RedBeaker()
@@ -564,7 +564,7 @@ namespace Server.Items
         }
     }
 
-    public class BlueBeaker : Item
+    public class BlueBeaker : BaseItem
     {
         [Constructable]
         public BlueBeaker()
@@ -594,7 +594,7 @@ namespace Server.Items
         }
     }
 
-    public class GreenBeaker : Item
+    public class GreenBeaker : BaseItem
     {
         [Constructable]
         public GreenBeaker()
@@ -624,7 +624,7 @@ namespace Server.Items
         }
     }
 
-    public class EmptyCurvedFlaskW : Item
+    public class EmptyCurvedFlaskW : BaseItem
     {
         [Constructable]
         public EmptyCurvedFlaskW()
@@ -654,7 +654,7 @@ namespace Server.Items
         }
     }
 
-    public class RedCurvedFlask : Item
+    public class RedCurvedFlask : BaseItem
     {
         [Constructable]
         public RedCurvedFlask()
@@ -684,7 +684,7 @@ namespace Server.Items
         }
     }
 
-    public class LtBlueCurvedFlask : Item
+    public class LtBlueCurvedFlask : BaseItem
     {
         [Constructable]
         public LtBlueCurvedFlask()
@@ -714,7 +714,7 @@ namespace Server.Items
         }
     }
 
-    public class EmptyCurvedFlaskE : Item
+    public class EmptyCurvedFlaskE : BaseItem
     {
         [Constructable]
         public EmptyCurvedFlaskE()
@@ -744,7 +744,7 @@ namespace Server.Items
         }
     }
 
-    public class BlueCurvedFlask : Item
+    public class BlueCurvedFlask : BaseItem
     {
         [Constructable]
         public BlueCurvedFlask()
@@ -774,7 +774,7 @@ namespace Server.Items
         }
     }
 
-    public class GreenCurvedFlask : Item
+    public class GreenCurvedFlask : BaseItem
     {
         [Constructable]
         public GreenCurvedFlask()
@@ -804,7 +804,7 @@ namespace Server.Items
         }
     }
 
-    public class RedRibbedFlask : Item
+    public class RedRibbedFlask : BaseItem
     {
         [Constructable]
         public RedRibbedFlask()
@@ -834,7 +834,7 @@ namespace Server.Items
         }
     }
 
-    public class VioletRibbedFlask : Item
+    public class VioletRibbedFlask : BaseItem
     {
         [Constructable]
         public VioletRibbedFlask()
@@ -864,7 +864,7 @@ namespace Server.Items
         }
     }
 
-    public class EmptyRibbedFlask : Item
+    public class EmptyRibbedFlask : BaseItem
     {
         [Constructable]
         public EmptyRibbedFlask()
@@ -894,7 +894,7 @@ namespace Server.Items
         }
     }
 
-    public class LargeYellowFlask : Item
+    public class LargeYellowFlask : BaseItem
     {
         [Constructable]
         public LargeYellowFlask()
@@ -924,7 +924,7 @@ namespace Server.Items
         }
     }
 
-    public class LargeVioletFlask : Item
+    public class LargeVioletFlask : BaseItem
     {
         [Constructable]
         public LargeVioletFlask()
@@ -954,7 +954,7 @@ namespace Server.Items
         }
     }
 
-    public class LargeEmptyFlask : Item
+    public class LargeEmptyFlask : BaseItem
     {
         [Constructable]
         public LargeEmptyFlask()
@@ -984,7 +984,7 @@ namespace Server.Items
         }
     }
 
-    public class AniRedRibbedFlask : Item
+    public class AniRedRibbedFlask : BaseItem
     {
         [Constructable]
         public AniRedRibbedFlask()
@@ -1014,7 +1014,7 @@ namespace Server.Items
         }
     }
 
-    public class AniLargeVioletFlask : Item
+    public class AniLargeVioletFlask : BaseItem
     {
         [Constructable]
         public AniLargeVioletFlask()
@@ -1044,7 +1044,7 @@ namespace Server.Items
         }
     }
 
-    public class AniSmallBlueFlask : Item
+    public class AniSmallBlueFlask : BaseItem
     {
         [Constructable]
         public AniSmallBlueFlask()
@@ -1074,7 +1074,7 @@ namespace Server.Items
         }
     }
 
-    public class SmallBlueBottle : Item
+    public class SmallBlueBottle : BaseItem
     {
         [Constructable]
         public SmallBlueBottle()
@@ -1104,7 +1104,7 @@ namespace Server.Items
         }
     }
 
-    public class SmallGreenBottle2 : Item
+    public class SmallGreenBottle2 : BaseItem
     {
         [Constructable]
         public SmallGreenBottle2()
@@ -1135,7 +1135,7 @@ namespace Server.Items
     }
 
     [Flipable(0x185B, 0x185C)]
-    public class EmptyVialsWRack : Item
+    public class EmptyVialsWRack : BaseItem
     {
         [Constructable]
         public EmptyVialsWRack()
@@ -1166,7 +1166,7 @@ namespace Server.Items
     }
 
     [Flipable(0x185D, 0x185E)]
-    public class FullVialsWRack : Item
+    public class FullVialsWRack : BaseItem
     {
         [Constructable]
         public FullVialsWRack()
@@ -1196,7 +1196,7 @@ namespace Server.Items
         }
     }
 
-    public class EmptyVial : Item
+    public class EmptyVial : BaseItem
     {
         [Constructable]
         public EmptyVial()
@@ -1226,7 +1226,7 @@ namespace Server.Items
         }
     }
 
-    public class HourglassAni : Item
+    public class HourglassAni : BaseItem
     {
         [Constructable]
         public HourglassAni()
@@ -1256,7 +1256,7 @@ namespace Server.Items
         }
     }
 
-    public class Hourglass : Item
+    public class Hourglass : BaseItem
     {
         [Constructable]
         public Hourglass()
@@ -1286,7 +1286,7 @@ namespace Server.Items
         }
     }
 
-    public class TinyRedBottle : Item
+    public class TinyRedBottle : BaseItem
     {
         [Constructable]
         public TinyRedBottle()
@@ -1316,7 +1316,7 @@ namespace Server.Items
         }
     }
 
-    public class EmptyVenomVial : Item
+    public class EmptyVenomVial : BaseItem
     {
         public override int LabelNumber => 1112215;  // empty venom vial
         [Constructable]

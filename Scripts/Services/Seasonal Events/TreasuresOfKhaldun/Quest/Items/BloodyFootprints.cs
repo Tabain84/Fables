@@ -5,7 +5,7 @@
 
 namespace Server.Mobiles
 {
-    public class BloodyFootPrints : Item
+    public class BloodyFootPrints : BaseItem
     {
         [Constructable]
         public BloodyFootPrints(int itemID)

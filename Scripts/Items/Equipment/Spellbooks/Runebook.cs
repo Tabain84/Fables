@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class Runebook : Item, ISecurable, ICraftable
+    public class Runebook : BaseItem, ISecurable, ICraftable
     {
         public override int LabelNumber => 1041267;  // runebook
 

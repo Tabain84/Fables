@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class RelicOfHydros : Item
+    public class RelicOfHydros : BaseItem
     {
         public override int LabelNumber => 1125458;  // relic of hydros
 
@@ -29,7 +29,7 @@ namespace Server.Items
         }
     }
 
-    public class RelicOfLithos : Item
+    public class RelicOfLithos : BaseItem
     {
         public override int LabelNumber => 1125461;  // relic of lithos
 
@@ -58,7 +58,7 @@ namespace Server.Items
         }
     }
 
-    public class RelicOfPyros : Item
+    public class RelicOfPyros : BaseItem
     {
         public override int LabelNumber => 1125459;  // relic of pyros
 
@@ -87,7 +87,7 @@ namespace Server.Items
         }
     }
 
-    public class RelicOfStratos : Item
+    public class RelicOfStratos : BaseItem
     {
         public override int LabelNumber => 1125460;  // relic of stratos
 

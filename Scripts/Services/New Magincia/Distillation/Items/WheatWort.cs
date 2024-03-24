@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WheatWort : Item
+    public class WheatWort : BaseItem
     {
         public override int LabelNumber => 1150275;  // wheat wort
 

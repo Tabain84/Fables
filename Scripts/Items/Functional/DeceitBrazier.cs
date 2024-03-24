@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class DeceitBrazier : Item
+    public class DeceitBrazier : BaseItem
     {
         private static readonly Type[] m_Creatures = new Type[]
         {

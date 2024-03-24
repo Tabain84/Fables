@@ -4,7 +4,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class SorcerersRewardChest : Item
+    public class SorcerersRewardChest : BaseItem
     {
         public override int LabelNumber => 1023712;  // strong box
 

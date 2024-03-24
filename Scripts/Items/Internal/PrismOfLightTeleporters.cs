@@ -91,7 +91,7 @@ namespace Server.Items
         }
     }
 
-    public class CrystalFieldTele : Item
+    public class CrystalFieldTele : BaseItem
     {
         [Constructable]
         public CrystalFieldTele()

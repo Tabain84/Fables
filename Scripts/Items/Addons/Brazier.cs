@@ -5,7 +5,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class RewardBrazier : Item, IRewardItem
+    public class RewardBrazier : BaseItem, IRewardItem
     {
         private static readonly int[] m_Art = new int[]
         {
@@ -132,7 +132,7 @@ namespace Server.Items
         }
     }
 
-    public class RewardBrazierDeed : Item, IRewardItem
+    public class RewardBrazierDeed : BaseItem, IRewardItem
     {
         private bool m_IsRewardItem;
         [Constructable]

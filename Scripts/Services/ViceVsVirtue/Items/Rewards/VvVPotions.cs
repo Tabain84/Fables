@@ -13,7 +13,7 @@ namespace Server.Engines.VvV
         GreaterStamina = 0x8,
     }
 
-    public class VvVPotionKeg : Item
+    public class VvVPotionKeg : BaseItem
     {
         private PotionType _PotionType;
         private int _Charges;
@@ -136,7 +136,7 @@ namespace Server.Engines.VvV
         }
     }
 
-    public abstract class VvVPotion : Item
+    public abstract class VvVPotion : BaseItem
     {
         public virtual TimeSpan CooldownDuration => TimeSpan.MinValue;
         public virtual PotionType CooldownType => PotionType.None;

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class LowYewTable : Item
+    public class LowYewTable : BaseItem
     {
         public override int LabelNumber => 1075502;  // Low Yew Table
 

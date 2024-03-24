@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class EtherealSoulbinder : Item
+    public class EtherealSoulbinder : BaseItem
     {
         public override int LabelNumber => 1159167;  // ethereal soulbinder
 

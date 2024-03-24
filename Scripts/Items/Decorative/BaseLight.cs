@@ -6,7 +6,7 @@ using System;
 
 namespace Server.Items
 {
-    public abstract class BaseLight : Item, ICraftable, IResource, IQuality, ISecurable
+    public abstract class BaseLight : BaseItem, ICraftable, IResource, IQuality, ISecurable
     {
         public static readonly bool Burnout = false;
         private Timer m_Timer;

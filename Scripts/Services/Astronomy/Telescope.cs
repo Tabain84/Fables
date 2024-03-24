@@ -9,7 +9,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0xA12C, 0xA12D)]
-    public class PersonalTelescope : Item, ISecurable
+    public class PersonalTelescope : BaseItem, ISecurable
     {
         private string _DisplayName;
         private double _DEC;

@@ -4,7 +4,7 @@ using System;
 namespace Server.Items
 {
     [Flipable(0x27AC, 0x27F7)]
-    public class Shuriken : Item, ICraftable, INinjaAmmo
+    public class Shuriken : BaseItem, ICraftable, INinjaAmmo
     {
         private int m_UsesRemaining;
         private Poison m_Poison;

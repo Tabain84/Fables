@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class GrobusFur : Item
+    public class GrobusFur : BaseItem
     {
         [Constructable]
         public GrobusFur()

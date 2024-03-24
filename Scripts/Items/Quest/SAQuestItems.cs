@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class AcidSac : Item
+    public class AcidSac : BaseItem
     {
         [Constructable]
         public AcidSac()
@@ -113,7 +113,7 @@ namespace Server.Items
         }
     }
 
-    public class AncientPotteryFragments : Item
+    public class AncientPotteryFragments : BaseItem
     {
         [Constructable]
         public AncientPotteryFragments()
@@ -143,7 +143,7 @@ namespace Server.Items
         }
     }
 
-    public class BouraPelt : Item, ICommodity
+    public class BouraPelt : BaseItem, ICommodity
     {
         [Constructable]
         public BouraPelt()
@@ -183,7 +183,7 @@ namespace Server.Items
         }
     }
 
-    public class ClawSlasherVeils : Item
+    public class ClawSlasherVeils : BaseItem
     {
         [Constructable]
         public ClawSlasherVeils()
@@ -220,7 +220,7 @@ namespace Server.Items
         }
     }
 
-    public class CongealedSlugAcid : Item
+    public class CongealedSlugAcid : BaseItem
     {
         [Constructable]
         public CongealedSlugAcid()
@@ -258,7 +258,7 @@ namespace Server.Items
     }
 
     [TypeAlias("Server.Items.EnchantEssence")]
-    public class EnchantedEssence : Item, ICommodity
+    public class EnchantedEssence : BaseItem, ICommodity
     {
         [Constructable]
         public EnchantedEssence()
@@ -297,7 +297,7 @@ namespace Server.Items
         }
     }
 
-    public class FairyDragonWing : Item
+    public class FairyDragonWing : BaseItem
     {
         [Constructable]
         public FairyDragonWing()
@@ -336,7 +336,7 @@ namespace Server.Items
         }
     }
 
-    public class LeatherWolfSkin : Item
+    public class LeatherWolfSkin : BaseItem
     {
         [Constructable]
         public LeatherWolfSkin()
@@ -381,7 +381,7 @@ namespace Server.Items
         }
     }
 
-    public class LuckyCoin : Item, ICommodity
+    public class LuckyCoin : BaseItem, ICommodity
     {
         [Constructable]
         public LuckyCoin()
@@ -457,7 +457,7 @@ namespace Server.Items
         }
     }
 
-    public class MagicalResidue : Item, ICommodity
+    public class MagicalResidue : BaseItem, ICommodity
     {
         [Constructable]
         public MagicalResidue()
@@ -496,7 +496,7 @@ namespace Server.Items
         }
     }
 
-    public class PileInspectedIngots : Item
+    public class PileInspectedIngots : BaseItem
     {
         [Constructable]
         public PileInspectedIngots()
@@ -535,7 +535,7 @@ namespace Server.Items
         }
     }
 
-    public class RelicFragment : Item, ICommodity
+    public class RelicFragment : BaseItem, ICommodity
     {
         [Constructable]
         public RelicFragment()
@@ -574,7 +574,7 @@ namespace Server.Items
         }
     }
 
-    public class SearedFireAntGoo : Item
+    public class SearedFireAntGoo : BaseItem
     {
         [Constructable]
         public SearedFireAntGoo()
@@ -610,7 +610,7 @@ namespace Server.Items
         }
     }
 
-    public class StygianDragonHead : Item
+    public class StygianDragonHead : BaseItem
     {
         [Constructable]
         public StygianDragonHead()
@@ -647,7 +647,7 @@ namespace Server.Items
         }
     }
 
-    public class TatteredAncientScroll : Item
+    public class TatteredAncientScroll : BaseItem
     {
         [Constructable]
         public TatteredAncientScroll()
@@ -691,7 +691,7 @@ namespace Server.Items
         }
     }
 
-    public class UndamagedIronBeetleScale : Item, ICommodity
+    public class UndamagedIronBeetleScale : BaseItem, ICommodity
     {
         [Constructable]
         public UndamagedIronBeetleScale()
@@ -734,7 +734,7 @@ namespace Server.Items
         }
     }
 
-    public class UndeadGargHorn : Item
+    public class UndeadGargHorn : BaseItem
     {
         [Constructable]
         public UndeadGargHorn()
@@ -774,7 +774,7 @@ namespace Server.Items
         }
     }
 
-    public class UndeadGargMedallion : Item
+    public class UndeadGargMedallion : BaseItem
     {
         [Constructable]
         public UndeadGargMedallion()
@@ -818,7 +818,7 @@ namespace Server.Items
     }
 
     [TypeAlias("Server.Items.UntransTome")]
-    public class UntranslatedAncientTome : Item
+    public class UntranslatedAncientTome : BaseItem
     {
         [Constructable]
         public UntranslatedAncientTome()
@@ -860,7 +860,7 @@ namespace Server.Items
         }
     }
 
-    public class CrystalDust : Item
+    public class CrystalDust : BaseItem
     {
         public override int LabelNumber => 1112328;  // crystal dust
 
@@ -900,7 +900,7 @@ namespace Server.Items
         }
     }
 
-    public class BarrelOfBarley : Item
+    public class BarrelOfBarley : BaseItem
     {
         public override int LabelNumber => 1094999;  // Barrel of Barley
 
@@ -929,7 +929,7 @@ namespace Server.Items
         }
     }
 
-    public class FlintsLogbook : Item
+    public class FlintsLogbook : BaseItem
     {
         public override int LabelNumber => 1095000;  // Flint's Logbook
 
@@ -993,7 +993,7 @@ namespace Server.Items
     }
 
     [Flipable(6870, 6871)]
-    public class KegOfFlintsPungnentBrew : Item
+    public class KegOfFlintsPungnentBrew : BaseItem
     {
         public override int LabelNumber => 1113608;  // a keg of Flint's Pungent Brew
 
@@ -1022,7 +1022,7 @@ namespace Server.Items
         }
     }
 
-    public class FloorTrapComponent : Item
+    public class FloorTrapComponent : BaseItem
     {
         public override int LabelNumber => 1095001;  // Floor Trap Components
 

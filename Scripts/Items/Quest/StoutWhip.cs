@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class StoutWhip : Item
+    public class StoutWhip : BaseItem
     {
         [Constructable]
         public StoutWhip()

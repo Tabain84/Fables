@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Sand : Item, ICommodity
+    public class Sand : BaseItem, ICommodity
     {
         public override int LabelNumber => 1044626;  // sand
         public override double DefaultWeight => 0.1;

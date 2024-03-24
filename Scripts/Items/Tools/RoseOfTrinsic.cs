@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0x234C, 0x234D)]
-    public class RoseOfTrinsic : Item, ISecurable, ICommodity
+    public class RoseOfTrinsic : BaseItem, ISecurable, ICommodity
     {
         private static readonly TimeSpan m_SpawnTime = TimeSpan.FromHours(4.0);
         private int m_Petals;
@@ -168,7 +168,7 @@ namespace Server.Items
         }
     }
 
-    public class RoseOfTrinsicPetal : Item
+    public class RoseOfTrinsicPetal : BaseItem
     {
         [Constructable]
         public RoseOfTrinsicPetal()

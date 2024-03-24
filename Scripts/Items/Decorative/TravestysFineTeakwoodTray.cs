@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TravestysFineTeakwoodTray : Item
+    public class TravestysFineTeakwoodTray : BaseItem
     {
         [Constructable]
         public TravestysFineTeakwoodTray()

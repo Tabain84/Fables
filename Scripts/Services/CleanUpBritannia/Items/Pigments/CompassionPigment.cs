@@ -91,7 +91,7 @@ namespace Server.Items
         };
     }
 
-    public class CompassionPigment : Item, IUsesRemaining
+    public class CompassionPigment : BaseItem, IUsesRemaining
     {
         public override int LabelNumber => CompassionPigmentInfo.GetInfo(m_Type).LabelNumber;
 

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.Quests.RitualQuest
 {
-    public class CrystalLotusPuzzle : Item
+    public class CrystalLotusPuzzle : BaseItem
     {
         public static CrystalLotusPuzzle Instance { get; set; }
 
@@ -377,7 +377,7 @@ namespace Server.Engines.Quests.RitualQuest
         }
     }
 
-    public class PuzzleTile : Item
+    public class PuzzleTile : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public CrystalLotusPuzzle Puzzle { get; set; }

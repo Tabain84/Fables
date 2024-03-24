@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public abstract class BaseScales : Item, ICommodity
+    public abstract class BaseScales : BaseItem, ICommodity
     {
         protected virtual CraftResource DefaultResource => CraftResource.RedScales;
 

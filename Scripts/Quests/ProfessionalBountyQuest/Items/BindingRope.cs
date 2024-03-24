@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BindingRope : Item
+    public class BindingRope : BaseItem
     {
         private Mobile m_BoundMobile;
         private ProfessionalBountyQuest m_Quest;

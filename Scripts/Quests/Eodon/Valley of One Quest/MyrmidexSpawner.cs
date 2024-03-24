@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class MyrmidexHill : Item
+    public class MyrmidexHill : BaseItem
     {
         private readonly Type[] _SpawnList =
         {

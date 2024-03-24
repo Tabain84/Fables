@@ -3,7 +3,7 @@
 namespace Server.Items
 {
     [Flipable(0x42CD, 0x42CE)]
-    public class OrderBanner : Item, IRewardItem
+    public class OrderBanner : BaseItem, IRewardItem
     {
         private bool m_IsRewardItem;
 
@@ -42,7 +42,7 @@ namespace Server.Items
     }
 
     [Flipable(0x42CB, 0x42CC)]
-    public class ChaosBanner : Item, IRewardItem
+    public class ChaosBanner : BaseItem, IRewardItem
     {
         private bool m_IsRewardItem;
 

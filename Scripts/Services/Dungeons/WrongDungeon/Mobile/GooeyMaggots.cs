@@ -95,7 +95,7 @@ namespace Server.Mobiles
         }
     }
 
-    public class GooeyMaggotSlime : Item
+    public class GooeyMaggotSlime : BaseItem
     {
         public override int LabelNumber => 1015246;  // Slime
 

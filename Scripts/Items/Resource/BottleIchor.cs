@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BottleIchor : Item, ICommodity
+    public class BottleIchor : BaseItem, ICommodity
     {
         [Constructable]
         public BottleIchor()

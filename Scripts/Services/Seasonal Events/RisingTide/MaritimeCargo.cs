@@ -23,7 +23,7 @@ namespace Server.Items
     }
 
     [Flipable(0xA2C4, 0xA2C5)]
-    public class MaritimeCargo : Item
+    public class MaritimeCargo : BaseItem
     {
         private CargoQuality _CargoQuality;
         private CargoType _CargoType;

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class DaemonClaw : Item, ICommodity
+    public class DaemonClaw : BaseItem, ICommodity
     {
         [Constructable]
         public DaemonClaw()

@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Items
 {
-    public class MysteriousFragment : Item
+    public class MysteriousFragment : BaseItem
     {
         public override int LabelNumber => 1159025;  // mysterious fragment
 

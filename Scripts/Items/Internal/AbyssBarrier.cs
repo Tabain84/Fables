@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class AbyssBarrier : Item
+    public class AbyssBarrier : BaseItem
     {
 
         [Constructable]

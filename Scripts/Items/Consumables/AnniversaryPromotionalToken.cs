@@ -9,7 +9,7 @@ namespace Server.Items
         CrystalItems
     }
 
-    public class AnniversaryPromotionalToken : Item
+    public class AnniversaryPromotionalToken : BaseItem
     {
         public override int LabelNumber
         {

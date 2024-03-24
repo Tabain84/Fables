@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Engines.ArtisanFestival
 {
-    public class SantasGiftBag : Item
+    public class SantasGiftBag : BaseItem
     {
         public override bool ForceShowProperties => true;
         public override int LabelNumber => 1157280;  // Santa's Gift Bag

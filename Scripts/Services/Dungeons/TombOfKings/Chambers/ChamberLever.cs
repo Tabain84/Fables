@@ -2,7 +2,7 @@
 
 namespace Server.Engines.TombOfKings
 {
-    public class ChamberLever : Item
+    public class ChamberLever : BaseItem
     {
         public static void Generate()
         {

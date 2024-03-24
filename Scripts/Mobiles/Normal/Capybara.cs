@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    public class CapybaraStatue : Item, ICreatureStatuette
+    public class CapybaraStatue : BaseItem, ICreatureStatuette
     {
         public override int LabelNumber => 1159492;  // Capybara
 

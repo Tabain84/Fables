@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA5CE, 0xA5CF, 0xA5D0, 0xA5D1)]
-    public class SilverPlatedTome : Item
+    public class SilverPlatedTome : BaseItem
     {
         private string _DisplayName;
 

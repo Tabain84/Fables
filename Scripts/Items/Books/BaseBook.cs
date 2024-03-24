@@ -55,7 +55,7 @@ namespace Server.Items
 		}
 	}
 
-	public class BaseBook : Item, ISecurable
+	public class BaseBook : BaseItem, ISecurable
 	{
 		public const int LineLimit = 10, LineLengthLimit = 53, DefaultPageCount = 20;
 

@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class HouseTeleporter : Item, ISecurable
+    public class HouseTeleporter : BaseItem, ISecurable
     {
         private Item m_Target;
         private SecureLevel m_Level;

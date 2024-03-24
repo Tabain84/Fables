@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class TribalPaint : Item
+    public class TribalPaint : BaseItem
     {
         [Constructable]
         public TribalPaint()

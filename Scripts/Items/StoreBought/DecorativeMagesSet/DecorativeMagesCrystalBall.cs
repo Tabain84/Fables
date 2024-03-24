@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Furniture]
-    public class DecorativeMagesCrystalBall : Item
+    public class DecorativeMagesCrystalBall : BaseItem
     {
         public override int LabelNumber => 1126487;  // crystal ball
 

@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class Lever : Item
+    public class Lever : BaseItem
     {
         [Constructable]
         public Lever()

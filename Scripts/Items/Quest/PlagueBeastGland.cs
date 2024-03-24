@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PlagueBeastGland : Item
+    public class PlagueBeastGland : BaseItem
     {
         public override int LabelNumber => 1153759;  // a healthy gland
 

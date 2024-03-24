@@ -2,7 +2,7 @@ namespace Server.Items
 {
     [Furniture]
     [Flipable(0x1945, 0x1946)]
-    public class CarvedWoodenScreen : Item
+    public class CarvedWoodenScreen : BaseItem
     {
         public override int LabelNumber => 1075495;  // Carved Wooden Screen
 

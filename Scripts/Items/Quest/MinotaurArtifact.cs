@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class MinotaurArtifact : Item
+    public class MinotaurArtifact : BaseItem
     {
         [Constructable]
         public MinotaurArtifact()

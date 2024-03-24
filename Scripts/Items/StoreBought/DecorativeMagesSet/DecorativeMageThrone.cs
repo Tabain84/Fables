@@ -2,7 +2,7 @@ namespace Server.Items
 {
     [Furniture]
     [Flipable(0xA586, 0xA587)]
-    public class DecorativeMageThrone : Item
+    public class DecorativeMageThrone : BaseItem
     {
         public override int LabelNumber => 1098456;  // chair
 

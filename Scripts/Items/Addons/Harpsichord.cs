@@ -22,7 +22,7 @@ namespace Server.Items
         DarkPurple = 2609
     }
 
-    public class HarpsichordRoll : Item
+    public class HarpsichordRoll : BaseItem
     {
         public override int LabelNumber => 1098233;  // An Harpsichord Roll
 

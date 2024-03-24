@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class CoffinPiece : Item
+    public class CoffinPiece : BaseItem
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1116783;

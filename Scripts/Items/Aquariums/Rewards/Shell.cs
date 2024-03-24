@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Shell : Item
+    public class Shell : BaseItem
     {
         [Constructable]
         public Shell()

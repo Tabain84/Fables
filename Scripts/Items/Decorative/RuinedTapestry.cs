@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class RuinedTapestry : Item
+    public class RuinedTapestry : BaseItem
     {
         public override int LabelNumber => 1096945;  // ruined tapestry
 

@@ -168,7 +168,7 @@ namespace Server.Items
         }
     }
 
-    public class MyrmidexIdol : Item
+    public class MyrmidexIdol : BaseItem
     {
         public override int LabelNumber => 1156823;  // Idol of Zipactriotl
 
@@ -217,7 +217,7 @@ namespace Server.Items
         }
     }
 
-    public class StasisChamberPowerCore : Item
+    public class StasisChamberPowerCore : BaseItem
     {
         public override int LabelNumber => 1156623;
 
@@ -244,7 +244,7 @@ namespace Server.Items
         }
     }
 
-    public class StasisChamberActivator : Item
+    public class StasisChamberActivator : BaseItem
     {
         public override int LabelNumber => 1156624;
 
@@ -272,7 +272,7 @@ namespace Server.Items
         }
     }
 
-    public class StasisChamberRegulator : Item
+    public class StasisChamberRegulator : BaseItem
     {
         public override int LabelNumber => 1156626;
 
@@ -300,7 +300,7 @@ namespace Server.Items
         }
     }
 
-    public class StasisChamberStator : Item
+    public class StasisChamberStator : BaseItem
     {
         public override int LabelNumber => 1156628;
 
@@ -328,7 +328,7 @@ namespace Server.Items
         }
     }
 
-    public class BottledMyrmidexPheromone : Item
+    public class BottledMyrmidexPheromone : BaseItem
     {
         public override int LabelNumber => 1156620;
 
@@ -356,7 +356,7 @@ namespace Server.Items
         }
     }
 
-    public class BottleOfConcentratedInsecticide : Item
+    public class BottleOfConcentratedInsecticide : BaseItem
     {
         public override int LabelNumber => 1156617;
 
@@ -384,7 +384,7 @@ namespace Server.Items
         }
     }
 
-    public class MyrmidexPopulationReport : Item
+    public class MyrmidexPopulationReport : BaseItem
     {
         public override int LabelNumber => 1156775;
 
@@ -413,7 +413,7 @@ namespace Server.Items
         }
     }
 
-    public class UnabridgedAtlasOfEodon : Item
+    public class UnabridgedAtlasOfEodon : BaseItem
     {
         public override int LabelNumber => 1156721;  // Unabridged Atlas of Eodon
 

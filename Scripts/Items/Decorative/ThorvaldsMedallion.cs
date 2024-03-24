@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ThorvaldsMedallion : Item
+    public class ThorvaldsMedallion : BaseItem
     {
         [Constructable]
         public ThorvaldsMedallion()

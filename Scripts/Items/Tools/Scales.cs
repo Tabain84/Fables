@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class Scales : Item, IResource, IQuality
+    public class Scales : BaseItem, IResource, IQuality
     {
         private CraftResource _Resource;
         private Mobile _Crafter;

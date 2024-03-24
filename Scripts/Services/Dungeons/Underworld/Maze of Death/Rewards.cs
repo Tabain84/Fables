@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(5353, 5354)]
-    public class MouldingBoard : Item
+    public class MouldingBoard : BaseItem
     {
         [Constructable]
         public MouldingBoard()
@@ -26,7 +26,7 @@ namespace Server.Items
         }
     }
 
-    public class DoughBowl : Item
+    public class DoughBowl : BaseItem
     {
         [Constructable]
         public DoughBowl()
@@ -52,7 +52,7 @@ namespace Server.Items
         }
     }
 
-    public class HornedTotemPole : Item
+    public class HornedTotemPole : BaseItem
     {
         [Constructable]
         public HornedTotemPole()
@@ -78,7 +78,7 @@ namespace Server.Items
         }
     }
 
-    public class LargeSquarePillow : Item
+    public class LargeSquarePillow : BaseItem
     {
         [Constructable]
         public LargeSquarePillow()
@@ -104,7 +104,7 @@ namespace Server.Items
         }
     }
 
-    public class LargeDiamondPillow : Item
+    public class LargeDiamondPillow : BaseItem
     {
         [Constructable]
         public LargeDiamondPillow()
@@ -130,7 +130,7 @@ namespace Server.Items
         }
     }
 
-    public class DustyPillow : Item
+    public class DustyPillow : BaseItem
     {
         public override int LabelNumber => 1113638;  // dusty pillow
 
@@ -158,7 +158,7 @@ namespace Server.Items
         }
     }
 
-    public class StatuePedestal : Item
+    public class StatuePedestal : BaseItem
     {
         [Constructable]
         public StatuePedestal()
@@ -184,7 +184,7 @@ namespace Server.Items
         }
     }
 
-    public class FlouredBreadBoard : Item
+    public class FlouredBreadBoard : BaseItem
     {
         public override int LabelNumber => 1113639;  // floured bread board
 

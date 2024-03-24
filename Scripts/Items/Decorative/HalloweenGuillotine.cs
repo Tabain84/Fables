@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class HalloweenGuillotine : Item
+    public class HalloweenGuillotine : BaseItem
     {
         [Constructable]
         public HalloweenGuillotine()

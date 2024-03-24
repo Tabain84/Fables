@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Engines.ArenaSystem
 {
-    public class ArenaGate : Item
+    public class ArenaGate : BaseItem
     {
         public override bool ForceShowProperties => true;
         public override int LabelNumber => 1115879;  // Arena Gate

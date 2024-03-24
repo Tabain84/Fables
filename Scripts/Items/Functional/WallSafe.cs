@@ -9,7 +9,7 @@ using System.Globalization;
 namespace Server.Items
 {
     [Flipable(0x8B8F, 0x8B90)]
-    public class WallSafe : Item, IAddon, ISecurable, IChopable
+    public class WallSafe : BaseItem, IAddon, ISecurable, IChopable
     {
         public const int MaxGold = 100000000;
         public const int HistoryMax = 15;
@@ -158,7 +158,7 @@ namespace Server.Items
         }
     }
 
-    public class WallSafeDeed : Item
+    public class WallSafeDeed : BaseItem
     {
         public override int LabelNumber => 1155857;  // Currency Wall Safe
 

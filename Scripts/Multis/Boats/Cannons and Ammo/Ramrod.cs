@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Ramrod : Item
+    public class Ramrod : BaseItem
     {
         public override int LabelNumber => 1095838;  // ramrod
 

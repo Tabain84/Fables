@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class ProfessionalBountyBoard : Item
+    public class ProfessionalBountyBoard : BaseItem
     {
         [Constructable]
         public ProfessionalBountyBoard() : base(7774)

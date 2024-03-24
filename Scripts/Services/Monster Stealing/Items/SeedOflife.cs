@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [TypeAlias("drNO.ThieveItems.SeedOflife")]
-    public class SeedOfLife : Item
+    public class SeedOfLife : BaseItem
     {
         private static readonly Dictionary<PlayerMobile, DateTime> SeedUsageList = new Dictionary<PlayerMobile, DateTime>();
         private static TimeSpan Cooldown = TimeSpan.FromMinutes(10);

@@ -35,7 +35,7 @@ namespace Server.Items
         Tinkering
     }
 
-    public class BaseTalisman : Item, IWearableDurability, IVvVItem, IOwnerRestricted, ITalismanProtection, ITalismanKiller, IArtifact
+    public class BaseTalisman : BaseItem, IWearableDurability, IVvVItem, IOwnerRestricted, ITalismanProtection, ITalismanKiller, IArtifact
     {
         private bool _VvVItem;
         private Mobile _Owner;

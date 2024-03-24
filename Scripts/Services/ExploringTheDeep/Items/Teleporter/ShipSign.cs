@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class ShipSign : Item
+    public class ShipSign : BaseItem
     {
         private int m_Cliloc;
 

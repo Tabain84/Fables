@@ -57,7 +57,7 @@ namespace Server.Items
         }
     }
 
-    public class ClothingBlessDeed : Item // Create the item class which is derived from the base item class
+    public class ClothingBlessDeed : BaseItem // Create the item class which is derived from the base item class
     {
         public override int LabelNumber => 1041008;  // A clothing bless deed
 

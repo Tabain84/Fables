@@ -10,7 +10,7 @@ namespace Server.Items
         RecipeBook = 3
     }
 
-    public class HolidayGiftToken2018 : Item, IRewardOption
+    public class HolidayGiftToken2018 : BaseItem, IRewardOption
     {
         public override int LabelNumber => 1158831;  // 2018 Holiday Gift Token
 

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public abstract class BaseDoor : Item, ILockable, ITelekinesisable
+    public abstract class BaseDoor : BaseItem, ILockable, ITelekinesisable
     {
         private static readonly string m_TimerID = "CloseDoorTimer";
         private static readonly Point3D[] m_Offsets = new Point3D[]

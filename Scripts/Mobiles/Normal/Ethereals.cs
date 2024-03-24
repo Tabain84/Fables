@@ -9,7 +9,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    public class EtherealMount : Item, IMount, IMountItem, IRewardItem
+    public class EtherealMount : BaseItem, IMount, IMountItem, IRewardItem
     {
         public static readonly int DefaultEtherealHue = 0x4001;
 

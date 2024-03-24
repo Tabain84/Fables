@@ -21,7 +21,7 @@ using System.Collections.Generic;
 //
 namespace Server.Engines.CannedEvil
 {
-    public class PrimevalLichPuzzleLever : Item
+    public class PrimevalLichPuzzleLever : BaseItem
     {
         private PrimevalLichPuzzle m_Controller;
         private byte m_Code;
@@ -84,7 +84,7 @@ namespace Server.Engines.CannedEvil
         }
     }
 
-    public class PrimevalLichPuzzle : Item
+    public class PrimevalLichPuzzle : BaseItem
     {
         // expected location of the Priveval Lich champion altar
         private static readonly Point3D altarLoc = new Point3D(7001, 1008, -15);

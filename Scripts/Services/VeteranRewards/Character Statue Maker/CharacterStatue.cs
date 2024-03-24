@@ -447,7 +447,7 @@ namespace Server.Mobiles
         }
     }
 
-    public class CharacterStatueDeed : Item, IRewardItem
+    public class CharacterStatueDeed : BaseItem, IRewardItem
     {
         private CharacterStatue m_Statue;
         private StatueType m_Type;

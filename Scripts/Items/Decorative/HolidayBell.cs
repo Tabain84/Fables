@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class HolidayBell : Item
+    public class HolidayBell : BaseItem
     {
         private static readonly string[] m_StaffNames = new string[]
         {

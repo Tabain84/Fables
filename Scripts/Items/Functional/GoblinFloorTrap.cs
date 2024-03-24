@@ -123,7 +123,7 @@ namespace Server.Items
         }
     }
 
-    public class GoblinFloorTrapKit : Item
+    public class GoblinFloorTrapKit : BaseItem
     {
         [Constructable]
         public GoblinFloorTrapKit() : base(16704)

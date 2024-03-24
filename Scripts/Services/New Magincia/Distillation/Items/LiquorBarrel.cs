@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class LiquorBarrel : Item, ICraftable
+    public class LiquorBarrel : BaseItem, ICraftable
     {
         private Liquor m_Liquor;
         private DateTime m_MaturationBegin;

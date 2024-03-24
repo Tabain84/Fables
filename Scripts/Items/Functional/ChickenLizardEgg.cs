@@ -21,7 +21,7 @@ namespace Server.Items
         Dehydrated
     }
 
-    public class ChickenLizardEgg : Item
+    public class ChickenLizardEgg : BaseItem
     {
         public virtual bool CanMutate => true;
 

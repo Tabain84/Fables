@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Potash : Item, ICommodity
+    public class Potash : BaseItem, ICommodity
     {
         public override int LabelNumber => 1116319;  // potash
 

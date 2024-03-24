@@ -12,7 +12,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class PublicMoongate : Item
+    public class PublicMoongate : BaseItem
     {
         public static List<PublicMoongate> Moongates { get; private set; }
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class RefinementAmalgamator : Item
+    public class RefinementAmalgamator : BaseItem
     {
         public List<RefinementComponent> ToCombine { get; set; }
         public RefinementComponent ToUpgrade { get; set; }

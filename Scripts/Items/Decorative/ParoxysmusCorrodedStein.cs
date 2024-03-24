@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ParoxysmusCorrodedStein : Item
+    public class ParoxysmusCorrodedStein : BaseItem
     {
         [Constructable]
         public ParoxysmusCorrodedStein()

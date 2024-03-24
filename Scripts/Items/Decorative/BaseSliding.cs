@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BaseSliding : Item
+    public class BaseSliding : BaseItem
     {
         private int m_OpenedID;
         private int m_ClosedID;

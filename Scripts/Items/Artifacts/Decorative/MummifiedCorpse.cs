@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class MummifiedCorpse : Item
+    public class MummifiedCorpse : BaseItem
     {
         public override int LabelNumber => 1112400;  //a mummified corpse
 

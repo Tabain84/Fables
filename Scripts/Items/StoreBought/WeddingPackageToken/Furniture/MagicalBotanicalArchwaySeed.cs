@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class MagicalBotanicalArchwaySeed : Item
+    public class MagicalBotanicalArchwaySeed : BaseItem
     {
         public override int LabelNumber => 1157337; // Magical Botanical Archway Seed
 

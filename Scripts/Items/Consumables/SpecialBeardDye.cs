@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class SpecialBeardDye : Item
+    public class SpecialBeardDye : BaseItem
     {
         [Constructable]
         public SpecialBeardDye()

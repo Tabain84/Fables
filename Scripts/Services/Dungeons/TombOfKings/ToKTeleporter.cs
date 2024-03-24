@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class ToKTeleporter : Item
+    public class ToKTeleporter : BaseItem
     {
         private static readonly Point3D m_Dest = new Point3D(35, 215, -5);
 

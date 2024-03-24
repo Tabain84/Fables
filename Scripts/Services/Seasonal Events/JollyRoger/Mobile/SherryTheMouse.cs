@@ -144,7 +144,7 @@ namespace Server.Engines.JollyRoger
         }
     }
 
-    public class SherryLute : Item
+    public class SherryLute : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public string Note { get; set; }

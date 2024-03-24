@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class StinkingCauldron : Item
+    public class StinkingCauldron : BaseItem
     {
         public override int LabelNumber => 1152163;  // stinking cauldron
 

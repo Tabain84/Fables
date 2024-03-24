@@ -3,7 +3,7 @@ using Server.Multis;
 
 namespace Server.Items
 {
-    public class BindingPole : Item, IGalleonFixture
+    public class BindingPole : BaseItem, IGalleonFixture
     {
         private BaseQuest m_Quest;
         private BaseGalleon m_Galleon;

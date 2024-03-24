@@ -765,7 +765,7 @@ namespace Server.Mobiles
     }
 
     [Flipable(0x14F0, 0x14EF)]
-    public class StewardDeed : Item
+    public class StewardDeed : BaseItem
     {
         public override int LabelNumber => 1153344;  // Steward Deed
 

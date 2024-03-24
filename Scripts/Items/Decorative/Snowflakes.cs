@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BlueSnowflake : Item
+    public class BlueSnowflake : BaseItem
     {
         [Constructable]
         public BlueSnowflake()
@@ -30,7 +30,7 @@ namespace Server.Items
         }
     }
 
-    public class WhiteSnowflake : Item
+    public class WhiteSnowflake : BaseItem
     {
         [Constructable]
         public WhiteSnowflake()

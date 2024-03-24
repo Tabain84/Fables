@@ -2,7 +2,7 @@ using Server.Engines.Plants;
 
 namespace Server.Items
 {
-    public class PlantClippings : Item, IPlantHue
+    public class PlantClippings : BaseItem, IPlantHue
     {
         private PlantHue m_PlantHue;
 

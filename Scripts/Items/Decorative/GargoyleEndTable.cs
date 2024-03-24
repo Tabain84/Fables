@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Furniture]
-    public class GargoyleEndTable : Item
+    public class GargoyleEndTable : BaseItem
     {
         [Constructable]
         public GargoyleEndTable()

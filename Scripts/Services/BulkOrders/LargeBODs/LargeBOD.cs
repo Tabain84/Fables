@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Server.Engines.BulkOrders
 {
     [TypeAlias("Scripts.Engines.BulkOrders.LargeBOD")]
-    public abstract class LargeBOD : Item, IBOD
+    public abstract class LargeBOD : BaseItem, IBOD
     {
         public abstract BODType BODType { get; }
 

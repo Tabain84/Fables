@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x4F7C, 0x4F7D)]
-    public class CupidStatue : Item
+    public class CupidStatue : BaseItem
     {
         public override int LabelNumber => 1099220;  // cupid statue
 

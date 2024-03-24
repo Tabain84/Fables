@@ -1,6 +1,6 @@
 ﻿namespace Server.Engines.TombOfKings
 {
-    public class ChamberSwitch : Item
+    public class ChamberSwitch : BaseItem
     {
         private readonly Chamber m_Chamber;
 

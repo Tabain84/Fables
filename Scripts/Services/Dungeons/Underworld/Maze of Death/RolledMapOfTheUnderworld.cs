@@ -2,7 +2,7 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public class RolledMapOfTheUnderworld : Item
+    public class RolledMapOfTheUnderworld : BaseItem
     {
         [Constructable]
         public RolledMapOfTheUnderworld() : base(5357)

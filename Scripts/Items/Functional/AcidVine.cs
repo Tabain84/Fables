@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AcidVine : Item
+    public class AcidVine : BaseItem
     {
         public override int LabelNumber => 1111655;  // magic vines
         public override bool ForceShowProperties => true;

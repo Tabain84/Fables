@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BarrelLid : Item, IResource, IQuality
+    public class BarrelLid : BaseItem, IResource, IQuality
     {
         private CraftResource _Resource;
         private ItemQuality _Quality;
@@ -82,7 +82,7 @@ namespace Server.Items
     }
 
     [Flipable(0x1EB1, 0x1EB2, 0x1EB3, 0x1EB4)]
-    public class BarrelStaves : Item, IResource, IQuality
+    public class BarrelStaves : BaseItem, IResource, IQuality
     {
         private CraftResource _Resource;
         private ItemQuality _Quality;
@@ -160,7 +160,7 @@ namespace Server.Items
         }
     }
 
-    public class BarrelHoops : Item, IResource, IQuality
+    public class BarrelHoops : BaseItem, IResource, IQuality
     {
         private CraftResource _Resource;
         private ItemQuality _Quality;
@@ -243,7 +243,7 @@ namespace Server.Items
         }
     }
 
-    public class BarrelTap : Item, IResource, IQuality
+    public class BarrelTap : BaseItem, IResource, IQuality
     {
         private CraftResource _Resource;
         private ItemQuality _Quality;

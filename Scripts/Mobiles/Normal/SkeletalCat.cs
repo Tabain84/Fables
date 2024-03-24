@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    public class SkeletalCatStatue : Item, ICreatureStatuette
+    public class SkeletalCatStatue : BaseItem, ICreatureStatuette
     {
         public override int LabelNumber => 1158462;  // Skeletal Cat
 

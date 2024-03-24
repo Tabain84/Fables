@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class BestWaveBoard : Item
+    public class BestWaveBoard : BaseItem
     {
         public override bool ForceShowProperties => true;
 

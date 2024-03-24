@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class MacawSpawner : Item
+    public class MacawSpawner : BaseItem
     {
         public override int LabelNumber => 1124032;  // foil sheet
 

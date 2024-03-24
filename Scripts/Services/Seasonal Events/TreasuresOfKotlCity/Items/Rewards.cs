@@ -378,7 +378,7 @@ namespace Server.Items
         }
     }
 
-    public class TribalBanner : Item, IFlipable
+    public class TribalBanner : BaseItem, IFlipable
     {
         public override int LabelNumber => ItemID + 1084024;
         public override bool ForceShowProperties => true;

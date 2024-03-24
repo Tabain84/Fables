@@ -80,7 +80,7 @@ namespace Server.Items
         }
     }
 
-    public class HoldItem : Item, IGalleonFixture
+    public class HoldItem : BaseItem, IGalleonFixture
     {
         public override int LabelNumber => 1149699;  // cargo hold
         public override bool ForceShowProperties => true;

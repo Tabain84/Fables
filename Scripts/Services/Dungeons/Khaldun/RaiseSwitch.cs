@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class RaiseSwitch : Item
+    public class RaiseSwitch : BaseItem
     {
         private RaisableItem m_RaisableItem;
         private ResetTimer m_ResetTimer;

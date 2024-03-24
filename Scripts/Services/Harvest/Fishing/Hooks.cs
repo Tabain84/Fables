@@ -11,7 +11,7 @@ namespace Server.Items
     }
 
     [Flipable(19270, 19271)]
-    public class BaseFishingHook : Item
+    public class BaseFishingHook : BaseItem
     {
         private int m_Uses;
 

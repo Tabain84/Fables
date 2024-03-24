@@ -369,7 +369,7 @@ namespace Server.Mobiles
             new Point3D(102, 1938, 0),
         };
 
-        private class ClonedItem : Item
+        private class ClonedItem : BaseItem
         {
             public ClonedItem(Item oItem)
                 : base(oItem.ItemID)

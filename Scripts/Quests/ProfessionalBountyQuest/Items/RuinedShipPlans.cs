@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class RuinedShipPlans : Item
+    public class RuinedShipPlans : BaseItem
     {
         public enum PlanType
         {

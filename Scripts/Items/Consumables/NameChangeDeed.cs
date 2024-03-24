@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class NameChangeDeed : Item
+    public class NameChangeDeed : BaseItem
     {
         [Constructable]
         public NameChangeDeed()

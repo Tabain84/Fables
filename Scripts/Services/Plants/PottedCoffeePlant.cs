@@ -6,7 +6,7 @@ using System;
 
 namespace Server.Items
 {
-    public class CoffeeGrounds : Item
+    public class CoffeeGrounds : BaseItem
     {
         public override int LabelNumber => 1155735;  // Coffee Grounds
 
@@ -43,7 +43,7 @@ namespace Server.Items
         }
     }
 
-    public class CoffeePod : Item
+    public class CoffeePod : BaseItem
     {
         public override int LabelNumber => 1123484;  // Coffee Pod
 
@@ -79,7 +79,7 @@ namespace Server.Items
         }
     }
 
-    public class PottedCoffeePlant : Item, ISecurable
+    public class PottedCoffeePlant : BaseItem, ISecurable
     {
         public static readonly TimeSpan CheckDelay = TimeSpan.FromHours(23.0);
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public abstract class BaseIngot : Item, ICommodity, IResource
+    public abstract class BaseIngot : BaseItem, ICommodity, IResource
     {
         protected virtual CraftResource DefaultResource => CraftResource.Iron;
 

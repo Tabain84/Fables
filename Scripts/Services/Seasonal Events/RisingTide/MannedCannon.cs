@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public abstract class MannedCannon : Item
+    public abstract class MannedCannon : BaseItem
     {
         public virtual TimeSpan ScanDelay => TimeSpan.FromSeconds(Utility.RandomMinMax(5, 10));
 

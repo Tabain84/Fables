@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.Mahjong
 {
-    public class MahjongGame : Item, ISecurable
+    public class MahjongGame : BaseItem, ISecurable
     {
         public const int MaxPlayers = 4;
         public const int BaseScore = 30000;

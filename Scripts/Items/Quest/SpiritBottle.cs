@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SpiritBottle : Item
+    public class SpiritBottle : BaseItem
     {
         [Constructable]
         public SpiritBottle()

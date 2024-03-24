@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SamplesOfCorruptedWater : Item
+    public class SamplesOfCorruptedWater : BaseItem
     {
         [Constructable]
         public SamplesOfCorruptedWater()

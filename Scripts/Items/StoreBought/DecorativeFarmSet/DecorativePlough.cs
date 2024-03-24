@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA31F, 0xA320)]
-    public class DecorativePlough : Item
+    public class DecorativePlough : BaseItem
     {
         public override int LabelNumber => 1125783; // plow
 

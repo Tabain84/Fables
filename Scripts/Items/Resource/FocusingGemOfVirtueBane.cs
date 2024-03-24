@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class FocusingGemOfVirtueBane : Item
+    public class FocusingGemOfVirtueBane : BaseItem
     {
         public override int LabelNumber => 1150004;  // Focusing Gem of Virtue Bane
 

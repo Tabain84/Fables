@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class SerpentsJawbone : Item, ISecurable
+    public class SerpentsJawbone : BaseItem, ISecurable
     {
         public static Dictionary<int, Point3D> Locations { get; set; }
 

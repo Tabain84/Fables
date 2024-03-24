@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class DoomSign : Item, IRevealableItem
+    public class DoomSign : BaseItem, IRevealableItem
     {
         public List<Mobile> Revealed { get; set; }
         public Dictionary<Mobile, DateTime> NextMessage { get; set; }

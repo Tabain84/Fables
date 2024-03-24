@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class SealedLettersScroll : Item
+    public class SealedLettersScroll : BaseItem
     {
         public override int LabelNumber => 1023637;  // scroll
 

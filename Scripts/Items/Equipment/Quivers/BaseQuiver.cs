@@ -1177,7 +1177,7 @@ namespace Server.Items
                 Enabled = m_quiver.Ammo == null || m_quiver.Ammo.Amount < m_quiver.Capacity;
             }
 
-            bool Refill<T>(Mobile m, Container c) where T : Item
+            bool Refill<T>(Mobile m, Container c) where T : BaseItem
             {
                 List<T> list = c.FindItemsByType<T>(true).ToList();
 

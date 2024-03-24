@@ -2,7 +2,7 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public abstract class CityBook : Item
+    public abstract class CityBook : BaseItem
     {
         public abstract int Title { get; }
         public abstract int Content { get; }

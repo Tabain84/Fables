@@ -90,7 +90,7 @@ namespace Server.Engines.Quests
         }
     }
 
-    public class EgwexemWrit : Item
+    public class EgwexemWrit : BaseItem
     {
         [Constructable]
         public EgwexemWrit()

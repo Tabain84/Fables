@@ -1,7 +1,7 @@
 ﻿namespace Server.Items
 {
     [Flipable(0x4C62, 0x4C63)]
-    public class BlackthornPainting1 : Item
+    public class BlackthornPainting1 : BaseItem
     {
         public override int LabelNumber => 1023744;  // painting
         public override bool IsArtifact => true;
@@ -33,7 +33,7 @@
     }
 
     [Flipable(0x4C64, 0x4C65)]
-    public class BlackthornPainting2 : Item
+    public class BlackthornPainting2 : BaseItem
     {
         public override int LabelNumber => 1023744;  // painting
         public override bool IsArtifact => true;

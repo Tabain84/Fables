@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BedlamTele : Item
+    public class BedlamTele : BaseItem
     {
         [Constructable]
         public BedlamTele()

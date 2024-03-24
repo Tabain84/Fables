@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0x27AA, 0x27F5)]
-    public class Fukiya : Item, INinjaWeapon
+    public class Fukiya : BaseItem, INinjaWeapon
     {
         private int m_UsesRemaining;
         private Poison m_Poison;

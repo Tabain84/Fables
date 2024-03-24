@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class AutomatonStatue : Item
+    public class AutomatonStatue : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public KotlAutomaton Automaton { get; set; }

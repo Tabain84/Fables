@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class MonsterousInterredGrizzleMaggots : Item
+    public class MonsterousInterredGrizzleMaggots : BaseItem
     {
         [Constructable]
         public MonsterousInterredGrizzleMaggots()

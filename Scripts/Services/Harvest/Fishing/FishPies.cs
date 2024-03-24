@@ -26,7 +26,7 @@ namespace Server.Items
         CastFocus,
     }
 
-    public class BaseFishPie : Item, IQuality
+    public class BaseFishPie : BaseItem, IQuality
     {
         private ItemQuality _Quality;
 

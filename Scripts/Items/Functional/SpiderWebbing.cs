@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class SpiderWebbing : Item
+    public class SpiderWebbing : BaseItem
     {
         private Timer m_Timer;
         private static readonly List<Mobile> m_WebVictims = new List<Mobile>();

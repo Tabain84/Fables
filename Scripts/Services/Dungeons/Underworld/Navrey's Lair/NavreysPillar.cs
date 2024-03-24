@@ -16,7 +16,7 @@ namespace Server.Items
         Nine
     }
 
-    public class NavreysPillar : Item
+    public class NavreysPillar : BaseItem
     {
         private NavreysPillarState m_State;
         private InternalTimer m_Timer;

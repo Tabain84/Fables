@@ -19,7 +19,7 @@ namespace Server.Items
         public PotionEventType Type { get; set; }
     }
 
-    public class PotionOfGloriousFortune : Item
+    public class PotionOfGloriousFortune : BaseItem
     {
         public override int LabelNumber => 1158688;  // Potion of Glorious Fortune        
 

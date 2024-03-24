@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PrismaticCrystal : Item
+    public class PrismaticCrystal : BaseItem
     {
         [Constructable]
         public PrismaticCrystal()

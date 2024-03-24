@@ -4,7 +4,7 @@ using Server.SkillHandlers;
 
 namespace Server.Items
 {
-    public class EggBomb : Item, ICommodity
+    public class EggBomb : BaseItem, ICommodity
     {
         [Constructable]
         public EggBomb()

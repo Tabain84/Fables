@@ -12,7 +12,7 @@ namespace Server.Items
     }
 
     [Flipable(0xf9f, 0xf9e)]
-    public class Scissors : Item, ICraftable, IQuality, IUsesRemaining
+    public class Scissors : BaseItem, ICraftable, IQuality, IUsesRemaining
     {
         private int m_UsesRemaining;
         private Mobile m_Crafter;

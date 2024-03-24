@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class EnergyBarrier : Item
+    public class EnergyBarrier : BaseItem
     {
         private static readonly string _TimerID = "EnergyBarrierTimer";
 

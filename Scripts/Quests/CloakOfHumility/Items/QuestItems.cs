@@ -1,7 +1,7 @@
 using Server.Items;
 namespace Server.Engines.Quests
 {
-    public class IronChain : Item
+    public class IronChain : BaseItem
     {
         public override int LabelNumber => 1075788;  // Iron Chain
 
@@ -62,7 +62,7 @@ namespace Server.Engines.Quests
         }
     }
 
-    public class SeasonedSkillet : Item
+    public class SeasonedSkillet : BaseItem
     {
         public override int LabelNumber => 1075774;  // Seasoned Skillet
 
@@ -91,7 +91,7 @@ namespace Server.Engines.Quests
         }
     }
 
-    public class VillageCauldron : Item
+    public class VillageCauldron : BaseItem
     {
         public override int LabelNumber => 1075775;  // Village Cauldron
 
@@ -208,7 +208,7 @@ namespace Server.Engines.Quests
         }
     }
 
-    public class WornHammer : Item
+    public class WornHammer : BaseItem
     {
         public override int LabelNumber => 1075779;  // Worn Hammer
 

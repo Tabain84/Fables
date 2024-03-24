@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Engines.VvV
 {
-    public class ForgedRoyalPardon : Item
+    public class ForgedRoyalPardon : BaseItem
     {
         public override int LabelNumber => 1155524;  // Forged Royal Pardon
 

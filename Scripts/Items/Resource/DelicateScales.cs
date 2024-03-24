@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class DelicateScales : Item, ICommodity
+    public class DelicateScales : BaseItem, ICommodity
     {
         [Constructable]
         public DelicateScales()

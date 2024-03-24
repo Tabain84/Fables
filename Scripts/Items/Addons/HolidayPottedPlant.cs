@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class HolidayPottedPlant : Item
+    public class HolidayPottedPlant : BaseItem
     {
         [Constructable]
         public HolidayPottedPlant()
@@ -39,7 +39,7 @@ namespace Server.Items
         }
     }
 
-    public class PottedPlantDeed : Item
+    public class PottedPlantDeed : BaseItem
     {
         [Constructable]
         public PottedPlantDeed()

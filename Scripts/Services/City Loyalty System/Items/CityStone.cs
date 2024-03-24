@@ -9,7 +9,7 @@ using System.Globalization;
 
 namespace Server.Engines.CityLoyalty
 {
-    public class CityStone : Item
+    public class CityStone : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public CityLoyaltySystem City { get; set; }

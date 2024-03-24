@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class PetTrainingGate : Item
+    public class PetTrainingGate : BaseItem
     {
         public override bool ForceShowProperties => true;
 
@@ -63,7 +63,7 @@ namespace Server.Items
         }
     }
 
-    public class PetBondRemoveGate : Item
+    public class PetBondRemoveGate : BaseItem
     {
         public override bool ForceShowProperties => true;
 
@@ -113,7 +113,7 @@ namespace Server.Items
         }
     }
 
-    public class PowerScrollGiver : Item
+    public class PowerScrollGiver : BaseItem
     {
         public override bool ForceShowProperties => true;
 

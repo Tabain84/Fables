@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class BaseSwitch : Item
+    public class BaseSwitch : BaseItem
     {
         private int m_TurnOn;
         private int m_TurnOff;

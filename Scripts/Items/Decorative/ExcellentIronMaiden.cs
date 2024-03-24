@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ExcellentIronMaiden : Item
+    public class ExcellentIronMaiden : BaseItem
     {
         [Constructable]
         public ExcellentIronMaiden()

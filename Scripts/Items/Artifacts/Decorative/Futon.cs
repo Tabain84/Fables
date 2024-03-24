@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable]
-    public class Futon : Item
+    public class Futon : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

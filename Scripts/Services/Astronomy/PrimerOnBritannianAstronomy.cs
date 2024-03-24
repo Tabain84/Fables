@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Engines.Astronomy
 {
-    public class PrimerOnBritannianAstronomy : Item
+    public class PrimerOnBritannianAstronomy : BaseItem
     {
         public override int LabelNumber => 1158515;  // Looking to the Heavens: A Primer on Britannian Astronomy
 

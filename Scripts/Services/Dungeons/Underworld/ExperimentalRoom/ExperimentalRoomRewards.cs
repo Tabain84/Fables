@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(12287, 12288)]
-    public class TwoStoryBanner : Item
+    public class TwoStoryBanner : BaseItem
     {
         [Constructable]
         public TwoStoryBanner() : base(12287)
@@ -26,7 +26,7 @@ namespace Server.Items
         }
     }
 
-    public class Stalagmite : Item
+    public class Stalagmite : BaseItem
     {
         [Constructable]
         public Stalagmite() : base(Utility.RandomList(2272, 2273, 2276, 2277, 2279, 2281, 2282))
@@ -50,7 +50,7 @@ namespace Server.Items
         }
     }
 
-    public class Flowstone : Item
+    public class Flowstone : BaseItem
     {
         [Constructable]
         public Flowstone() : base(Utility.RandomList(2274, 2275, 2278, 2280))
@@ -75,7 +75,7 @@ namespace Server.Items
         }
     }
 
-    public class HangingChainmailLegs : Item
+    public class HangingChainmailLegs : BaseItem
     {
         [Constructable]
         public HangingChainmailLegs() : base(5052)
@@ -100,7 +100,7 @@ namespace Server.Items
         }
     }
 
-    public class HangingRingmailTunic : Item
+    public class HangingRingmailTunic : BaseItem
     {
         [Constructable]
         public HangingRingmailTunic() : base(5095)
@@ -125,7 +125,7 @@ namespace Server.Items
         }
     }
 
-    public class PluckedChicken : Item
+    public class PluckedChicken : BaseItem
     {
         [Constructable]
         public PluckedChicken() : base(7819)
@@ -150,7 +150,7 @@ namespace Server.Items
         }
     }
 
-    public class ColorfulTapestry : Item
+    public class ColorfulTapestry : BaseItem
     {
         [Constructable]
         public ColorfulTapestry() : base(17092)
@@ -175,7 +175,7 @@ namespace Server.Items
         }
     }
 
-    public class CanvaslessEasel : Item
+    public class CanvaslessEasel : BaseItem
     {
         public override int LabelNumber => 123467;
 

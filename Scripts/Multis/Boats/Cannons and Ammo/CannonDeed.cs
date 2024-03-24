@@ -11,7 +11,7 @@ namespace Server.Items
         Pumpkin
     }
 
-    public abstract class ShipCannonDeed : Item
+    public abstract class ShipCannonDeed : BaseItem
     {
         public abstract CannonPower CannonType { get; }
 

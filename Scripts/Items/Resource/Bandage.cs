@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class Bandage : Item, IDyable, ICommodity
+    public class Bandage : BaseItem, IDyable, ICommodity
     {
         public static void Initialize()
         {

@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    public class HungryCoconutCrabStatue : Item, ICreatureStatuette
+    public class HungryCoconutCrabStatue : BaseItem, ICreatureStatuette
     {
         public override int LabelNumber => 1159221;  // Hungry Coconut Crab Statuette
 

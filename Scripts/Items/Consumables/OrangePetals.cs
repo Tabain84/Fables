@@ -4,7 +4,7 @@ using System.Collections;
 
 namespace Server.Items
 {
-    public class OrangePetals : Item, ICommodity
+    public class OrangePetals : BaseItem, ICommodity
     {
         private static readonly Hashtable m_Table = new Hashtable();
         [Constructable]

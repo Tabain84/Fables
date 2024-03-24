@@ -38,7 +38,7 @@ namespace Server.Items
         }
     }
 
-    public class HousePlacementTool : Item
+    public class HousePlacementTool : BaseItem
     {
         public virtual bool UseCustomHousePlots => Misc.TestCenter.Enabled;
 

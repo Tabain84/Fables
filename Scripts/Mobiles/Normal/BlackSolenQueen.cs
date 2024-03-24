@@ -218,7 +218,7 @@ namespace Server.Mobiles
         }
     }
 
-    public class BSQEggSac : Item, ICarvable
+    public class BSQEggSac : BaseItem, ICarvable
     {
         private SpawnTimer m_Timer;
 

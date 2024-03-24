@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TaintedTreeSample : Item
+    public class TaintedTreeSample : BaseItem
     {
         [Constructable]
         public TaintedTreeSample()

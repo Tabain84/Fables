@@ -8,7 +8,7 @@ using System;
 
 namespace Server.Engines.Khaldun
 {
-    public class TrapDoor : Item, IRevealableItem, IForensicTarget
+    public class TrapDoor : BaseItem, IRevealableItem, IForensicTarget
     {
         //public static readonly Point3D TeleportDestination1 = new Point3D(6242, 2892, 17);
 

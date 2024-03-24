@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class MechanicalLifeManual : Item
+    public class MechanicalLifeManual : BaseItem
     {
         public override int LabelNumber => 1112874;  // Mechanical Life Manual
 

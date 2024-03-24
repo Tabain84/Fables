@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA4EF, 0xA4F0)]
-    public class DecorativeDungeonMask : Item
+    public class DecorativeDungeonMask : BaseItem
     {
         public override int LabelNumber => 1159473;  // decorative dungeon mask
 

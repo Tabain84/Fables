@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class MagicalFishFinder : Item
+    public class MagicalFishFinder : BaseItem
     {
         public const int DecayPeriod = 4;
 

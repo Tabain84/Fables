@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class LabyrinthIslandTele : Item
+    public class LabyrinthIslandTele : BaseItem
     {
         [Constructable]
         public LabyrinthIslandTele()
@@ -37,7 +37,7 @@ namespace Server.Items
         }
     }
 
-    public class LabyrinthTele : Item
+    public class LabyrinthTele : BaseItem
     {
         [Constructable]
         public LabyrinthTele()

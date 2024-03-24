@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.HuntsmasterChallenge
 {
-    public class HuntingSystem : Item
+    public class HuntingSystem : BaseItem
     {
         private static HuntingSystem m_Instance;
         public static HuntingSystem Instance => m_Instance;

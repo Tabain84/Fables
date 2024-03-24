@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class LillyPads : Item
+    public class LillyPads : BaseItem
     {
         [Constructable]
         public LillyPads()

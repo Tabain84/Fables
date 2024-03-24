@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class InspectedKegofGreaterPoison : Item
+    public class InspectedKegofGreaterPoison : BaseItem
     {
         [Constructable]
         public InspectedKegofGreaterPoison()

@@ -12,7 +12,7 @@ namespace Server.Items
         Reptalon = 1075202
     }
 
-    public class BaseFormTalisman : Item
+    public class BaseFormTalisman : BaseItem
     {
         public BaseFormTalisman()
             : base(0x2F59)

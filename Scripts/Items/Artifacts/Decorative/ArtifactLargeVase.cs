@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ArtifactLargeVase : Item
+    public class ArtifactLargeVase : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

@@ -70,7 +70,7 @@ namespace Server.Engines.ArtisanFestival
         }
     }
 
-    public class FestivalGiftBox : Item
+    public class FestivalGiftBox : BaseItem
     {
         public FestivalGiftBox()
             : base(Utility.Random(0x46A2, 6))

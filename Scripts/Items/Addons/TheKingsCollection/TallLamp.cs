@@ -79,7 +79,7 @@ namespace Server.Items
         }
     }
 
-    public class TallLampDeed : Item
+    public class TallLampDeed : BaseItem
     {
         public override int LabelNumber => 1098410;  // tall lamp
 

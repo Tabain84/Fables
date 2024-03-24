@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Sapphire : Item, IGem
+    public class Sapphire : BaseItem, IGem
     {
         [Constructable]
         public Sapphire()

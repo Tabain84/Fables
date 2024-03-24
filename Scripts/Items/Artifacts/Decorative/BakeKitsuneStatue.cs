@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BakeKitsuneStatue : Item
+    public class BakeKitsuneStatue : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

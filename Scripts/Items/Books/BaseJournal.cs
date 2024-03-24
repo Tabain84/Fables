@@ -35,7 +35,7 @@ namespace Server.Items
         }
     }
 
-    public abstract class BaseJournal : Item
+    public abstract class BaseJournal : BaseItem
     {
         public abstract TextDefinition Title { get; }
         public abstract TextDefinition Body { get; }

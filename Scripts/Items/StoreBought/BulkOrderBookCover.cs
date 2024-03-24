@@ -84,7 +84,7 @@ namespace Server.Items
         }
     }
 
-    public class BulkOrderBookCover : Item
+    public class BulkOrderBookCover : BaseItem
     {
         private CoverType _CoverType;
         private int _UsesRemaining;

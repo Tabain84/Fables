@@ -19,7 +19,7 @@ namespace Server.Items
         InRange
     }
 
-    public class EffectController : Item
+    public class EffectController : BaseItem
     {
         private TimeSpan m_EffectDelay;
         private ECEffectType m_EffectType;

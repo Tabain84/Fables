@@ -4,7 +4,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class ExplodingJackOLantern : Item
+    public class ExplodingJackOLantern : BaseItem
     {
         public override int LabelNumber => 1159220;  // Exploding Jack o' Lantern
 

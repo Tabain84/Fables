@@ -4,7 +4,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class ParrotItem : Item
+    public class ParrotItem : BaseItem
     {
         private static readonly int[] m_Hues = new int[]
         {

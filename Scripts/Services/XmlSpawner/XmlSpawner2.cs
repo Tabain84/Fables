@@ -16,7 +16,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	public class XmlSpawner : Item, ISpawner
+	public class XmlSpawner : BaseItem, ISpawner
 	{
 		public static List<XmlSpawner> Instances { get; } = new List<XmlSpawner>();
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TravestysSushiPreparations : Item
+    public class TravestysSushiPreparations : BaseItem
     {
         [Constructable]
         public TravestysSushiPreparations()

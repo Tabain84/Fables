@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Items
 {
-    public class NavreysController : Item
+    public class NavreysController : BaseItem
     {
         #region Generation
         public static void Initialize()

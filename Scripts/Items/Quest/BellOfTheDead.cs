@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Server.Engines.Quests.Doom
 {
-    public class BellOfTheDead : Item
+    public class BellOfTheDead : BaseItem
     {
         private Chyloth m_Chyloth;
         private SkeletalDragon m_Dragon;

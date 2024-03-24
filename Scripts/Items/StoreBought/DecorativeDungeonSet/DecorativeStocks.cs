@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA4ED, 0xA4EE)]
-    public class DecorativeStocks : Item
+    public class DecorativeStocks : BaseItem
     {
         public override int LabelNumber => 1159472;  // decorative stocks
 

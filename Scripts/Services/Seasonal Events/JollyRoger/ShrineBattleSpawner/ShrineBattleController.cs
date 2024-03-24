@@ -45,7 +45,7 @@ namespace Server.Engines.JollyRoger
         }
     }
 
-    public class ShrineBattleController : Item
+    public class ShrineBattleController : BaseItem
     {
         private bool m_Active;
 

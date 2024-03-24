@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BouraSkin : Item
+    public class BouraSkin : BaseItem
     {
         public override int LabelNumber => 1112900; // Boura Skin
 

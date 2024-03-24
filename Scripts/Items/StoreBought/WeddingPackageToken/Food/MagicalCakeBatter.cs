@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class MagicalCakeBatter : Item
+    public class MagicalCakeBatter : BaseItem
     {
         public override int LabelNumber => 1157336; // Magical Cake Batter
 

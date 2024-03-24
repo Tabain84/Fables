@@ -12,7 +12,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class DisguiseKit : Item
+    public class DisguiseKit : BaseItem
     {
         [Constructable]
         public DisguiseKit()

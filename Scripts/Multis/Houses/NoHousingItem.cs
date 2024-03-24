@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class NoHousingItem : Item
+    public class NoHousingItem : BaseItem
     {
         private NoHousingDelayTimer m_Timer;
         private Rectangle3D[] m_Area;

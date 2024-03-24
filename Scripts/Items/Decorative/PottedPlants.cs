@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PottedPlant : Item
+    public class PottedPlant : BaseItem
     {
         [Constructable]
         public PottedPlant()
@@ -29,7 +29,7 @@ namespace Server.Items
         }
     }
 
-    public class PottedPlant1 : Item
+    public class PottedPlant1 : BaseItem
     {
         [Constructable]
         public PottedPlant1()
@@ -58,7 +58,7 @@ namespace Server.Items
         }
     }
 
-    public class PottedPlant2 : Item
+    public class PottedPlant2 : BaseItem
     {
         [Constructable]
         public PottedPlant2()

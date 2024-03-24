@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PileofInspectedVeriteIngots : Item
+    public class PileofInspectedVeriteIngots : BaseItem
     {
         public override int LabelNumber => 1113029; // Pile of Inspected Verite Ingots
 

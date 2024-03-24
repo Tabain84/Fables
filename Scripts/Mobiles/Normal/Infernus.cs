@@ -77,7 +77,7 @@ namespace Server.Mobiles
             }
         }
 
-        public class FireItem : Item
+        public class FireItem : BaseItem
         {
             public Infernus Mobile { get; private set; }
             public Timer Timer { get; private set; }

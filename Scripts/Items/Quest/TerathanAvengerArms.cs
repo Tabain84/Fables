@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TerathanAvengerArms : Item
+    public class TerathanAvengerArms : BaseItem
     {
         [Constructable]
         public TerathanAvengerArms()

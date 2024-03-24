@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class GoldDust : Item, ICommodity
+    public class GoldDust : BaseItem, ICommodity
     {
         [Constructable]
         public GoldDust() : this(1)

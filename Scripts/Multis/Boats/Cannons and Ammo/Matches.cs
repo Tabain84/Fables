@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class Matches : Item, ICommodity
+    public class Matches : BaseItem, ICommodity
     {
         public override int LabelNumber => 1116112;
 

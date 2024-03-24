@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Emerald : Item, IGem
+    public class Emerald : BaseItem, IGem
     {
         [Constructable]
         public Emerald()

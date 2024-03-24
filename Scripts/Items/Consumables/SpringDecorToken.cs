@@ -2,7 +2,7 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public class SpringDecorToken : Item
+    public class SpringDecorToken : BaseItem
     {
         public override int LabelNumber => 1070997; // a promotional token
 

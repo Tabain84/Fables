@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SpecialPrintingOfVirtue : Item
+    public class SpecialPrintingOfVirtue : BaseItem
     {
         public override int LabelNumber => 1075793;  // Special Printing of 'Virtue' by Lord British
 

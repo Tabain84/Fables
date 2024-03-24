@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SilverSnakeSkin : Item, ICommodity
+    public class SilverSnakeSkin : BaseItem, ICommodity
     {
         [Constructable]
         public SilverSnakeSkin()

@@ -6,7 +6,7 @@ using System;
 namespace Server.Items
 {
     [Flipable(0x1EBA, 0x1EBB)]
-    public class TaxidermyKit : Item
+    public class TaxidermyKit : BaseItem
     {
         public override int LabelNumber => 1041279;  // a taxidermy kit
 
@@ -288,7 +288,7 @@ namespace Server.Items
         }
     }
 
-    public class TrophyAddon : Item, IAddon
+    public class TrophyAddon : BaseItem, IAddon
     {
         public override bool ForceShowProperties => true;
 
@@ -476,7 +476,7 @@ namespace Server.Items
     }
 
     [Flipable(0x14F0, 0x14EF)]
-    public class TrophyDeed : Item
+    public class TrophyDeed : BaseItem
     {
         private int m_WestID;
         private int m_NorthID;

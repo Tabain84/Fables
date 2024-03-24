@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Furniture]
-    public class WeddingCocktailTable : Item, IDyable
+    public class WeddingCocktailTable : BaseItem, IDyable
     {
         public override int LabelNumber => 1022869; // table
 

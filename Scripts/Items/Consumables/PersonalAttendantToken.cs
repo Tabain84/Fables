@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class PersonalAttendantToken : Item
+    public class PersonalAttendantToken : BaseItem
     {
         [Constructable]
         public PersonalAttendantToken()

@@ -13,7 +13,7 @@ namespace Server.Items
         Rusty = 0x1013
     }
 
-    public class Key : Item, IResource, IQuality
+    public class Key : BaseItem, IResource, IQuality
     {
         private string m_Description;
         private uint m_KeyVal;

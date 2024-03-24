@@ -4,7 +4,7 @@ using Server.Accounting;
 
 namespace Server.Items
 {
-    public class BankCheck : Item
+    public class BankCheck : BaseItem
     {
         private int m_Worth;
 

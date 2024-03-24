@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class ClockworkAssembly : Item, ICommodity
+    public class ClockworkAssembly : BaseItem, ICommodity
     {
         public override int LabelNumber => 1073426;  // Clockwork Assembly
 

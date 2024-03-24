@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class GamanHorns : Item
+    public class GamanHorns : BaseItem
     {
         [Constructable]
         public GamanHorns()

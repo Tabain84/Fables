@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AbscessTail : Item
+    public class AbscessTail : BaseItem
     {
         [Constructable]
         public AbscessTail()

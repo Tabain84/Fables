@@ -2,7 +2,7 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public class InstanceExitGate : Item
+    public class InstanceExitGate : BaseItem
     {
         private Map m_MapDest;
         private Point3D m_LocDest;

@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class AbyssKey : Item
+    public class AbyssKey : BaseItem
     {
         private int m_Lifespan;
         private Timer m_Timer;

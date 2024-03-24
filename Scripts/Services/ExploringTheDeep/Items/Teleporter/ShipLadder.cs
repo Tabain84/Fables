@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class ShipLadder : Item
+    public class ShipLadder : BaseItem
     {
         private Point3D m_PointDest;
         private Map m_Map;

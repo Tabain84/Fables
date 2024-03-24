@@ -46,7 +46,7 @@ namespace Server.Engines.Quests
         }
     }
 
-    public class CorpseOfBennetYardley : Item, IConditionalVisibility
+    public class CorpseOfBennetYardley : BaseItem, IConditionalVisibility
     {
         public static CorpseOfBennetYardley TramInstance { get; set; }
         public static CorpseOfBennetYardley FelInstance { get; set; }
@@ -129,7 +129,7 @@ namespace Server.Engines.Quests
         }
     }
 
-    public class TreasureHuntingBook : Item
+    public class TreasureHuntingBook : BaseItem
     {
         [Constructable]
         public TreasureHuntingBook()
@@ -416,7 +416,7 @@ namespace Server.Engines.Quests
         }
     }
 
-    public class MysteriousPotion : Item
+    public class MysteriousPotion : BaseItem
     {
         public override int LabelNumber => 1158286;  // A Mysterious Potion
 

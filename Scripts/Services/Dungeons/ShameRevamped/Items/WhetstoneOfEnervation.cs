@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class WhetstoneOfEnervation : Item
+    public class WhetstoneOfEnervation : BaseItem
     {
         public override int LabelNumber => 1151811;  // Whetstone of Enervation
 

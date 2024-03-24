@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class MedusaBlood : Item, ICommodity
+    public class MedusaBlood : BaseItem, ICommodity
     {
         [Constructable]
         public MedusaBlood()

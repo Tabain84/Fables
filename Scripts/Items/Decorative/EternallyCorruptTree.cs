@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class EternallyCorruptTree : Item
+    public class EternallyCorruptTree : BaseItem
     {
         [Constructable]
         public EternallyCorruptTree()

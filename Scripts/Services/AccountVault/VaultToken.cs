@@ -5,7 +5,7 @@ using Server.Engines.UOStore;
 
 namespace Server.Items
 {
-    public class VaultToken : Item, IAccountRestricted
+    public class VaultToken : BaseItem, IAccountRestricted
     {
         public override int LabelNumber => 1070997;// A promotional token
 

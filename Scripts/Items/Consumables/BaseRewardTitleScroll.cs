@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public abstract class BaseRewardTitleToken : Item
+    public abstract class BaseRewardTitleToken : BaseItem
     {
         public List<Tuple<TextDefinition, Type>> Titles { get; set; }
 

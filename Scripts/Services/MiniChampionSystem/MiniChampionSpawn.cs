@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.MiniChamps
 {
-    public class MiniChamp : Item
+    public class MiniChamp : BaseItem
     {
         public static void Initialize()
         {

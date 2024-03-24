@@ -187,12 +187,12 @@ namespace Server.Commands
 			}
 		}
 
-		private static bool Exists<T>(Mobile m) where T : Item
+		private static bool Exists<T>(Mobile m) where T : BaseItem
 		{
 			return Exists<T>(m, out _);
 		}
 
-		private static bool Exists<T>(Mobile m, out T found) where T : Item
+		private static bool Exists<T>(Mobile m, out T found) where T : BaseItem
 		{
 			foreach (var o in m.Items)
 			{

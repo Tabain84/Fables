@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class EnchantedTimepiece : Item
+    public class EnchantedTimepiece : BaseItem
     {
         public override int LabelNumber
         {

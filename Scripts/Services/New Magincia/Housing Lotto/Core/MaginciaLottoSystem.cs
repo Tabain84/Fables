@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Server.Engines.NewMagincia
 {
-    public class MaginciaLottoSystem : Item
+    public class MaginciaLottoSystem : BaseItem
     {
         public static readonly TimeSpan DefaultLottoDuration = TimeSpan.FromDays(30);
         public static readonly int WritExpirePeriod = 30;

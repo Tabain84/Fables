@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class RoseInAVase : Item /* TODO: when dye tub changes are implemented, furny dyable this */
+    public class RoseInAVase : BaseItem /* TODO: when dye tub changes are implemented, furny dyable this */
     {
         [Constructable]
         public RoseInAVase()

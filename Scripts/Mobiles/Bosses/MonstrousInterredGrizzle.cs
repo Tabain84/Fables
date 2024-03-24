@@ -141,7 +141,7 @@ namespace Server.Mobiles
         }
     }
 
-    public class InfernalOoze : Item
+    public class InfernalOoze : BaseItem
     {
         private bool m_Corrosive;
         private readonly int m_Damage;

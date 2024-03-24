@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ArcanicRuneStone : Item, ICommodity
+    public class ArcanicRuneStone : BaseItem, ICommodity
     {
         [Constructable]
         public ArcanicRuneStone()

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class HydraScale : Item
+    public class HydraScale : BaseItem
     {
         [Constructable]
         public HydraScale()

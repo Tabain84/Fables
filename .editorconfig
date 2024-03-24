@@ -166,6 +166,9 @@ csharp_style_pattern_matching_over_is_with_cast_check = true:suggestion
 csharp_style_prefer_not_pattern = true:suggestion
 csharp_style_prefer_extended_property_pattern = true:suggestion
 
+# IDE0005: Using directive is unnecessary.
+dotnet_diagnostic.IDE0005.severity = none
+
 [*.{cs,vb}]
 dotnet_style_prefer_is_null_check_over_reference_equality_method= false:suggestion
 dotnet_style_prefer_auto_properties= true:suggestion

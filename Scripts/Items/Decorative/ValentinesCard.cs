@@ -3,7 +3,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class ValentinesCard : Item
+    public class ValentinesCard : BaseItem
     {
         private static readonly string Unsigned = "___";
         private int m_LabelNumber;

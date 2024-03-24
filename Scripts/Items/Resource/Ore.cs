@@ -4,7 +4,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public abstract class BaseOre : Item
+    public abstract class BaseOre : BaseItem
     {
         protected virtual CraftResource DefaultResource => CraftResource.Iron;
 

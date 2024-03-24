@@ -168,7 +168,7 @@ namespace Server.Mobiles
             item.MoveToWorld(new Point3D(p), Map);
         }
 
-        private class FreezeItem : Item
+        private class FreezeItem : BaseItem
         {
             public Item Static { get; private set; }
             public BaseCreature Owner { get; }

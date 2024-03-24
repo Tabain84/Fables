@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class SnowPile : Item
+    public class SnowPile : BaseItem
     {
         [Constructable]
         public SnowPile()

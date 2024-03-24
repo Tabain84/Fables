@@ -3,7 +3,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class PlantPigment : Item, IPigmentHue
+    public class PlantPigment : BaseItem, IPigmentHue
     {
         private PlantPigmentHue m_Hue;
         [Constructable]

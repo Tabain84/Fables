@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class EnchantedWheelbarrow : Item, IFlipable, ISecurable
+    public class EnchantedWheelbarrow : BaseItem, IFlipable, ISecurable
     {
         public override int LabelNumber => 1125214;  // enchanted wheelbarrow
 
@@ -171,7 +171,7 @@ namespace Server.Items
         }
     }
 
-    public class DecorativePlant : Item
+    public class DecorativePlant : BaseItem
     {
         public override int LabelNumber => 1125205;  // decorative plant
 

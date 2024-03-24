@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SosariaSap : Item
+    public class SosariaSap : BaseItem
     {
         [Constructable]
         public SosariaSap()

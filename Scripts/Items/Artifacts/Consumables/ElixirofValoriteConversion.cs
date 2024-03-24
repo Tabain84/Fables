@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ElixirofValoriteConversion : Item
+    public class ElixirofValoriteConversion : BaseItem
     {
         public override int LabelNumber => 1113010;  // Elixir of Valorite Conversion
 

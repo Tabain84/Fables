@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BloodOfTheDarkFather : Item, ICommodity
+    public class BloodOfTheDarkFather : BaseItem, ICommodity
     {
         [Constructable]
         public BloodOfTheDarkFather()

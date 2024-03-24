@@ -127,7 +127,7 @@ namespace Server.Items
         }
     }
 
-    public class CrackedLavaRockSouth : Item
+    public class CrackedLavaRockSouth : BaseItem
     {
         public override int LabelNumber => 1098151;
 
@@ -173,7 +173,7 @@ namespace Server.Items
         }
     }
 
-    public class CrackedLavaRockEast : Item
+    public class CrackedLavaRockEast : BaseItem
     {
         public override int LabelNumber => 1098151;
 
@@ -226,7 +226,7 @@ namespace Server.Items
         }
     }
 
-    public class GeodeSouth : Item
+    public class GeodeSouth : BaseItem
     {
         public override int LabelNumber => 1098145;
 
@@ -257,7 +257,7 @@ namespace Server.Items
         }
     }
 
-    public class GeodeEast : Item
+    public class GeodeEast : BaseItem
     {
         public override int LabelNumber => 1098145;
 
@@ -288,7 +288,7 @@ namespace Server.Items
         }
     }
 
-    public class GeodeShardSouth : Item
+    public class GeodeShardSouth : BaseItem
     {
         public override int LabelNumber => 1098148;
 
@@ -319,7 +319,7 @@ namespace Server.Items
         }
     }
 
-    public class GeodeShardEast : Item
+    public class GeodeShardEast : BaseItem
     {
         public override int LabelNumber => 1098148;
 
@@ -350,7 +350,7 @@ namespace Server.Items
         }
     }
 
-    public class LavaRock : Item
+    public class LavaRock : BaseItem
     {
         public override int LabelNumber => 1151166;
 
@@ -375,7 +375,7 @@ namespace Server.Items
         }
     }
 
-    public class StonePaver : Item
+    public class StonePaver : BaseItem
     {
         public override int LabelNumber => 1097277;
 

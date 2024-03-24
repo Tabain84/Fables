@@ -18,7 +18,7 @@ namespace Server.Items
     }
 
     [Furniture]
-    public class DecorativeStableFencing : Item, IFlipable, IDyable
+    public class DecorativeStableFencing : BaseItem, IFlipable, IDyable
     {
         public override int LabelNumber => IDs[(int)_Type][0];
 

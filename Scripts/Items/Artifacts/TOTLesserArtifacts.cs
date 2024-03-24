@@ -647,7 +647,7 @@ namespace Server.Items
     }
 
     //Non weapon/armor ones:
-    public class AncientUrn : Item
+    public class AncientUrn : BaseItem
     {
         public override bool IsArtifact => true;
         private static readonly string[] m_Names = new string[]
@@ -746,7 +746,7 @@ namespace Server.Items
         }
     }
 
-    public class HonorableSwords : Item
+    public class HonorableSwords : BaseItem
     {
         public override bool IsArtifact => true;
         private string m_SwordsName;

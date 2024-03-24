@@ -705,7 +705,7 @@ namespace Server.Mobiles
 
 
     [Flipable(0x14F0, 0x14EF)]
-    public class MannequinDeed : Item
+    public class MannequinDeed : BaseItem
     {
         public override int LabelNumber => 1151602;  // Mannequin Deed
 

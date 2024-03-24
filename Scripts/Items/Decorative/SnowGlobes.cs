@@ -66,7 +66,7 @@ namespace Server.Items
         ThePrismofLight
     }
 
-    public class SnowGlobe : Item
+    public class SnowGlobe : BaseItem
     {
         public SnowGlobe()
             : base(0xE2F)

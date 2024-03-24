@@ -16,7 +16,7 @@ namespace Server.Items
         GetHue
     }
 
-    public class InteriorDecorator : Item
+    public class InteriorDecorator : BaseItem
     {
         public override int LabelNumber => 1041280;  // an interior decorator
 

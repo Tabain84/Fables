@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class Bamboo : Item
+    public class Bamboo : BaseItem
     {
         [Constructable]
         public Bamboo()

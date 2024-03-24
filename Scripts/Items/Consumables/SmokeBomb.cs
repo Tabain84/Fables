@@ -4,7 +4,7 @@ using Server.SkillHandlers;
 
 namespace Server.Items
 {
-    public class SmokeBomb : Item, ICommodity
+    public class SmokeBomb : BaseItem, ICommodity
     {
         [Constructable]
         public SmokeBomb()

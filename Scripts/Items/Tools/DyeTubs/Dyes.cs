@@ -3,7 +3,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class Dyes : Item
+    public class Dyes : BaseItem
     {
         [Constructable]
         public Dyes()

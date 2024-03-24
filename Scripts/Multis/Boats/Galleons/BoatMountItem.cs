@@ -2,7 +2,7 @@
 
 namespace Server.Multis
 {
-    public class BoatMountItem : Item, IMountItem
+    public class BoatMountItem : BaseItem, IMountItem
     {
         private BaseBoat m_Mount;
         public IMount Mount => m_Mount;

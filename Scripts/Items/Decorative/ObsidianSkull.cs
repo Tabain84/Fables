@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x9A1E, 0x9A1F)]
-    public class ObsidianSkull : Item
+    public class ObsidianSkull : BaseItem
     {
         public override int LabelNumber => 1123478;  // Obsidian Skull
 

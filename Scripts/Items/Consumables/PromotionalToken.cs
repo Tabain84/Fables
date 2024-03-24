@@ -10,7 +10,7 @@ namespace Server.Items
         Type GumpType { get; }
     }
 
-    public abstract class PromotionalToken : Item, IPromotionalToken
+    public abstract class PromotionalToken : BaseItem, IPromotionalToken
     {
         public PromotionalToken()
             : base(0x2AAA)

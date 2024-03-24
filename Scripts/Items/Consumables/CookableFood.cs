@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public abstract class CookableFood : Item, IQuality, ICommodity
+    public abstract class CookableFood : BaseItem, IQuality, ICommodity
     {
         private ItemQuality _Quality;
 

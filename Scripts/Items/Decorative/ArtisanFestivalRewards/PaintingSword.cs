@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA48B, 0xA48C)]
-    public class PaintingSword : Item
+    public class PaintingSword : BaseItem
     {
         public override int LabelNumber => 1023744;  // painting
 

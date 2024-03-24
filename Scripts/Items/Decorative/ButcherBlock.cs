@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ButcherBlock : Item
+    public class ButcherBlock : BaseItem
     {
         public override int LabelNumber => 1125659;  // butcher block
 

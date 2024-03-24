@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x9C14, 0x9C15)]
-    public class AnniversaryCard : Item
+    public class AnniversaryCard : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public string Args { get; set; }

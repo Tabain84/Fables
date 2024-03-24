@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ChocolateFountain : Item
+    public class ChocolateFountain : BaseItem
     {
         public override int LabelNumber => 1124655; // Chocolate Fountain
 

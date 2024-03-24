@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TravestysCollectionOfShells : Item
+    public class TravestysCollectionOfShells : BaseItem
     {
         [Constructable]
         public TravestysCollectionOfShells()

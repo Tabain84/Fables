@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class PerfectBlackPearlDecor : Item
+    public class PerfectBlackPearlDecor : BaseItem
     {
         public override int LabelNumber => 1154257;  // Perfect Black Pearl
 
@@ -105,7 +105,7 @@ namespace Server.Items
         }
     }
 
-    public class BurstingBrimstoneDecor : Item
+    public class BurstingBrimstoneDecor : BaseItem
     {
         public override int LabelNumber => 1154258;  // Bursting Brimstone
 
@@ -207,7 +207,7 @@ namespace Server.Items
         }
     }
 
-    public class BrightDaemonBloodDecor : Item
+    public class BrightDaemonBloodDecor : BaseItem
     {
         public override int LabelNumber => 1154259;  // Bright Daemon Blood
 
@@ -309,7 +309,7 @@ namespace Server.Items
         }
     }
 
-    public class MightyMandrakeDecor : Item
+    public class MightyMandrakeDecor : BaseItem
     {
         public override int LabelNumber => 1154260;  // Mighty Mandrake
 
@@ -410,7 +410,7 @@ namespace Server.Items
         }
     }
 
-    public class BurlyBoneDecor : Item
+    public class BurlyBoneDecor : BaseItem
     {
         public override int LabelNumber => 1154261;  // Burly Bone
 

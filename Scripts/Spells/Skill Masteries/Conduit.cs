@@ -134,7 +134,7 @@ namespace Server.Spells.SkillMasteries
             return false;
         }
 
-        private class InternalItem : Item
+        private class InternalItem : BaseItem
         {
             public InternalItem()
                 : base(Utility.RandomList(0x1853, 0x1858))

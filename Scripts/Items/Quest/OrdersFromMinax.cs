@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class OrdersFromMinax : Item
+    public class OrdersFromMinax : BaseItem
     {
         [Constructable]
         public OrdersFromMinax()

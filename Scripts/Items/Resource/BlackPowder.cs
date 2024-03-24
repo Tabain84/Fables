@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BlackPowder : Item, ICommodity
+    public class BlackPowder : BaseItem, ICommodity
     {
         public override int LabelNumber => 1095826;  // black powder
 

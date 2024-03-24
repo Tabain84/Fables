@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class GemMiningBook : Item
+    public class GemMiningBook : BaseItem
     {
         public override int LabelNumber => 1112240;  // Mining for Quality Gems
 

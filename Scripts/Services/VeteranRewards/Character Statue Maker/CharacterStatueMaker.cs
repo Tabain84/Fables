@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class CharacterStatueMaker : Item, IRewardItem
+    public class CharacterStatueMaker : BaseItem, IRewardItem
     {
         private bool m_IsRewardItem;
         private StatueType m_Type;

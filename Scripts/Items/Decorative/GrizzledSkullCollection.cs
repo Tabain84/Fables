@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class GrizzledSkullCollection : Item
+    public class GrizzledSkullCollection : BaseItem
     {
         [Constructable]
         public GrizzledSkullCollection()

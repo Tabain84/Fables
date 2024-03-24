@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class CrystallineBlackrock : Item, ICommodity
+    public class CrystallineBlackrock : BaseItem, ICommodity
     {
         [Constructable]
         public CrystallineBlackrock()

@@ -5,7 +5,7 @@ using Server.SkillHandlers;
 
 namespace Server.Engines.Khaldun
 {
-    public class MysteriousBook : Item, IForensicTarget
+    public class MysteriousBook : BaseItem, IForensicTarget
     {
         public override int LabelNumber => 1158583;  // mysterious book
         public static readonly Point3D SpawnLocation = new Point3D(6240, 2885, 7);

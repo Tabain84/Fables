@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class JeweledFiligree : Item
+    public class JeweledFiligree : BaseItem
     {
         [Constructable]
         public JeweledFiligree()

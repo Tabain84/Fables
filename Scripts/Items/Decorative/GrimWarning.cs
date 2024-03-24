@@ -4,7 +4,7 @@
     first seen halloween 2009.  subsequently in 2010, 
     2011 and 2012. GM Beggar-only Semi-Rare Treats
     */
-    public class GrimWarning : Item
+    public class GrimWarning : BaseItem
     {
         [Constructable]
         public GrimWarning()

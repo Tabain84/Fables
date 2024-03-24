@@ -2,7 +2,7 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public class MysteriousNote : Item
+    public class MysteriousNote : BaseItem
     {
         public override int LabelNumber => 1151753;  // A Mysterious Note
 

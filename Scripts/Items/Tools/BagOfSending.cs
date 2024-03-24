@@ -14,7 +14,7 @@ namespace Server.Items
         Green
     }
 
-    public class BagOfSending : Item, TranslocationItem
+    public class BagOfSending : BaseItem, TranslocationItem
     {
         private int m_Charges;
         private int m_Recharges;

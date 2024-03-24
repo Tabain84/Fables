@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class IceCrystals : Item
+    public class IceCrystals : BaseItem
     {
         public override int LabelNumber => 1028710;  // crystal
 

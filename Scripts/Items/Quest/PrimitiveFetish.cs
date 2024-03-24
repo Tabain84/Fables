@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PrimitiveFetish : Item
+    public class PrimitiveFetish : BaseItem
     {
         [Constructable]
         public PrimitiveFetish()

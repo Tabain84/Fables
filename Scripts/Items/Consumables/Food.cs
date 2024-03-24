@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public abstract class Food : Item, IEngravable, IQuality
+    public abstract class Food : BaseItem, IEngravable, IQuality
     {
         private bool m_PlayerConstructed;
         private ItemQuality _Quality;
@@ -1458,7 +1458,7 @@ namespace Server.Items
         }
     }
 
-    public class SheafOfHay : Item
+    public class SheafOfHay : BaseItem
     {
         [Constructable]
         public SheafOfHay()
@@ -1487,7 +1487,7 @@ namespace Server.Items
         }
     }
 
-    public class ThreeTieredCake : Item, IQuality
+    public class ThreeTieredCake : BaseItem, IQuality
     {
         private ItemQuality _Quality;
         private int _Pieces;

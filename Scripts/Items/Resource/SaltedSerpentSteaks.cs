@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SaltedSerpentSteaks : Item
+    public class SaltedSerpentSteaks : BaseItem
     {
         public override int LabelNumber => 1159163; // salted serpent steak
 

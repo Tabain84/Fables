@@ -11,7 +11,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class CrystalPortal : Item, ISecurable
+    public class CrystalPortal : BaseItem, ISecurable
     {
         public override int LabelNumber => 1113945;  // Crystal Portal
 

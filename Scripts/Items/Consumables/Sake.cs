@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class BegSake : Item
+    public class BegSake : BaseItem
     {
         [Constructable]
         public BegSake()

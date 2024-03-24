@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Bolt : Item, ICommodity
+    public class Bolt : BaseItem, ICommodity
     {
         TextDefinition ICommodity.Description => LabelNumber;
         bool ICommodity.IsDeedable => true;

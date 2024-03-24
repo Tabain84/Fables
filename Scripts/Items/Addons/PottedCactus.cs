@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class RewardPottedCactus : Item, IRewardItem
+    public class RewardPottedCactus : BaseItem, IRewardItem
     {
         private bool m_IsRewardItem;
         [Constructable]
@@ -64,7 +64,7 @@ namespace Server.Items
         }
     }
 
-    public class PottedCactusDeed : Item, IRewardItem
+    public class PottedCactusDeed : BaseItem, IRewardItem
     {
         private bool m_IsRewardItem;
         [Constructable]

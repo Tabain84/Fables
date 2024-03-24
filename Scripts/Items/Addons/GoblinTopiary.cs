@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x4919, 0x491A)]
-    public class GoblinTopiary : Item
+    public class GoblinTopiary : BaseItem
     {
 
         public override int LabelNumber => 1070878;  // a decorative topiary

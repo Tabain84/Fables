@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ArielHavenWritofMembership : Item
+    public class ArielHavenWritofMembership : BaseItem
     {
         public override int LabelNumber => 1094998; //Ariel Haven Writ of Membership
 

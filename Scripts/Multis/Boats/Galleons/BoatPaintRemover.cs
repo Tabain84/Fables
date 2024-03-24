@@ -3,7 +3,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class BoatPaintRemover : Item
+    public class BoatPaintRemover : BaseItem
     {
         public override int LabelNumber => 1116766;
         public override double DefaultWeight => 10.0;

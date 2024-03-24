@@ -2,7 +2,7 @@ namespace Server.Items
 {
     [Furniture]
     [Flipable(0x2DD3, 0x2DD4)]
-    public class ElvenAlchemyTable : Item
+    public class ElvenAlchemyTable : BaseItem
     {
         [Constructable]
         public ElvenAlchemyTable()

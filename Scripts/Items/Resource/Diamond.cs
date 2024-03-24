@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Diamond : Item, IGem
+    public class Diamond : BaseItem, IGem
     {
         [Constructable]
         public Diamond()

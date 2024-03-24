@@ -123,7 +123,7 @@ namespace Server.Items
         }
     }
 
-    public class FlamingHeadDeed : Item, IRewardItem
+    public class FlamingHeadDeed : BaseItem, IRewardItem
     {
         private bool m_IsRewardItem;
         [Constructable]

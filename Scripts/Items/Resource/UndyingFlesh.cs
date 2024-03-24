@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class UndyingFlesh : Item, ICommodity
+    public class UndyingFlesh : BaseItem, ICommodity
     {
         [Constructable]
         public UndyingFlesh()

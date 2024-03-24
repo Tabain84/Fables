@@ -602,7 +602,7 @@ namespace Server.Items
     }
 
     // resources
-    public class MyrmidexEggsac : Item, ICommodity
+    public class MyrmidexEggsac : BaseItem, ICommodity
     {
         public override int LabelNumber => 1156725;  // Myrmidex Eggsac
 
@@ -639,7 +639,7 @@ namespace Server.Items
         }
     }
 
-    public class LavaBerry : Item
+    public class LavaBerry : BaseItem
     {
         // TODO: Harvested near Jukari Village
         public override int LabelNumber => 1156727;  // Lava Berry
@@ -675,7 +675,7 @@ namespace Server.Items
         }
     }
 
-    public class LavaBerryBush : Item
+    public class LavaBerryBush : BaseItem
     {
         // TODO: Harvested near Jukari Village
         public override int LabelNumber => 1156735;  // Lava Berry Bush
@@ -721,7 +721,7 @@ namespace Server.Items
         }
     }
 
-    public class PerfectBanana : Item
+    public class PerfectBanana : BaseItem
     {
         public override int LabelNumber => 1156730;  // Perfect Bananas
 
@@ -755,7 +755,7 @@ namespace Server.Items
         }
     }
 
-    public class RiverMossDecorate : Item
+    public class RiverMossDecorate : BaseItem
     {
         // TODO: Harvested near Urali Village
         public override int LabelNumber => 1156731;  // River Moss
@@ -801,7 +801,7 @@ namespace Server.Items
         }
     }
 
-    public class RiverMoss : Item, ICommodity
+    public class RiverMoss : BaseItem, ICommodity
     {
         // TODO: Harvested near Urali Village
         public override int LabelNumber => 1156731;  // River Moss
@@ -872,7 +872,7 @@ namespace Server.Items
         }
     }
 
-    public class CornStalk : Item
+    public class CornStalk : BaseItem
     {
         public override int LabelNumber => 1035639;  // corn stalk
         private int m_Used;
@@ -948,7 +948,7 @@ namespace Server.Items
         }
     }
 
-    public class MoonstoneCrystalShard : Item
+    public class MoonstoneCrystalShard : BaseItem
     {
         public override int LabelNumber => 1124142;  // Moonstone Crystal Shards
 

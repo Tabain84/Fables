@@ -99,7 +99,7 @@ namespace Server.Items
         }
     }
 
-    public class GateTeleporter : Item
+    public class GateTeleporter : BaseItem
     {
         private Point3D _Destination;
         private Map _DestinationMap;

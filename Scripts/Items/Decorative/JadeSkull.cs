@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x9A1C, 0x9A1D)]
-    public class JadeSkull : Item
+    public class JadeSkull : BaseItem
     {
         public override int LabelNumber => 1123476;  // Jade Skull
 

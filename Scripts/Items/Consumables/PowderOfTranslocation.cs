@@ -12,7 +12,7 @@ namespace Server.Items
         string TranslocationItemName { get; }
     }
 
-    public class PowderOfTranslocation : Item, ICommodity
+    public class PowderOfTranslocation : BaseItem, ICommodity
     {
         [Constructable]
         public PowderOfTranslocation()

@@ -3,7 +3,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class ElixirOfRebirth : Item
+    public class ElixirOfRebirth : BaseItem
     {
         [Constructable]
         public ElixirOfRebirth() : base(0x24E2)

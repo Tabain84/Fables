@@ -7,7 +7,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0x9A97, 0x9A98)]
-    public class Grinder : Item, ISecurable
+    public class Grinder : BaseItem, ISecurable
     {
         public override int LabelNumber => 1123599;  // Grinder
 

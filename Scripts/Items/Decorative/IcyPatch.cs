@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class IcyPatch : Item
+    public class IcyPatch : BaseItem
     {
         /* On OSI, the iceypatch with itemid 0x122a is "rarer", so we will give it 1:10 chance of creating it that way */
         [Constructable]

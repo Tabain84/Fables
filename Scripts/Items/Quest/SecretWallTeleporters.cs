@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class SecretWall : Item
+    public class SecretWall : BaseItem
     {
         [Constructable]
         public SecretWall(int itemID)
@@ -68,7 +68,7 @@ namespace Server.Items
         }
     }
 
-    public class SecretSwitch : Item
+    public class SecretSwitch : BaseItem
     {
         [Constructable]
         public SecretSwitch()

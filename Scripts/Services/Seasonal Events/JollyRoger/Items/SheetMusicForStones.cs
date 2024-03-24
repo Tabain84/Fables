@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class SheetMusicForStones : Item
+    public class SheetMusicForStones : BaseItem
     {
         public override int LabelNumber => 1159343; // Sheet Music for Stones
 

@@ -15,7 +15,7 @@ namespace Server.Items
         UmbranViolet
     }
 
-    public class SpecialNaturalDye : Item
+    public class SpecialNaturalDye : BaseItem
     {
         private DyeType m_DyeType;
         private int m_UsesRemaining;

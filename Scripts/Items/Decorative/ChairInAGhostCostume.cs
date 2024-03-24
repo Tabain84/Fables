@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ChairInAGhostCostume : Item
+    public class ChairInAGhostCostume : BaseItem
     {
         [Constructable]
         public ChairInAGhostCostume()

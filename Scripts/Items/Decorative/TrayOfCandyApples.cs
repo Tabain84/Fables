@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x9D32, 0x9D33)]
-    public class TrayOfCandyApples : Item
+    public class TrayOfCandyApples : BaseItem
     {
         public override int LabelNumber => 1124266;  // Tray of Candy Apples
 

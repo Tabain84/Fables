@@ -14,7 +14,7 @@ namespace Server.Items
         void OnHarmfulSpell(Mobile attacker);
     }
 
-    public class DamageableItem : Item, IDamageableItem
+    public class DamageableItem : BaseItem, IDamageableItem
     {
         public enum ItemLevel
         {

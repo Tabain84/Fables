@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class RunedPrism : Item
+    public class RunedPrism : BaseItem
     {
         [Constructable]
         public RunedPrism()

@@ -7,7 +7,7 @@ using Server.Multis;
 
 namespace Server.Items
 {
-    public class DecorativeGuildstone : Item, ISecurable
+    public class DecorativeGuildstone : BaseItem, ISecurable
     {
         public override int LabelNumber => 1159490;  // Decorative Guildstone
 

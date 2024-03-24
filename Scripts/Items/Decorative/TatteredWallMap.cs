@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TatteredWallMapSouth : Item
+    public class TatteredWallMapSouth : BaseItem
     {
         public override int LabelNumber => 1031635;  // tattered wall map
 
@@ -27,7 +27,7 @@ namespace Server.Items
         }
     }
 
-    public class TatteredWallMapEast : Item
+    public class TatteredWallMapEast : BaseItem
     {
         public override int LabelNumber => 1031635;  // tattered wall map
 

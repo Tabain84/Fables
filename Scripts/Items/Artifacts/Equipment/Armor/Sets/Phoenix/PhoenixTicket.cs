@@ -1,7 +1,7 @@
 namespace Server.Items
 {
 
-    public class PhoenixTicket : Item
+    public class PhoenixTicket : BaseItem
     {
         [Constructable]
         public PhoenixTicket() : base(0x14F0)

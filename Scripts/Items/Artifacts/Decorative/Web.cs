@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Web : Item
+    public class Web : BaseItem
     {
         public override bool IsArtifact => true;
         private static readonly int[] m_itemids = new int[]

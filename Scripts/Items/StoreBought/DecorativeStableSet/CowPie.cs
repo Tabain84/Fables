@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA489, 0xA48A)]
-    public class CowPie : Item
+    public class CowPie : BaseItem
     {
         public override int LabelNumber => 1126237;  // cow pie
 

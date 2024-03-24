@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class GardeningContract : Item
+    public class GardeningContract : BaseItem
     {
         public override int LabelNumber => 1155764;  // Gardening Contract
 

@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class CitadelTele : Item
+    public class CitadelTele : BaseItem
     {
         [Constructable]
         public CitadelTele()

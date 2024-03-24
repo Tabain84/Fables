@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class BasketOfHerbs : Item
+    public class BasketOfHerbs : BaseItem
     {
         public override int LabelNumber => 1075493; // Basket of Herbs
 

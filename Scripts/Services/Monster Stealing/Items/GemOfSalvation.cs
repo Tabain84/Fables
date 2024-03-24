@@ -6,7 +6,7 @@ using System;
 namespace Server.Items
 {
     [TypeAlias("drNO.ThieveItems.GemOfSalvation")]
-    public class GemOfSalvation : Item
+    public class GemOfSalvation : BaseItem
     {
         public override int LabelNumber => 1094939;  // Gem of Salvation
 

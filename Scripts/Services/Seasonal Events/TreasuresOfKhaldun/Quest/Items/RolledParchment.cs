@@ -2,7 +2,7 @@ using Server.Network;
 
 namespace Server.Engines.Khaldun
 {
-    public class RolledParchment : Item
+    public class RolledParchment : BaseItem
     {
         public override int LabelNumber => 1158578;  // rolled parchment
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class SatietyCure : Item
+    public class SatietyCure : BaseItem
     {
         private int m_Uses;
 

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0x14EB, 0x14EC)]
-    public class MapItem : Item, ICraftable
+    public class MapItem : BaseItem, ICraftable
     {
         private bool m_Editable;
         private const int MaxUserPins = 50;

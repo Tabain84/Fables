@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.TombOfKings
 {
-    public class ChamberSpawner : Item
+    public class ChamberSpawner : BaseItem
     {
         public static void Generate()
         {

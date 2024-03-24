@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class PersonalAttendantDeed : Item
+    public class PersonalAttendantDeed : BaseItem
     {
         private Mobile m_Owner;
         [Constructable]

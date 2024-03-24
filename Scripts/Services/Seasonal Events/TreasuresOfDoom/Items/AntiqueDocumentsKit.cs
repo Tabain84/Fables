@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AntiqueDocumentsKit : Item
+    public class AntiqueDocumentsKit : BaseItem
     {
         public override int LabelNumber => 1155630;  // Antique Documents Kit
 

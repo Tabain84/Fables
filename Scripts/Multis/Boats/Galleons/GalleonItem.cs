@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class DeckItem : Item
+    public class DeckItem : BaseItem
     {
         public override int LabelNumber => 1035994;  // deck
 
@@ -28,7 +28,7 @@ namespace Server.Items
         }
     }
 
-    public class WeaponPad : Item
+    public class WeaponPad : BaseItem
     {
         public override int LabelNumber => 1102376;  // weapon pad
 

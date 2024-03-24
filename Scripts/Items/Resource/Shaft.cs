@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Shaft : Item, ICommodity
+    public class Shaft : BaseItem, ICommodity
     {
         [Constructable]
         public Shaft()

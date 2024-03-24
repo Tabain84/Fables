@@ -35,7 +35,7 @@ namespace Server.Items
         EndCurledMetalSignHanger
     }
 
-    public class CraftableHouseItem : Item, IFlipable, ICraftable
+    public class CraftableHouseItem : BaseItem, IFlipable, ICraftable
     {
         public static int[][] IDs =
         {
@@ -427,7 +427,7 @@ namespace Server.Items
         }
     }
 
-    public class CraftableHouseDoorDeed : Item
+    public class CraftableHouseDoorDeed : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public DoorType Type { get; set; }

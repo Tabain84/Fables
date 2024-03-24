@@ -185,7 +185,7 @@ namespace Server.Spells.Spellweaving
             }
         }
 
-        public class FireItem : Item
+        public class FireItem : BaseItem
         {
             public FireItem(int duration)
                 : base(Utility.RandomBool() ? 0x398C : 0x3996)

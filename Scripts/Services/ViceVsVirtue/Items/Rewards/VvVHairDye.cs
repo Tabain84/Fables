@@ -1,6 +1,6 @@
 namespace Server.Engines.VvV
 {
-    public class VvVHairDye : Item
+    public class VvVHairDye : BaseItem
     {
         public override int LabelNumber
         {

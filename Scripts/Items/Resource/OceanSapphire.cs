@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class OceanSapphire : Item, ICommodity
+    public class OceanSapphire : BaseItem, ICommodity
     {
         public override int LabelNumber => 1159162;  // ocean sapphire
 

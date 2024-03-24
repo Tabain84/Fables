@@ -4,7 +4,7 @@ using System.Collections;
 
 namespace Server.Items
 {
-    public class StealableArtifactsSpawner : Item
+    public class StealableArtifactsSpawner : BaseItem
     {
         private static readonly StealableEntry[] m_Entries = new StealableEntry[]
         {            

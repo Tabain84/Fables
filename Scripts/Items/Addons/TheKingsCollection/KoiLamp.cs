@@ -79,7 +79,7 @@ namespace Server.Items
         }
     }
 
-    public class KoiLampDeed : Item
+    public class KoiLampDeed : BaseItem
     {
         public override int LabelNumber => 1154190;  // Koi Lamp
 

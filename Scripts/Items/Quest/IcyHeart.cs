@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class IcyHeart : Item
+    public class IcyHeart : BaseItem
     {
         [Constructable]
         public IcyHeart()

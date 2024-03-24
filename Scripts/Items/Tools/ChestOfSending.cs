@@ -10,7 +10,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0x4910, 0x4911)]
-    public class ChestOfSending : Item, ISecurable
+    public class ChestOfSending : BaseItem, ISecurable
     {
         public static readonly int MaxCharges = 50;
 

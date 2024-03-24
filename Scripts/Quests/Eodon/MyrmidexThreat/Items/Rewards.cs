@@ -81,7 +81,7 @@ namespace Server.Items
         }
     }
 
-    public class MoonstoneCrystal : Item, ISecurable
+    public class MoonstoneCrystal : BaseItem, ISecurable
     {
         public static Dictionary<int, Point3D> Locations { get; set; }
         private SecureLevel m_SecureLevel;
@@ -249,7 +249,7 @@ namespace Server.Items
     }
 
     [TypeAlias("Server.Items.KotlPowerCoil")]
-    public class KotlPowerCore : Item
+    public class KotlPowerCore : BaseItem
     {
         public override int LabelNumber => 1124179;  // Kotl Power Core
 
@@ -276,7 +276,7 @@ namespace Server.Items
     }
 
     [Flipable(40253, 40252)]
-    public class EodonianWallMap : Item
+    public class EodonianWallMap : BaseItem
     {
         public override int LabelNumber => 1156690;  // Wall Map of Eodon
 

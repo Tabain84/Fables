@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AutomatonActuator : Item
+    public class AutomatonActuator : BaseItem
     {
         public override int LabelNumber => 1156997;  // Automaton Actuator
 

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class NotarizedApplication : Item
+    public class NotarizedApplication : BaseItem
     {
         [Constructable]
         public NotarizedApplication()

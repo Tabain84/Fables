@@ -2,7 +2,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class RedLeaves : Item, ICommodity
+    public class RedLeaves : BaseItem, ICommodity
     {
         [Constructable]
         public RedLeaves()

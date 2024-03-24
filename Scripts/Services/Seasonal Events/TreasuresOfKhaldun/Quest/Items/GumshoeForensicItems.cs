@@ -5,7 +5,7 @@ using Server.SkillHandlers;
 
 namespace Server.Engines.Khaldun
 {
-    public class BaseGumshoeForensicItem : Item, IForensicTarget
+    public class BaseGumshoeForensicItem : BaseItem, IForensicTarget
     {
         public virtual string ItemName => null;
         public virtual int Cliloc => 0;

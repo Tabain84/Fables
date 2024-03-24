@@ -10,7 +10,7 @@ namespace Server.Items
         Modern
     }
 
-    public class HolidayTree : Item, IAddon
+    public class HolidayTree : BaseItem, IAddon
     {
         private ArrayList m_Components;
         private Mobile m_Placer;
@@ -232,7 +232,7 @@ namespace Server.Items
             m_Components.Add(item);
         }
 
-        private class Ornament : Item
+        private class Ornament : BaseItem
         {
             public Ornament(int itemID)
                 : base(itemID)
@@ -261,7 +261,7 @@ namespace Server.Items
             }
         }
 
-        private class TreeTrunk : Item
+        private class TreeTrunk : BaseItem
         {
             private HolidayTree m_Tree;
             public TreeTrunk(HolidayTree tree, int itemID)

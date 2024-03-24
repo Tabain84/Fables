@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0x236E, 0x2371)]
-    public class LightOfTheWinterSolstice : Item
+    public class LightOfTheWinterSolstice : BaseItem
     {
         private static readonly string[] m_StaffNames = new string[]
         {

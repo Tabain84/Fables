@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class EssenceAchievement : Item, ICommodity
+    public class EssenceAchievement : BaseItem, ICommodity
     {
         [Constructable]
         public EssenceAchievement()

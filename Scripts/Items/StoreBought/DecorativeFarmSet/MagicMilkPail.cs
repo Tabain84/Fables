@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace Server.Items
 {
     [Flipable(0xA323, 0xA324)]
-    public class MagicMilkPail : Item, ISecurable
+    public class MagicMilkPail : BaseItem, ISecurable
     {
         public override int LabelNumber => 1159047; // Magic Milk Pail
 

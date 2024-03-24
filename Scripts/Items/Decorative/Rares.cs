@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Rope : Item, ICommodity
+    public class Rope : BaseItem, ICommodity
     {
         [Constructable]
         public Rope()
@@ -40,7 +40,7 @@ namespace Server.Items
         }
     }
 
-    public class IronWire : Item, ICommodity
+    public class IronWire : BaseItem, ICommodity
     {
         [Constructable]
         public IronWire()
@@ -80,7 +80,7 @@ namespace Server.Items
         }
     }
 
-    public class SilverWire : Item, ICommodity
+    public class SilverWire : BaseItem, ICommodity
     {
         [Constructable]
         public SilverWire()
@@ -120,7 +120,7 @@ namespace Server.Items
         }
     }
 
-    public class GoldWire : Item, ICommodity
+    public class GoldWire : BaseItem, ICommodity
     {
         [Constructable]
         public GoldWire()
@@ -160,7 +160,7 @@ namespace Server.Items
         }
     }
 
-    public class CopperWire : Item, ICommodity
+    public class CopperWire : BaseItem, ICommodity
     {
         [Constructable]
         public CopperWire()
@@ -200,7 +200,7 @@ namespace Server.Items
         }
     }
 
-    public class WhiteDriedFlowers : Item
+    public class WhiteDriedFlowers : BaseItem
     {
         [Constructable]
         public WhiteDriedFlowers()
@@ -237,7 +237,7 @@ namespace Server.Items
         }
     }
 
-    public class GreenDriedFlowers : Item
+    public class GreenDriedFlowers : BaseItem
     {
         [Constructable]
         public GreenDriedFlowers()
@@ -274,7 +274,7 @@ namespace Server.Items
         }
     }
 
-    public class DriedOnions : Item
+    public class DriedOnions : BaseItem
     {
         [Constructable]
         public DriedOnions()
@@ -311,7 +311,7 @@ namespace Server.Items
         }
     }
 
-    public class DriedHerbs : Item
+    public class DriedHerbs : BaseItem
     {
         [Constructable]
         public DriedHerbs()
@@ -348,7 +348,7 @@ namespace Server.Items
         }
     }
 
-    public class HorseShoes : Item
+    public class HorseShoes : BaseItem
     {
         [Constructable]
         public HorseShoes()
@@ -377,7 +377,7 @@ namespace Server.Items
         }
     }
 
-    public class ForgedMetal : Item
+    public class ForgedMetal : BaseItem
     {
         [Constructable]
         public ForgedMetal()
@@ -406,7 +406,7 @@ namespace Server.Items
         }
     }
 
-    public class Whip : Item
+    public class Whip : BaseItem
     {
         [Constructable]
         public Whip()
@@ -435,7 +435,7 @@ namespace Server.Items
         }
     }
 
-    public class PaintsAndBrush : Item
+    public class PaintsAndBrush : BaseItem
     {
         [Constructable]
         public PaintsAndBrush()
@@ -464,7 +464,7 @@ namespace Server.Items
         }
     }
 
-    public class PenAndInk : Item
+    public class PenAndInk : BaseItem
     {
         [Constructable]
         public PenAndInk()
@@ -493,7 +493,7 @@ namespace Server.Items
         }
     }
 
-    public class ChiselsNorth : Item
+    public class ChiselsNorth : BaseItem
     {
         [Constructable]
         public ChiselsNorth()
@@ -522,7 +522,7 @@ namespace Server.Items
         }
     }
 
-    public class ChiselsWest : Item
+    public class ChiselsWest : BaseItem
     {
         [Constructable]
         public ChiselsWest()
@@ -551,7 +551,7 @@ namespace Server.Items
         }
     }
 
-    public class DirtyPan : Item
+    public class DirtyPan : BaseItem
     {
         [Constructable]
         public DirtyPan()
@@ -580,7 +580,7 @@ namespace Server.Items
         }
     }
 
-    public class DirtySmallRoundPot : Item
+    public class DirtySmallRoundPot : BaseItem
     {
         [Constructable]
         public DirtySmallRoundPot()
@@ -609,7 +609,7 @@ namespace Server.Items
         }
     }
 
-    public class DirtyPot : Item
+    public class DirtyPot : BaseItem
     {
         [Constructable]
         public DirtyPot()
@@ -638,7 +638,7 @@ namespace Server.Items
         }
     }
 
-    public class DirtyRoundPot : Item
+    public class DirtyRoundPot : BaseItem
     {
         [Constructable]
         public DirtyRoundPot()
@@ -667,7 +667,7 @@ namespace Server.Items
         }
     }
 
-    public class DirtyFrypan : Item
+    public class DirtyFrypan : BaseItem
     {
         [Constructable]
         public DirtyFrypan()
@@ -696,7 +696,7 @@ namespace Server.Items
         }
     }
 
-    public class DirtySmallPot : Item
+    public class DirtySmallPot : BaseItem
     {
         [Constructable]
         public DirtySmallPot()
@@ -725,7 +725,7 @@ namespace Server.Items
         }
     }
 
-    public class DirtyKettle : Item
+    public class DirtyKettle : BaseItem
     {
         [Constructable]
         public DirtyKettle()

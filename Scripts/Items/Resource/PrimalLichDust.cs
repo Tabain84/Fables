@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PrimalLichDust : Item
+    public class PrimalLichDust : BaseItem
     {
         [Constructable]
         public PrimalLichDust()

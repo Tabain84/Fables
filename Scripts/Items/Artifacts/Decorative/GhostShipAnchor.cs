@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class GhostShipAnchor : Item
+    public class GhostShipAnchor : BaseItem
     {
         public override bool IsArtifact => true;
         [Constructable]

@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Engines.Exodus
 {
-    public class VerLorRegController : Item
+    public class VerLorRegController : BaseItem
     {
         private static bool m_Active;
 

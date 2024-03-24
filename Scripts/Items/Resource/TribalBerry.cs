@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TribalBerry : Item, ICommodity
+    public class TribalBerry : BaseItem, ICommodity
     {
         TextDefinition ICommodity.Description => LabelNumber;
         bool ICommodity.IsDeedable => true;

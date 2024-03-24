@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ThrashersTail : Item
+    public class ThrashersTail : BaseItem
     {
         [Constructable]
         public ThrashersTail()

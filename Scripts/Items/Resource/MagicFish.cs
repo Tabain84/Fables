@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public abstract class BaseMagicFish : Item
+    public abstract class BaseMagicFish : BaseItem
     {
         public BaseMagicFish(int hue)
             : base(0xDD6)

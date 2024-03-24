@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public class CorrosiveAsh : Item
+    public class CorrosiveAsh : BaseItem
     {
         public override int LabelNumber => 1151809;  // Corrosive Ash
 

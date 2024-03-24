@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class AddonContainerComponent : Item, IChopable
+    public class AddonContainerComponent : BaseItem, IChopable
     {
         [Constructable]
         public AddonContainerComponent(int itemID)

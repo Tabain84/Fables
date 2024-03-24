@@ -14,7 +14,7 @@ namespace Server.Items
         bool Dye(Mobile from, DyeTub sender);
     }
 
-    public class DyeTub : Item, ISecurable
+    public class DyeTub : BaseItem, ISecurable
     {
         private bool m_Redyable;
         private int m_DyedHue;

@@ -15,7 +15,7 @@ namespace Server.Engines.Doom
         Completed
     }
 
-    public class GauntletSpawner : Item
+    public class GauntletSpawner : BaseItem
     {
         public const int PlayersPerSpawn = 5;
         public const int InSequenceItemHue = 0x000;

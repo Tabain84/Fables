@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class CrystallineFragments : Item
+    public class CrystallineFragments : BaseItem
     {
         [Constructable]
         public CrystallineFragments()

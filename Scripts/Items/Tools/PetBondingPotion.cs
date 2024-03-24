@@ -3,7 +3,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class PetBondingPotion : Item
+    public class PetBondingPotion : BaseItem
     {
         public override int LabelNumber => 1152921;  // Pet Bonding Potion
 

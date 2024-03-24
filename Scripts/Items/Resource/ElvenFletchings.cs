@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [TypeAlias("Server.Items.ElvenFletchings")]
-    public class ElvenFletching : Item, ICommodity
+    public class ElvenFletching : BaseItem, ICommodity
     {
         [Constructable]
         public ElvenFletching()

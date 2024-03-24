@@ -3,7 +3,7 @@ using Server.Gumps;
 namespace Server.Items
 {
     [Flipable(0x9C14, 0x9C15)]
-    public class CardOfSemidar : Item
+    public class CardOfSemidar : BaseItem
     {
         public enum CardType
         {

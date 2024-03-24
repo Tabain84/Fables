@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class Bait : Item
+    public class Bait : BaseItem
     {
         public static readonly bool UsePrompt = true;
 

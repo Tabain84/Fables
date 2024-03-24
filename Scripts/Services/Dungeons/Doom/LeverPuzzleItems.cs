@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Engines.Doom
 {
-    public class LampRoomBox : Item
+    public class LampRoomBox : BaseItem
     {
         private LeverPuzzleController m_Controller;
         private Mobile m_Wanderer;
@@ -64,7 +64,7 @@ namespace Server.Engines.Doom
         }
     }
 
-    public class LeverPuzzleStatue : Item
+    public class LeverPuzzleStatue : BaseItem
     {
         private LeverPuzzleController m_Controller;
         public LeverPuzzleStatue(int[] dat, LeverPuzzleController controller)
@@ -101,7 +101,7 @@ namespace Server.Engines.Doom
         }
     }
 
-    public class LeverPuzzleLever : Item
+    public class LeverPuzzleLever : BaseItem
     {
         private ushort m_Code;
         private LeverPuzzleController m_Controller;
@@ -159,7 +159,7 @@ namespace Server.Engines.Doom
     }
 
     [TypeAlias("Server.Engines.Doom.LampRoomTelePorter")]
-    public class LampRoomTeleporter : Item
+    public class LampRoomTeleporter : BaseItem
     {
         public LampRoomTeleporter(int[] dat)
         {

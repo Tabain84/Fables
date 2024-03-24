@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Ruby : Item, IGem
+    public class Ruby : BaseItem, IGem
     {
         [Constructable]
         public Ruby()

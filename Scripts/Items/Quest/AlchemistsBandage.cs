@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AlchemistsBandage : Item
+    public class AlchemistsBandage : BaseItem
     {
         [Constructable]
         public AlchemistsBandage()

@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace Server.Misc
 {
-    public class ShardPoller : Item
+    public class ShardPoller : BaseItem
     {
         private static readonly List<ShardPoller> m_ActivePollers = new List<ShardPoller>();
         private string m_Title;

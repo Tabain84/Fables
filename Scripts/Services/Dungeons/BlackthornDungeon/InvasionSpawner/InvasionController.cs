@@ -21,7 +21,7 @@ namespace Server.Engines.Blackthorn
         Nature
     }
 
-    public class InvasionController : Item
+    public class InvasionController : BaseItem
     {
         public static bool Enabled = true;
         public static int WaveCountMin = 8;

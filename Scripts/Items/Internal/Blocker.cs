@@ -2,7 +2,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class Blocker : Item
+    public class Blocker : BaseItem
     {
         [Constructable]
         public Blocker()

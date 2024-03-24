@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AncientParchment : Item
+    public class AncientParchment : BaseItem
     {
         public override int LabelNumber => 1155627;  // Ancient Parchment
 

@@ -24,7 +24,7 @@ namespace Server.Items
     }
 
     // ********** Dough **********
-    public class Dough : Item, IQuality
+    public class Dough : BaseItem, IQuality
     {
         private ItemQuality _Quality;
 
@@ -161,7 +161,7 @@ namespace Server.Items
     }
 
     // ********** SweetDough **********
-    public class SweetDough : Item
+    public class SweetDough : BaseItem
     {
         private ItemQuality _Quality;
 
@@ -290,7 +290,7 @@ namespace Server.Items
     }
 
     // ********** JarHoney **********
-    public class JarHoney : Item
+    public class JarHoney : BaseItem
     {
         [Constructable]
         public JarHoney()
@@ -363,7 +363,7 @@ namespace Server.Items
     }
 
     // ********** BowlFlour **********
-    public class BowlFlour : Item
+    public class BowlFlour : BaseItem
     {
         [Constructable]
         public BowlFlour()
@@ -393,7 +393,7 @@ namespace Server.Items
     }
 
     // ********** WoodenBowl **********
-    public class WoodenBowl : Item
+    public class WoodenBowl : BaseItem
     {
         [Constructable]
         public WoodenBowl()
@@ -423,7 +423,7 @@ namespace Server.Items
     }
 
     // ********** SackFlour **********
-    public class SackFlour : Item, IQuality
+    public class SackFlour : BaseItem, IQuality
     {
         private ItemQuality _Quality;
 
@@ -527,7 +527,7 @@ namespace Server.Items
     }
 
     // ********** SackFlourOpen **********
-    public class SackFlourOpen : Item
+    public class SackFlourOpen : BaseItem
     {
         public override int LabelNumber => 1024166;  // open sack of flour
 
@@ -557,7 +557,7 @@ namespace Server.Items
     }
 
     // ********** Eggshells **********
-    public class Eggshells : Item
+    public class Eggshells : BaseItem
     {
         [Constructable]
         public Eggshells()
@@ -586,7 +586,7 @@ namespace Server.Items
         }
     }
 
-    public class WheatSheaf : Item
+    public class WheatSheaf : BaseItem
     {
         [Constructable]
         public WheatSheaf()

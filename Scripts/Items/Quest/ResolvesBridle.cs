@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ResolvesBridle : Item
+    public class ResolvesBridle : BaseItem
     {
         [Constructable]
         public ResolvesBridle()

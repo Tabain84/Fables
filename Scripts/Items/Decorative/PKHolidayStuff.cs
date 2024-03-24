@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Coal : Item
+    public class Coal : BaseItem
     {
         public override int LabelNumber => 1041426;  // coal
 
@@ -31,7 +31,7 @@ namespace Server.Items
         }
     }
 
-    public class BadCard : Item
+    public class BadCard : BaseItem
     {
         private static readonly int[] m_CardHues = new int[] { 0x45, 0x27, 0x3D0 };
 

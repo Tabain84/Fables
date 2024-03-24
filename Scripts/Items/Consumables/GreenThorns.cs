@@ -5,7 +5,7 @@ using System;
 
 namespace Server.Items
 {
-    public class GreenThorns : Item, ICommodity
+    public class GreenThorns : BaseItem, ICommodity
     {
         [Constructable]
         public GreenThorns()
@@ -669,7 +669,7 @@ namespace Server.Items
         }
     }
 
-    public class GreenThornsSHTeleporter : Item
+    public class GreenThornsSHTeleporter : BaseItem
     {
         public static readonly Point3D Destination = new Point3D(5738, 1856, 0);
         public GreenThornsSHTeleporter(Serial serial)

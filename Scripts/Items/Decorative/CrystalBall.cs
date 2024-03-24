@@ -5,7 +5,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class MagicCrystalBall : Item
+    public class MagicCrystalBall : BaseItem
     {
         [Constructable]
         public MagicCrystalBall() : base(0xE2E)

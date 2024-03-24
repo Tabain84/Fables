@@ -163,7 +163,7 @@ namespace Server.Items
     }
 
     [Furniture]
-    public class TerMurStyleTable : Item
+    public class TerMurStyleTable : BaseItem
     {
         public override int LabelNumber => 1095321;  // Ter-Mur style table
 

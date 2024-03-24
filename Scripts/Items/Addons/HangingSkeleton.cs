@@ -6,7 +6,7 @@ using Server.Targeting;
 
 namespace Server.Items
 {
-    public class HangingSkeleton : Item, IAddon, IRewardItem
+    public class HangingSkeleton : BaseItem, IAddon, IRewardItem
     {
         private bool m_IsRewardItem;
         [Constructable]
@@ -127,7 +127,7 @@ namespace Server.Items
         }
     }
 
-    public class HangingSkeletonDeed : Item, IRewardItem
+    public class HangingSkeletonDeed : BaseItem, IRewardItem
     {
         private bool m_IsRewardItem;
         [Constructable]

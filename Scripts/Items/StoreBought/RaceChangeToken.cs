@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class RaceChangeToken : Item, IPromotionalToken
+    public class RaceChangeToken : BaseItem, IPromotionalToken
     {
         public override int LabelNumber => 1070997;  // a promotional token
         public TextDefinition ItemName => 1113656;  // race change

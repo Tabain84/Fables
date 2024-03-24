@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class CraftableFurniture : Item, IResource, IQuality
+    public class CraftableFurniture : BaseItem, IResource, IQuality
     {
         public virtual bool ShowCrafterName => true;
 

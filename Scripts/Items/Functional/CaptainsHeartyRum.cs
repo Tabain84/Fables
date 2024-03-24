@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class CaptainsHeartyRum : Item
+    public class CaptainsHeartyRum : BaseItem
     {
         private string _ShipName;
 

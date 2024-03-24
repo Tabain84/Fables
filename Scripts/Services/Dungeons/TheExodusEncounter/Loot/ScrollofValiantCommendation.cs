@@ -2,7 +2,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
-    public class ScrollofValiantCommendation : Item
+    public class ScrollofValiantCommendation : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public string Owner { get; set; }

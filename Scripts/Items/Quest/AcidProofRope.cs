@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AcidProofRope : Item
+    public class AcidProofRope : BaseItem
     {
         [Constructable]
         public AcidProofRope()

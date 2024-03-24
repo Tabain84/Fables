@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class PixieLeg : Item
+    public class PixieLeg : BaseItem
     {
         [Constructable]
         public PixieLeg()

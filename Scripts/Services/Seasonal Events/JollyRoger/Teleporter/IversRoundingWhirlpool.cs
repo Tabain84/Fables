@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class IRTeleporter : Item
+    public class IRTeleporter : BaseItem
     {
         private static readonly Point3D m_Dest = new Point3D(2263, 1572, -28);
 

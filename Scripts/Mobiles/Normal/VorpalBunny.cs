@@ -115,7 +115,7 @@ namespace Server.Mobiles
             DelayBeginTunnel();
         }
 
-        public class BunnyHole : Item
+        public class BunnyHole : BaseItem
         {
             public BunnyHole()
                 : base(0x913)

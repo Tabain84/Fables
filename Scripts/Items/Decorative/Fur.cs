@@ -3,7 +3,7 @@ using Server.Mobiles;
 namespace Server.Items
 {
     [TypeAlias("Server.Items.BouraFur", "Server.Items.KepetchFur")]
-    public class Fur : Item
+    public class Fur : BaseItem
     {
         [Constructable]
         public Fur()

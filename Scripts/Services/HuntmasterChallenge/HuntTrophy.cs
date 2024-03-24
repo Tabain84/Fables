@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class HuntTrophy : Item, IFlipable
+    public class HuntTrophy : BaseItem, IFlipable
     {
         private string m_Owner;
         private int m_Measurement;
@@ -157,7 +157,7 @@ namespace Server.Items
         }
     }
 
-    public class HuntTrophyDeed : Item
+    public class HuntTrophyDeed : BaseItem
     {
         private string m_Owner;
         private int m_Measurement;

@@ -204,7 +204,7 @@ namespace Server.Items
         }
     }
 
-    public class MetalBarrel : Item
+    public class MetalBarrel : BaseItem
     {
         public override int LabelNumber => 1023703;  // barrel
 
@@ -234,7 +234,7 @@ namespace Server.Items
         }
     }
 
-    public class WoodKeyDebris : Item
+    public class WoodKeyDebris : BaseItem
     {
         [Constructable]
         public WoodKeyDebris()

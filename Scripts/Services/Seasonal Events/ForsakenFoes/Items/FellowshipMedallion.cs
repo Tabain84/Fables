@@ -10,7 +10,7 @@ namespace Server.Items
         void Start(PlayerMobile pm);
     }
 
-    public class FellowshipMedallion : Item, IFellowshipMedallion
+    public class FellowshipMedallion : BaseItem, IFellowshipMedallion
     {
         public override int LabelNumber => 1159248;  // Fellowship Medallion
 

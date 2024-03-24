@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class ArisenController : Item
+    public class ArisenController : BaseItem
     {
         private static readonly int SpawnHour = 0; // Midnight
         private static readonly int DespawnHour = 4; // 4 AM

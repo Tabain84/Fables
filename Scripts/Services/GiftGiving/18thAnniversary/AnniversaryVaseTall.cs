@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AnniversaryVaseTall : Item
+    public class AnniversaryVaseTall : BaseItem
     {
         public override int LabelNumber => 1156147;  // Tall 18th Anniversary Vase
 

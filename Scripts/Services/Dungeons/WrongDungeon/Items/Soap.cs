@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Soap : Item
+    public class Soap : BaseItem
     {
         public override int LabelNumber => 1152267;  // soap
 

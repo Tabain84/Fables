@@ -167,7 +167,7 @@ namespace Server.Mobiles
             return base.OnMove(d);
         }
 
-        private class ClonedItem : Item
+        private class ClonedItem : BaseItem
         {
             public ClonedItem(Item item)
                 : base(item.ItemID)

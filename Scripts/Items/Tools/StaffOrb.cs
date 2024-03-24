@@ -13,7 +13,7 @@ namespace Server.Items
     /// A home location can be set/used thru the context menu.
     /// Will auto resurrect it's owner on death.
     /// </summary>
-    public class StaffOrb : Item
+    public class StaffOrb : BaseItem
     {
         public Point3D m_HomeLocation;
         public Map m_HomeMap;

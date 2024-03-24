@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.Quests.Collector
 {
-    public class Obsidian : Item
+    public class Obsidian : BaseItem
     {
         private static readonly string[] m_Names = new string[]
         {

@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Items
 {
-    public class ShipwreckBook : Item
+    public class ShipwreckBook : BaseItem
     {
         public override int LabelNumber => 1123597;  // Book
 

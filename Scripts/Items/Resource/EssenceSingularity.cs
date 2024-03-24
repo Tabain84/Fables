@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class EssenceSingularity : Item, ICommodity
+    public class EssenceSingularity : BaseItem, ICommodity
     {
         [Constructable]
         public EssenceSingularity()

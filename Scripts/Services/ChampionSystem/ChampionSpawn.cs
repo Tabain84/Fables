@@ -10,7 +10,7 @@ using System.Linq;
 
 namespace Server.Engines.CannedEvil
 {
-    public class ChampionSpawn : Item
+    public class ChampionSpawn : BaseItem
     {
         public static readonly int MaxStrayDistance = 250;
 
@@ -1576,7 +1576,7 @@ namespace Server.Engines.CannedEvil
         }
     }
 
-    public class IdolOfTheChampion : Item
+    public class IdolOfTheChampion : BaseItem
     {
         private ChampionSpawn m_Spawn;
 

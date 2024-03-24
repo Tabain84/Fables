@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class SilverSapling : Item
+    public class SilverSapling : BaseItem
     {
         public override int LabelNumber => 1113052;  // The Silver Sapling
 
@@ -73,7 +73,7 @@ namespace Server.Items
         }
     }
 
-    public class SilverSaplingSeed : Item
+    public class SilverSaplingSeed : BaseItem
     {
         public override int LabelNumber => 1113053;  // a seed of the Silver Sapling
 

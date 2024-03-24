@@ -2,7 +2,7 @@
 
 namespace Server.Items
 {
-    public class CursedOilstone : Item
+    public class CursedOilstone : BaseItem
     {
         public override int LabelNumber => 1151810;  // Cursed Oilstone
 

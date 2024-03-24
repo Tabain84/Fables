@@ -473,7 +473,7 @@ namespace Server
             }
         }
 
-        private static FileStream OpenWrite(FileStream orig)
+        public static FileStream OpenWrite(FileStream orig)
         {
             if (orig == null)
                 return null;
@@ -489,7 +489,7 @@ namespace Server
             }
         }
 
-        private static StaticTile[] ReadStaticBlock(BinaryReader idxReader, FileStream mulStream, int x, int y, int width, int height, out int count)
+        public static StaticTile[] ReadStaticBlock(BinaryReader idxReader, FileStream mulStream, int x, int y, int width, int height, out int count)
         {
             try
             {

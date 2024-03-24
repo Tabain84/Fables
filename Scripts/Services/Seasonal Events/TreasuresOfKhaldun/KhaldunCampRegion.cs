@@ -292,7 +292,7 @@ namespace Server.Engines.Khaldun
         }
     }
 
-    public class KhaldunCampBlocker : Item
+    public class KhaldunCampBlocker : BaseItem
     {
         public int Position { get; set; }
 

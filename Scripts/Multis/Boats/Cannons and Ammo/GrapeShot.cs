@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Grapeshot : Item, ICommodity, ICannonAmmo
+    public class Grapeshot : BaseItem, ICommodity, ICannonAmmo
     {
         public override int LabelNumber => 1116030;  // grapeshot
         public override double DefaultWeight => 3.5;
@@ -42,7 +42,7 @@ namespace Server.Items
         }
     }
 
-    public class LightGrapeshot : Item, ICommodity, ICannonAmmo
+    public class LightGrapeshot : BaseItem, ICommodity, ICannonAmmo
     {
         public override int LabelNumber => 1116030;
         public override double DefaultWeight => 3.5;
@@ -81,7 +81,7 @@ namespace Server.Items
         }
     }
 
-    public class HeavyGrapeshot : Item, ICommodity, ICannonAmmo
+    public class HeavyGrapeshot : BaseItem, ICommodity, ICannonAmmo
     {
         public override int LabelNumber => 1116166;
         public override double DefaultWeight => 7.0;

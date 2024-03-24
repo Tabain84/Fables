@@ -2,7 +2,7 @@ using Server.Engines.Despise;
 
 namespace Server.Items
 {
-    public class PutridHeart : Item
+    public class PutridHeart : BaseItem
     {
         public override int LabelNumber => 1153424;  // putrid heart
 

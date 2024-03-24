@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ExpiredVoucher : Item
+    public class ExpiredVoucher : BaseItem
     {
         public override int LabelNumber => 1151749;  // Expired Voucher for a Free Drink at the Fortune's Fire Casino
 

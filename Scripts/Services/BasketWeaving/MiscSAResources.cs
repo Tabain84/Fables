@@ -4,7 +4,7 @@ using Server.Engines.Plants;
 
 namespace Server.Items
 {
-    public class DryReeds : Item, IPlantHue
+    public class DryReeds : BaseItem, IPlantHue
     {
         private PlantHue m_PlantHue;
 
@@ -94,7 +94,7 @@ namespace Server.Items
         }
     }
 
-    public class SoftenedReeds : Item, IPlantHue
+    public class SoftenedReeds : BaseItem, IPlantHue
     {
         private PlantHue m_PlantHue;
 
@@ -192,7 +192,7 @@ namespace Server.Items
         }
     }
 
-    public class CrystalGranules : Item
+    public class CrystalGranules : BaseItem
     {
         public override int LabelNumber => 1112329;  // crystal granules
 

@@ -1,7 +1,7 @@
 namespace Server.Items
 {
     [Flipable(0xA2FE, 0xA2FF)]
-    public class DecorativeFeedingTrough : Item
+    public class DecorativeFeedingTrough : BaseItem
     {
         public override int LabelNumber => 1125750; // trough
 

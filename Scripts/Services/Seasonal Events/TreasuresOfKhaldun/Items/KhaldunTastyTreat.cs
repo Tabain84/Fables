@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class KhaldunTastyTreat : Item
+    public class KhaldunTastyTreat : BaseItem
     {
         public const int Duration = 1; // hours
 

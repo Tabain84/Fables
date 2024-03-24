@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AriellesBauble : Item
+    public class AriellesBauble : BaseItem
     {
         [Constructable]
         public AriellesBauble()

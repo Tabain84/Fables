@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class LittleBlackBook : Item
+    public class LittleBlackBook : BaseItem
     {
         public override int LabelNumber => 1151751;  // Slim the Fence's little black book
 

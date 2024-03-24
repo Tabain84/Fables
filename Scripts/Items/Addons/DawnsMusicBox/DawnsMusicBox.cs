@@ -29,7 +29,7 @@ namespace Server.Items
     }
 
     [Flipable(0x2AF9, 0x2AFD)]
-    public class DawnsMusicBox : Item, ISecurable
+    public class DawnsMusicBox : BaseItem, ISecurable
     {
         public static MusicName[] m_CommonTracks = new MusicName[]
         {

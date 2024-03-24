@@ -79,7 +79,7 @@ namespace Server.Items
         }
     }
 
-    public class DragonLanternDeed : Item
+    public class DragonLanternDeed : BaseItem
     {
         public override int LabelNumber => 1098392;  // dragon lantern
 

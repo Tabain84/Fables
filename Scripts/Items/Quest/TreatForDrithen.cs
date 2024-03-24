@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class TreatForDrithen : Item
+    public class TreatForDrithen : BaseItem
     {
         [Constructable]
         public TreatForDrithen()

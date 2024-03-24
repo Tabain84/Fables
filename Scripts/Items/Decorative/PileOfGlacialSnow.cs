@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Items
 {
-    public class PileOfGlacialSnow : Item
+    public class PileOfGlacialSnow : BaseItem
     {
         public override int LabelNumber => 1070874; // a Pile of Glacial Snow
 

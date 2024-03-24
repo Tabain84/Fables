@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class AquariumFood : Item
+    public class AquariumFood : BaseItem
     {
         [Constructable]
         public AquariumFood()

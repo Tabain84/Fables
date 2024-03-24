@@ -116,7 +116,7 @@ namespace Server.Items
         }
     }
 
-    public class AddonComponent : Item, IChopable
+    public class AddonComponent : BaseItem, IChopable
     {
         public override bool ForceShowProperties => Addon != null && Addon.ForceShowProperties;
 

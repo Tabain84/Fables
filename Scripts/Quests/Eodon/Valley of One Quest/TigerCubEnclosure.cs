@@ -181,7 +181,7 @@ namespace Server.Items
         }
     }
 
-    public class EnclosureDoor : Item
+    public class EnclosureDoor : BaseItem
     {
         [CommandProperty(AccessLevel.GameMaster)]
         public CubEnclosure Enclosure { get; set; }

@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class DecorativeDungeonStool : Item
+    public class DecorativeDungeonStool : BaseItem
     {
         public override int LabelNumber => 1159471;  // decorative dungeon stool
 

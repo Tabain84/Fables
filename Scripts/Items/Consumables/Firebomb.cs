@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Server.Items
 {
-    public class Firebomb : Item
+    public class Firebomb : BaseItem
     {
         private Timer m_Timer;
         private int m_Ticks = 0;
@@ -229,7 +229,7 @@ namespace Server.Items
         }
     }
 
-    public class FirebombField : Item
+    public class FirebombField : BaseItem
     {
         private readonly List<Mobile> m_Burning;
         private readonly Timer m_Timer;

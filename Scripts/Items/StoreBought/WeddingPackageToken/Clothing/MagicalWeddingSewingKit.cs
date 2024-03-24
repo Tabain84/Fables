@@ -2,7 +2,7 @@ using Server.Gumps;
 
 namespace Server.Items
 {
-    public class MagicalWeddingSewingKit : Item, IRewardOption
+    public class MagicalWeddingSewingKit : BaseItem, IRewardOption
     {
         public override int LabelNumber => 1157338; // Magical Wedding Sewing Kit
 

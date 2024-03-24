@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Server.Items
 {
-    public class ArcaneGem : Item, ICommodity
+    public class ArcaneGem : BaseItem, ICommodity
     {
         public const int DefaultArcaneHue = 2117;
         public override int LabelNumber => 1114115;  // Arcane Gem
