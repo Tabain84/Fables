@@ -1,6 +1,7 @@
 using Server.Items;
 using Server.Regions;
 using Server.Spells;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -170,14 +171,14 @@ namespace Server.Multis
 
                         int addTileZ = center.Z + addTile.Z;
                         int addTileTop = addTileZ + addTile.Height;
-
+                        
                         if ((addTileFlags & TileFlag.Surface) != 0)
                             addTileTop += 16;
 
-                        if (addTileTop > landStartZ && landAvgZ > addTileZ)
+                        if (addTileTop > landStartZ && landAvgZ - 2 > addTileZ)
                             return HousePlacementResult.BadLand; // Broke rule #2
 
-                        if (isFoundation && ((TileData.LandTable[landTile.ID & TileData.MaxLandValue].Flags & TileFlag.Impassable) == 0) && landAvgZ == center.Z)
+                        if (isFoundation && ((TileData.LandTable[landTile.ID & TileData.MaxLandValue].Flags & TileFlag.Impassable) == 0) && (landAvgZ <= center.Z + 2 && landAvgZ >= center.Z - 2))
                             hasSurface = true;
 
                         for (int j = 0; j < oldTiles.Length; ++j)
