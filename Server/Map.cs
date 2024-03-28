@@ -1241,66 +1241,68 @@ namespace Server
 			GetAverageZ(x, y, ref landZ, ref landAvg, ref landTop);
 
 			var items = AcquireFixItems(this, x, y);
-
-			foreach (var toFix in items)
+			if (items != null)
 			{
-				if (!toFix.Movable)
+				foreach (var toFix in items)
 				{
-					continue;
-				}
-
-				var z = Int32.MinValue;
-				var currentZ = toFix.Z;
-
-				if (!landTile.Ignored && landAvg <= currentZ)
-				{
-					z = landAvg;
-				}
-
-				foreach (var tile in tiles)
-				{
-					var id = TileData.ItemTable[tile.ID & TileData.MaxItemValue];
-
-					var checkZ = tile.Z;
-					var checkTop = checkZ + id.CalcHeight;
-
-					if (checkTop == checkZ && !id.Surface)
-					{
-						++checkTop;
-					}
-
-					if (checkTop > z && checkTop <= currentZ)
-					{
-						z = checkTop;
-					}
-				}
-
-				foreach (var item in items)
-				{
-					if (item == toFix)
+					if (!toFix.Movable)
 					{
 						continue;
 					}
 
-					var id = item.ItemData;
+					var z = Int32.MinValue;
+					var currentZ = toFix.Z;
 
-					var checkZ = item.Z;
-					var checkTop = checkZ + id.CalcHeight;
-
-					if (checkTop == checkZ && !id.Surface)
+					if (!landTile.Ignored && landAvg <= currentZ)
 					{
-						++checkTop;
+						z = landAvg;
 					}
 
-					if (checkTop > z && checkTop <= currentZ)
+					foreach (var tile in tiles)
 					{
-						z = checkTop;
-					}
-				}
+						var id = TileData.ItemTable[tile.ID & TileData.MaxItemValue];
 
-				if (z != Int32.MinValue)
-				{
-					toFix.Location = new Point3D(toFix.X, toFix.Y, z);
+						var checkZ = tile.Z;
+						var checkTop = checkZ + id.CalcHeight;
+
+						if (checkTop == checkZ && !id.Surface)
+						{
+							++checkTop;
+						}
+
+						if (checkTop > z && checkTop <= currentZ)
+						{
+							z = checkTop;
+						}
+					}
+
+					foreach (var item in items)
+					{
+						if (item == toFix)
+						{
+							continue;
+						}
+
+						var id = item.ItemData;
+
+						var checkZ = item.Z;
+						var checkTop = checkZ + id.CalcHeight;
+
+						if (checkTop == checkZ && !id.Surface)
+						{
+							++checkTop;
+						}
+
+						if (checkTop > z && checkTop <= currentZ)
+						{
+							z = checkTop;
+						}
+					}
+
+					if (z != Int32.MinValue)
+					{
+						toFix.Location = new Point3D(toFix.X, toFix.Y, z);
+					}
 				}
 			}
 
