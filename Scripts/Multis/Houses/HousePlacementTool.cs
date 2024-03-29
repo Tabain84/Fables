@@ -102,6 +102,8 @@ namespace Server.Items
         private const int LabelColor = 0x7FFF;
         private const int LabelColorDisabled = 0x4210;
 
+        private const int LabelHue = 1149;
+
         private readonly Mobile m_From;
         private readonly HousePlacementTool m_Tool;
 
@@ -138,11 +140,9 @@ namespace Server.Items
             AddButton(10, 80, 4005, 4007, 3, GumpButtonType.Reply, 0);
             AddHtmlLocalized(45, 80, 200, 20, 1060392, LabelColor, false, false); // 3-Story Customizable Houses
 
-            if (m_Tool.UseCustomHousePlots || from.AccessLevel > AccessLevel.Counselor)
-            {
-                AddButton(10, 100, 4005, 4007, 4, GumpButtonType.Reply, 0);
-                AddHtmlLocalized(45, 100, 200, 20, 1158540, LabelColor, false, false); // Custom House Contest
-            }
+            AddButton(10, 100, 4005, 4007, 4, GumpButtonType.Reply, 0);
+            //AddHtmlLocalized(45, 100, 200, 20, 1158540, LabelColor, false, false); // Custom House Contest
+            AddLabel(45, 100, LabelHue, "Customizable Keeps");
         }
 
         public override void OnResponse(NetState sender, RelayInfo info)
@@ -169,10 +169,8 @@ namespace Server.Items
                     }
                 case 4: // Custom House Contest
                     {
-                        if (m_Tool.UseCustomHousePlots || m_From.AccessLevel > AccessLevel.Player)
-                        {
-                            m_From.SendGump(new HousePlacementListGump(m_Tool, m_From, HousePlacementEntry.CustomHouseContest));
-                        }
+                        
+                        m_From.SendGump(new HousePlacementListGump(m_Tool, m_From, HousePlacementEntry.CustomHouseContest));
                         break;
                     }
             }
