@@ -702,7 +702,7 @@ namespace Server.Mobiles
             {
                 string name;
 
-                if (Fame >= 10000)
+                if (Fame >= 50000)
                     name = string.Format("{0} {1}", Female ? "Lady" : "Lord", RawName);
                 else
                     name = RawName;
@@ -5396,7 +5396,7 @@ namespace Server.Mobiles
         {
             string prefix = "";
 
-            if (ShowFameTitle && Fame >= 10000)
+            if (ShowFameTitle && Fame >= 50000)
             {
                 prefix = Female ? "Lady" : "Lord";
             }

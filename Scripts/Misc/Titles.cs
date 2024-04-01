@@ -3,6 +3,7 @@ using Server.Items;
 using Server.Mobiles;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Text;
 
 namespace Server.Misc
@@ -10,59 +11,74 @@ namespace Server.Misc
     public class Titles
     {
         public const int MinFame = 0;
-        public const int MaxFame = 32000;
+        public const int MaxFame = 100000;
 
         public static void AwardFame(Mobile m, int offset, bool message)
         {
             int fame = m.Fame;
+            offset = Math.Abs(offset);
 
             if (offset > 0)
             {
                 if (fame >= MaxFame)
                     return;
 
-                offset -= fame / 100;
+                offset -= fame / 500;
 
                 if (offset < 0)
                     offset = 0;
             }
-            else if (offset < 0)
-            {
-                if (fame <= MinFame)
-                    return;
 
-                offset -= fame / 100;
-
-                if (offset > 0)
-                    offset = 0;
-            }
-
-            if ((fame + offset) > MaxFame)
-                offset = MaxFame - fame;
-            else if ((fame + offset) < MinFame)
-                offset = MinFame - fame;
-
-            m.Fame += offset;
+            int addFame =0;
 
             if (message)
             {
-                if (offset > 40)
-                    m.SendLocalizedMessage(1019054); // You have gained a lot of fame.
-                else if (offset > 20)
-                    m.SendLocalizedMessage(1019053); // You have gained a good amount of fame.
-                else if (offset > 10)
-                    m.SendLocalizedMessage(1019052); // You have gained some fame.
-                else if (offset > 0)
-                    m.SendLocalizedMessage(1019051); // You have gained a little fame.
-                else if (offset < -40)
-                    m.SendLocalizedMessage(1019058); // You have lost a lot of fame.
-                else if (offset < -20)
-                    m.SendLocalizedMessage(1019057); // You have lost a good amount of fame.
-                else if (offset < -10)
-                    m.SendLocalizedMessage(1019056); // You have lost some fame.
-                else if (offset < 0)
-                    m.SendLocalizedMessage(1019055); // You have lost a little fame.
+                if (offset > 300)
+                {
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained a massive amount of fame!");
+                    addFame += 8;
+                }
+                if (offset > 250)
+                {
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained a vast amount of fame!");
+                    addFame += 7;
+                }
+                if (offset > 200)
+                {
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained a great amount of fame!");
+                    addFame += 6;
+                }
+                else if (offset > 150)
+                {
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained a large amount of fame!");
+                    addFame += 5;
+                }
+                else if (offset > 100)
+                {
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained a good amount of fame!");
+                    addFame += 4;
+                }
+                else if (offset > 50)
+                {
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained some fame!");
+                    addFame += 3;
+                }
+                else if (offset > 25)
+                {
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained a little fame!");
+                    addFame += 2;
+                }
+                else if (offset > 5)
+                {
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained a tiny amount of fame!");
+                    addFame += 1;
+                }
             }
+
+            if ((fame + addFame) > MaxFame)
+                addFame = MaxFame - fame;
+
+            m.Fame += addFame;
         }
 
         public const int MinKarma = -32000;
@@ -123,21 +139,21 @@ namespace Server.Misc
             if (message)
             {
                 if (offset > 40)
-                    m.SendLocalizedMessage(1019062); // You have gained a lot of karma.
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained a lot of karma.");
                 else if (offset > 20)
-                    m.SendLocalizedMessage(1019061); // You have gained a good amount of karma.
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained a good amount of karma."); // You have gained a good amount of karma.
                 else if (offset > 10)
-                    m.SendLocalizedMessage(1019060); // You have gained some karma.
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained some karma."); // You have gained some karma.
                 else if (offset > 0)
-                    m.SendLocalizedMessage(1019059); // You have gained a little karma.
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have gained a little karma."); // You have gained a little karma.
                 else if (offset < -40)
-                    m.SendLocalizedMessage(1019066); // You have lost a lot of karma.
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have have lost a lot of karma."); // You have lost a lot of karma.
                 else if (offset < -20)
-                    m.SendLocalizedMessage(1019065); // You have lost a good amount of karma.
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have lost a good amount of karma."); // You have lost a good amount of karma.
                 else if (offset < -10)
-                    m.SendLocalizedMessage(1019064); // You have lost some karma.
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have lost some karma."); // You have lost some karma.
                 else if (offset < 0)
-                    m.SendLocalizedMessage(1019063); // You have lost a little karma.
+                    m.SendMessage(MessageUtil.MessageColorPlayer, "You have lost a little karma."); // You have lost a little karma.
             }
         }
 
@@ -178,7 +194,49 @@ namespace Server.Misc
             int fame = beheld.Fame;
             int karma = beheld.Karma;
 
-            for (int i = 0; i < m_FameEntries.Length; ++i)
+			string[] titles;
+            StringBuilder title = new StringBuilder();
+
+            if ( beheld is PlayerMobile ) {
+				PlayerMobile bh = beheld as PlayerMobile;
+				if ( bh != null ) {
+
+					if ( bh.Karma < 0)
+						titles = NegativeLevels;
+					else
+						titles = PositiveLevels;
+
+                    if (fame >= 50000)
+                        title.AppendFormat(titles[11], beheld.Female ? "Lady" : "Lord", beheld.Name);
+                    else if (fame > 40000)
+                        title.AppendFormat(titles[10], beheld.Name);
+                    else if (fame > 30000)
+                        title.AppendFormat(titles[9], beheld.Name);
+                    else if (fame > 20000)
+                        title.AppendFormat(titles[8], beheld.Name);
+                    else if (fame > 15000)
+                        title.AppendFormat(titles[7], beheld.Name);
+                    else if (fame > 10000)
+                        title.AppendFormat(titles[6], beheld.Name);
+                    else if (fame > 5000)
+                        title.AppendFormat(titles[5], beheld.Name);
+                    else if (fame > 3200)
+                        title.AppendFormat(titles[4], beheld.Name);
+                    else if (fame > 1600)
+                        title.AppendFormat(titles[3], beheld.Name);
+                    else if (fame > 800)
+                        title.AppendFormat(titles[2], beheld.Name);
+                    else if (fame > 400)
+                        title.AppendFormat(titles[1], beheld.Name);
+                    else if (fame > 200)
+                        title.AppendFormat(titles[0], beheld.Name);
+                    else
+                        title.AppendFormat(beheld.Name);
+				}	
+			}
+            return title.ToString();
+
+            /*for (int i = 0; i < m_FameEntries.Length; ++i)
             {
                 FameEntry fe = m_FameEntries[i];
 
@@ -199,7 +257,7 @@ namespace Server.Misc
                     return string.Empty;
                 }
             }
-            return string.Empty;
+            return string.Empty;*/
         }
 
         public static string ComputeTitle(Mobile beholder, Mobile beheld)
@@ -284,7 +342,53 @@ namespace Server.Misc
 
             return highest;
         }
+		public static string[] PositiveLevels
+		{
+			get
+			{
+				string[] PosLevelArray = 
+				{
+					"The Recognized {0}",
+					"The Noted {0}",
+					"The Honorable {0}",
+					"The Influential {0}",
+                    "The Admirable {0}",
+					"The Famed {0}",
+					"The Extraordinary {0}",
+					"The Acclaimed {0}",
+                    "The Great {0}",
+					"The Exalted {0}",
+					"The Illustrious {0}",
+					"The Glorious {0} {1}",
+					};
 
+				return PosLevelArray;
+			}
+		}
+
+		public static string[] NegativeLevels
+		{
+			get
+			{
+				string[] NegLevelArray = 
+				{
+					"The Questionable {0}",
+					"The Contemptible {0}",
+					"The Despicable {0}",
+                    "The Disreputable {0}",
+					"The Outcast {0}",
+                    "The Infamous {0}",
+					"The Wicked {0}",
+					"The Atrocious {0}",
+					"The Wretched {0}",
+					"The Vicious {0}",
+					"The Vile {0}",
+					"The Dread {0} {1}",
+					};
+
+				return NegLevelArray;
+			}
+		}
         private static readonly string[,] m_Levels = new string[,]
         {
             { "Neophyte", "Neophyte", "Neophyte" },
