@@ -495,7 +495,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "2d10+20"),
+                    new LootPackEntry(false, true, Gold, 100.00, "2d10"),
                     new LootPackEntry(false, false, MagicItemsPoor, 1.00, 1, 5, 0, 100, true),
                     new LootPackEntry(false, false, Instruments, 0.02, 1, true)
                 });
@@ -504,7 +504,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "4d10+40"),
+                    new LootPackEntry(false, true, Gold, 100.00, "4d10"),
                     new LootPackEntry(false, false, MagicItemsMeagerType1, 20.40, 1, 2, 0, 50, true),
                     new LootPackEntry(false, false, MagicItemsMeagerType2, 10.20, 1, 5, 0, 100, true),
                     new LootPackEntry(false, false, Instruments, 0.10, 1)
@@ -514,7 +514,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "8d10+100"),
+                    new LootPackEntry(false, true, Gold, 100.00, "8d10"),
                     new LootPackEntry(false, false, MagicItemsAverageType1, 32.80, 1, 3, 0, 50, true),
                     new LootPackEntry(false, false, MagicItemsAverageType1, 32.80, 1, 4, 0, 75, true),
                     new LootPackEntry(false, false, MagicItemsAverageType2, 19.50, 1, 5, 0, 100, true),
@@ -525,7 +525,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "15d10+225"),
+                    new LootPackEntry(false, true, Gold, 100.00, "15d10"),
                     new LootPackEntry(false, false, MagicItemsRichType1, 76.30, 1, 4, 0, 75, true),
                     new LootPackEntry(false, false, MagicItemsRichType1, 76.30, 1, 4, 0, 75, true),
                     new LootPackEntry(false, false, MagicItemsRichType2, 61.70, 1, 5, 0, 100, true),
@@ -536,7 +536,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "3d100+400"),
+                    new LootPackEntry(false, true, Gold, 100.00, "3d100"),
                     new LootPackEntry(false, false, MagicItemsFilthyRichType1, 79.50, 1, 5, 0, 100, true),
                     new LootPackEntry(false, false, MagicItemsFilthyRichType1, 79.50, 1, 5, 0, 100, true),
                     new LootPackEntry(false, false, MagicItemsFilthyRichType2, 77.60, 1, 5, 25, 100, true),
@@ -547,7 +547,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "6d100+600"),
+                    new LootPackEntry(false, true, Gold, 100.00, "6d100"),
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
@@ -561,7 +561,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-                    new LootPackEntry(false, true, Gold, 100.00, "10d100+800"),
+                    new LootPackEntry(false, true, Gold, 100.00, "10d100"),
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
                     new LootPackEntry(false, false, MagicItemsUltraRich, 100.00, 1, 5, 25, 100, true),
@@ -954,6 +954,8 @@ namespace Server
                 if (item.Stackable)
                 {
                     item.Amount = Quantity.Roll();
+                    if (item is Gold)
+                        item.Amount *= Settings.goldModifier;
                 }
             }
 

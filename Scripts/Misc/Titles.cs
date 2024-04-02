@@ -78,7 +78,7 @@ namespace Server.Misc
             if ((fame + addFame) > MaxFame)
                 addFame = MaxFame - fame;
 
-            m.Fame += addFame;
+            m.Fame += addFame * Settings.fameGainModifier;
         }
 
         public const int MinKarma = -32000;
