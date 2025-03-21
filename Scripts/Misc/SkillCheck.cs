@@ -225,6 +225,11 @@ namespace Server.Misc
             bool success = Utility.Random(100) <= (int)(chance * 100);
             double gc = GetGainChance(from, skill, chance, success);
 
+            if ( from is PlayerMobile ) {
+				Gain( from, skill );
+				return success;
+			}
+
             if (AllowGain(from, skill, obj))
             {
                 if (from.Alive && (skill.Base < 10.0 || Utility.RandomDouble() <= gc || CheckGGS(from, skill)))
@@ -352,6 +357,21 @@ namespace Server.Misc
 
             if (skill.SkillName == SkillName.Focus && from is BaseCreature && !((BaseCreature)from).Controlled)
                 return;
+
+            //Player Skillgain handled elsewhere
+            if (from is PlayerMobile)
+            {
+                int gain = Utility.Random(3, 6);
+
+                PlayerMobile pm = from as PlayerMobile;
+                if (pm.TrainingPoints.ContainsKey(skill.SkillName))
+                    pm.TrainingPoints[skill.SkillName] += gain;
+                else
+                    pm.TrainingPoints.Add(skill.SkillName, gain);
+
+                return;
+            }
+
 
             if (skill.Base < skill.Cap && skill.Lock == SkillLock.Up)
             {

@@ -5899,16 +5899,8 @@ namespace Server.Mobiles
                     int totalFame = Fame / 100;
                     int totalKarma = -Karma / 100;
 
-                    if (Map == Map.Felucca)
-                    {
-                        totalFame += ((totalFame / 10) * 3);
-                        totalKarma += ((totalKarma / 10) * 3);
-                    }
-
                     List<DamageStore> list = GetLootingRights();
-                    List<Mobile> titles = new List<Mobile>();
-                    List<int> fame = new List<int>();
-                    List<int> karma = new List<int>();
+                    List<PlayerMobile> titles = new List<PlayerMobile>();
 
                     for (int i = 0; i < list.Count; ++i)
                     {
@@ -5921,63 +5913,33 @@ namespace Server.Mobiles
 
                         if (GivesFameAndKarmaAward)
                         {
-                            Party party = Engines.PartySystem.Party.Get(ds.m_Mobile);
+                            Party party = Server.Engines.PartySystem.Party.Get(ds.m_Mobile);
 
-                            if (party != null)
-                            {
-                                int divedFame = totalFame / party.Members.Count;
-                                int divedKarma = totalKarma / party.Members.Count;
-
-                                for (int j = 0; j < party.Members.Count; ++j)
-                                {
-                                    PartyMemberInfo info = party.Members[j];
-
-                                    if (info != null && info.Mobile != null)
-                                    {
-                                        int index = titles.IndexOf(info.Mobile);
-
-                                        if (index == -1)
-                                        {
-                                            titles.Add(info.Mobile);
-                                            fame.Add(divedFame);
-                                            karma.Add(divedKarma);
-                                        }
-                                        else
-                                        {
-                                            fame[index] += divedFame;
-                                            karma[index] += divedKarma;
-                                        }
-                                    }
-                                }
-                            }
+                            if (party == null && ds.m_Mobile is PlayerMobile)
+                                titles.Add((PlayerMobile)ds.m_Mobile);
                             else
                             {
-                                if (ds.m_Mobile is PlayerMobile)
+                                foreach (PartyMemberInfo info in party.Members)
                                 {
-                                    foreach (Mobile pet in ((PlayerMobile)ds.m_Mobile).AllFollowers.Where(p => DamageEntries.Any(de => de.Damager == p)))
+                                    if (!titles.Contains((PlayerMobile)info.Mobile) && Utility.InRange(info.Mobile.Location, Location, 30))
                                     {
-                                        titles.Add(pet);
-                                        fame.Add(totalFame);
-                                        karma.Add(totalKarma);
+                                        titles.Add((PlayerMobile)info.Mobile);
                                     }
                                 }
-
-                                titles.Add(ds.m_Mobile);
-                                fame.Add(totalFame);
-                                karma.Add(totalKarma);
                             }
+
+                            OnKilledBy(ds.m_Mobile);
+
+                            if (HumilityVirtue.IsInHunt(ds.m_Mobile) && Karma < 0)
+                                HumilityVirtue.RegisterKill(ds.m_Mobile, this, list.Count);
                         }
-
-                        OnKilledBy(ds.m_Mobile);
-
-                        if (HumilityVirtue.IsInHunt(ds.m_Mobile) && Karma < 0)
-                            HumilityVirtue.RegisterKill(ds.m_Mobile, this, list.Count);
                     }
 
                     for (int i = 0; i < titles.Count; ++i)
                     {
-                        Titles.AwardFame(titles[i], fame[i], true);
-                        Titles.AwardKarma(titles[i], karma[i], true);
+                        titles[i].KillCounter++;
+                        Exp.ExpGain.AwardFameExp( titles[i], Fame );
+                        Titles.AwardFame(titles[i], totalFame, true);
                     }
                 }
 

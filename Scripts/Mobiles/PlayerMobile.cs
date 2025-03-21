@@ -119,6 +119,322 @@ namespace Server.Mobiles
 
     public partial class PlayerMobile : BaseMobile, IHonorTarget
     {
+        #region Skills and Skillcaps
+
+        //Easy to adjust variables to change how many skills the player
+        //is allowed to have.
+        public const int SpecialsPermitted = 1;
+        public const int PrimariesPermitted = 3;
+        public const int SecondariesPermitted = 4;
+        public const int TradeskillsPermitted = 1;
+
+        public const int SpecialCap = 110;
+        public const int PrimaryCap = 100;
+        public const int SecondaryCap = 80;
+        public const int TradeSkillCap = 100;
+        public const int NonSpecCap = 20;
+
+        //Skill related functions
+        private SkillName[] m_SpecialSkills, m_PrimarySkills, m_SecondarySkills, m_TradeSkills;
+
+        [CommandProperty( AccessLevel.GameMaster )]
+        public SkillName[] SpecialSkills
+        {
+            get
+            {
+                return m_SpecialSkills;
+            }
+            set
+            {
+                if ( value.Length != SpecialsPermitted ) {
+                    Console.Write( "Error:  Attempted to write invalid sized skill list to primaries!" );
+                    return;
+                }
+                m_SpecialSkills = value;
+                ClearSkillsCache();
+            }
+        }
+
+        [CommandProperty( AccessLevel.GameMaster )]
+        public SkillName[] PrimarySkills
+        {
+            get
+            {
+                return m_PrimarySkills;
+            }
+            set
+            {
+                if ( value.Length != PrimariesPermitted ) {
+                    Console.Write( "Error:  Attempted to write invalid sized skill list to primaries!" );
+                    return;
+                }
+                m_PrimarySkills = value;
+                ClearSkillsCache();
+            }
+        }
+
+        [CommandProperty( AccessLevel.GameMaster )]
+        public SkillName[] SecondarySkills
+        {
+            get
+            {
+                return m_SecondarySkills;
+            }
+            set
+            {
+                if ( value.Length != SecondariesPermitted ) {
+                    Console.Write( "Error:  Attempted to write invalid sized skill list to Secondaries!" );
+                    return;
+                }
+                m_SecondarySkills = value;
+                ClearSkillsCache();
+            }
+        }
+
+        [CommandProperty(AccessLevel.GameMaster)]
+        public SkillName[] TradeSkills
+        {
+            get
+            {
+                return m_TradeSkills;
+            }
+            set
+            {
+                if (value.Length != TradeskillsPermitted)
+                {
+                    Console.Write("Error:  Attempted to write invalid sized skill list to Secondaries!");
+                    return;
+                }
+                m_TradeSkills = value;
+                ClearSkillsCache();
+            }
+        }
+
+        public bool IsSpecial( SkillName theSkillID )
+        {
+            for ( int i = 0; i < m_SpecialSkills.Length; i++ ) {
+                SkillName thisSkill = (SkillName)m_SpecialSkills[i];
+                if ( thisSkill == theSkillID )
+                    return true;
+            }
+            return false;
+        }
+
+        public bool IsPrimary( SkillName theSkillID )
+        {
+            for ( int i = 0; i < m_PrimarySkills.Length; i++ ) {
+                SkillName thisSkill = (SkillName)m_PrimarySkills[i];
+                if ( thisSkill == theSkillID )
+                    return true;
+            }
+            return false;
+        }
+
+        public bool IsSecondary( SkillName theSkillID )
+        {
+            for ( int i = 0; i < m_SecondarySkills.Length; i++ ) {
+                SkillName thisSkill = (SkillName)m_SecondarySkills[i];
+                if ( thisSkill == theSkillID )
+                    return true;
+            }
+            return false;
+        }
+        
+        public bool IsTradeSkill(SkillName theSkillID)
+        {
+            for (int i = 0; i < m_TradeSkills.Length; i++)
+            {
+                SkillName thisSkill = (SkillName)m_TradeSkills[i];
+                if (thisSkill == theSkillID)
+                    return true;
+            }
+            return false;
+        }
+
+        public bool IsSpecced( SkillName theSkillID )
+        {
+            if ( IsSpecial( theSkillID ) || IsPrimary( theSkillID ) || IsSecondary( theSkillID ) || IsTradeSkill(theSkillID))
+                return true;
+            return false;
+        }
+
+        //Returns the skillcap based on what is spec'ed
+        public int GetSkillCap( SkillName theSkillID )
+        {
+            if ( IsSpecial( theSkillID ) )
+                return SpecialCap;
+            else if ( IsPrimary( theSkillID ) )
+                return PrimaryCap;
+            else if ( SkillMaster.IsTradeskill( theSkillID ) && IsSecondary( theSkillID ) )
+                return TradeSkillCap;
+            else if ( IsSecondary( theSkillID ) )
+                return SecondaryCap;
+            else if (IsTradeSkill(theSkillID))
+                return TradeSkillCap;
+
+
+            //Not specced
+            return NonSpecCap;
+        }
+
+        private SkillName[] m_CachedSortedSkillIDArray;
+        public SkillName[] SortedSkillIDArray
+        {
+            get
+            {
+                if ( m_CachedSortedSkillIDArray == null ) {
+                    List<SkillName> allSkills = new List<SkillName>( SkillMaster.AllSkills );
+                    m_CachedSortedSkillIDArray = new SkillName[SkillMaster.AllSkills.Length];
+                    int lastUsedIndex = 0;
+
+                    foreach ( SkillName thisSkillID in m_SpecialSkills ) {
+                        if ( thisSkillID != SkillName.TasteID ) {
+                            m_CachedSortedSkillIDArray[lastUsedIndex] = thisSkillID;
+                            allSkills.Remove( thisSkillID );
+                            lastUsedIndex++;
+                        }
+                    }
+                    foreach ( SkillName thisSkillID in m_PrimarySkills ) {
+                        if ( thisSkillID != SkillName.TasteID ) {
+                            m_CachedSortedSkillIDArray[lastUsedIndex] = thisSkillID;
+                            allSkills.Remove( thisSkillID );
+                            lastUsedIndex++;
+                        }
+                    }
+                    foreach ( SkillName thisSkillID in m_SecondarySkills ) {
+                        if ( thisSkillID != SkillName.TasteID ) {
+                            m_CachedSortedSkillIDArray[lastUsedIndex] = thisSkillID;
+                            allSkills.Remove( thisSkillID );
+                            lastUsedIndex++;
+                        }
+                    }
+                    foreach ( SkillName thisSkillID in m_TradeSkills ) {
+                        if ( thisSkillID != SkillName.TasteID ) {
+                            m_CachedSortedSkillIDArray[lastUsedIndex] = thisSkillID;
+                            allSkills.Remove( thisSkillID );
+                            lastUsedIndex++;
+                        }
+                    }
+
+                    foreach ( SkillName thisSkillID in allSkills ) {
+                        if ( thisSkillID != SkillName.TasteID ) {
+                            m_CachedSortedSkillIDArray[lastUsedIndex] = thisSkillID;
+                            lastUsedIndex++;
+                        }
+                    }
+                }
+                return m_CachedSortedSkillIDArray;
+            }
+        }
+
+        /// <summary>
+        /// For performance reasons, sometimes things information is cached so it doesn't
+        /// always need to be recalculated.  This deletes the cache so the information is recalculated
+        /// </summary>
+        public void ClearSkillsCache()
+        {
+            m_CachedSortedSkillIDArray = null;
+        }
+
+        public void CheckSkillCaps()
+        {
+            Skills sk = this.Skills;
+            for ( int i = 0; i < sk.Length; i++ ) {
+                SkillName sn = (SkillName)i;
+                int sc = GetSkillCap( sn );
+                sk[sn].CapFixedPoint = sc * 10;
+                if ( sk[sn].Base > sc )
+                    sk[sn].BaseFixedPoint = sc * 10;
+            }
+        }
+
+        // Skill Training
+
+        private Dictionary<SkillName, int> m_TrainingPoints;
+        public Dictionary<SkillName, int> TrainingPoints
+        {
+            get { return m_TrainingPoints; }
+            set { m_TrainingPoints = value; }
+        }
+
+        private Dictionary<SkillName, int> m_SkillPoints;
+        public Dictionary<SkillName, int> SkillPoints
+        {
+            get { return m_SkillPoints; }
+            set { m_SkillPoints = value; }
+        }
+
+        private int m_RestedTraining;
+
+        [CommandProperty( AccessLevel.Administrator )]
+        public int RestedTraining
+        {
+            get { return m_RestedTraining; }
+            set { m_RestedTraining = value; }
+        }
+
+        #endregion
+
+        // Stat timer addition
+        private DateTime m_StatGained;
+
+        public DateTime StatGained
+        {
+            get { return m_StatGained; }
+            set { m_StatGained = value; }
+        }
+        
+        #region Experience
+        // Experience system
+
+        private int m_TotalExperience;
+
+        [CommandProperty( AccessLevel.Administrator )]
+        public int TotalExperience
+        {
+            get { return m_TotalExperience; }
+            set { m_TotalExperience = value; }
+        }
+
+        private int m_CurrentExperience;
+
+        [CommandProperty( AccessLevel.Administrator )]
+        public int CurrentExperience
+        {
+            get { return m_CurrentExperience; }
+            set { m_CurrentExperience = value; }
+        }
+
+        private int m_DailyExperience;
+
+        [CommandProperty( AccessLevel.GameMaster )]
+        public int DailyExperience
+        {
+            get { return m_DailyExperience; }
+            set { m_DailyExperience = value; }
+        }
+
+        private DateTime m_DailyExpReset;
+
+        [CommandProperty( AccessLevel.GameMaster )]
+        public DateTime DailyExpReset
+        {
+            get { return m_DailyExpReset; }
+            set { m_DailyExpReset = value; }
+        }
+
+        #endregion
+
+        // Kill Counter
+
+        private int m_killCounter;
+        
+        public int KillCounter
+        {
+            get { return m_killCounter; }
+            set { m_killCounter = value; }
+        }
+
         public static List<PlayerMobile> Instances { get; private set; }
 
         static PlayerMobile()
@@ -4000,6 +4316,21 @@ namespace Server.Mobiles
 
         public PlayerMobile()
         {
+            #region Skill spec
+            m_SpecialSkills = new SkillName[SpecialsPermitted];
+            for (int i = 0; i < SpecialsPermitted; i++)
+                m_SpecialSkills[i] = SkillName.TasteID;
+            m_PrimarySkills = new SkillName[PrimariesPermitted];
+            for (int i = 0; i < PrimariesPermitted; i++)
+                m_PrimarySkills[i] = SkillName.TasteID;
+            m_SecondarySkills = new SkillName[SecondariesPermitted];
+            for (int i = 0; i < SecondariesPermitted; i++)
+                m_SecondarySkills[i] = SkillName.TasteID;
+            m_TradeSkills = new SkillName[TradeskillsPermitted];
+            for (int i = 0; i < TradeskillsPermitted; i++)
+                m_TradeSkills[i] = SkillName.TasteID;
+            #endregion
+
             Instances.Add(this);
 
             m_AutoStabled = new List<Mobile>();
@@ -4021,6 +4352,13 @@ namespace Server.Mobiles
             m_GuildRank = RankDefinition.Lowest;
 
             m_ChampionTitles = new ChampionTitleInfo();
+
+            m_DailyExpReset = DateTime.Now + TimeSpan.FromDays(1.0);
+
+            m_TrainingPoints = new Dictionary<SkillName, int>();
+            m_SkillPoints = new Dictionary<SkillName, int>();
+            
+            LastOnline = DateTime.Now;
         }
 
         public override bool MutateSpeech(List<Mobile> hears, ref string text, ref object context)
@@ -4298,6 +4636,80 @@ namespace Server.Mobiles
 
             switch (version)
             {
+                case 43:
+                {
+                    //Experience System
+                    m_TotalExperience = reader.ReadInt();
+                    m_CurrentExperience = reader.ReadInt();
+                    m_DailyExperience = reader.ReadInt();
+                    m_DailyExpReset = reader.ReadDateTime();
+
+                    //Training Points
+                    int TrainingCount = reader.ReadInt();
+                    m_TrainingPoints = new Dictionary<SkillName, int>();
+                    for (int i = 0; i < TrainingCount; i++)
+                        m_TrainingPoints.Add((SkillName)reader.ReadInt(), reader.ReadInt());
+
+                    int SkillsCount = reader.ReadInt();
+                    m_SkillPoints = new Dictionary<SkillName, int>();
+                    for (int i = 0; i < SkillsCount; i++)
+                        m_SkillPoints.Add((SkillName)reader.ReadInt(), reader.ReadInt());
+
+                    m_RestedTraining = reader.ReadInt();
+
+                    //Load specs
+                    m_SpecialSkills = new SkillName[SpecialsPermitted];
+                    m_PrimarySkills = new SkillName[PrimariesPermitted];
+                    m_SecondarySkills = new SkillName[SecondariesPermitted];
+
+                    int specialSkillsCount = reader.ReadInt();
+                    if (specialSkillsCount > 0)
+                    {
+                        for (int i = 0; i < specialSkillsCount; i++)
+                        {
+                            SkillName thisSkill = (SkillName)reader.ReadInt();
+                            if (i < SpecialsPermitted)
+                                m_SpecialSkills[i] = thisSkill;
+                        }
+                    }
+
+                    int primarySkillsCount = reader.ReadInt();
+                    if (primarySkillsCount > 0)
+                    {
+                        for (int i = 0; i < primarySkillsCount; i++)
+                        {
+                            SkillName thisSkill = (SkillName)reader.ReadInt();
+                            if (i < PrimariesPermitted)
+                                m_PrimarySkills[i] = thisSkill;
+                        }
+                    }
+
+                    int secondarySkillsCount = reader.ReadInt();
+                    if (secondarySkillsCount > 0)
+                    {
+                        for (int i = 0; i < secondarySkillsCount; i++)
+                        {
+                            SkillName thisSkill = (SkillName)reader.ReadInt();
+                            if (i < SecondariesPermitted)
+                                m_SecondarySkills[i] = thisSkill;
+                        }
+                    }
+
+                    m_TradeSkills = new SkillName[TradeskillsPermitted];
+
+                    int tradeskillsCount = reader.ReadInt();
+                    if (tradeskillsCount > 0)
+                    {
+                        for (int i = 0; i < tradeskillsCount; i++)
+                        {
+                            SkillName thisSkill = (SkillName)reader.ReadInt();
+                            if (i < TradeskillsPermitted)
+                                m_TradeSkills[i] = thisSkill;
+                        }
+                    }
+                    m_killCounter = reader.ReadInt();
+                    goto case 38;
+                }
                 case 42: // upgraded quest serialization
                 case 41: // removed PeacedUntil - no need to serialize this
                 case 40: // Version 40, moved gauntlet points, virtua artys and TOT convert to PointsSystem
@@ -4766,7 +5178,49 @@ namespace Server.Mobiles
 
             base.Serialize(writer);
 
-            writer.Write(42); // version
+            writer.Write(43); // version
+
+            //Experience system
+            writer.Write( m_TotalExperience );
+            writer.Write( m_CurrentExperience );
+            writer.Write( m_DailyExperience );
+            writer.Write( m_DailyExpReset );
+
+            // Save Training points
+            writer.Write( m_TrainingPoints.Count );
+            foreach ( KeyValuePair<SkillName, int> kvp in m_TrainingPoints ) {
+                writer.Write( (int)kvp.Key );
+                writer.Write( kvp.Value );
+            }
+
+            writer.Write( m_SkillPoints.Count );
+            foreach ( KeyValuePair<SkillName, int> kvp in m_SkillPoints ) {
+                writer.Write( (int)kvp.Key );
+                writer.Write( kvp.Value );
+            }
+
+            writer.Write( m_RestedTraining );
+
+            //Save the .spec'ed skills
+            writer.Write( m_SpecialSkills.Length );
+            for ( int i = 0; i < m_SpecialSkills.Length; i++ ) {
+                writer.Write( (int)m_SpecialSkills[i] );
+            }
+            writer.Write( m_PrimarySkills.Length );
+            for ( int i = 0; i < m_PrimarySkills.Length; i++ ) {
+                writer.Write( (int)m_PrimarySkills[i] );
+            }
+            writer.Write( m_SecondarySkills.Length );
+            for ( int i = 0; i < m_SecondarySkills.Length; i++ ) {
+                writer.Write( (int)m_SecondarySkills[i] );
+            }
+            writer.Write(m_TradeSkills.Length);
+            for (int i = 0; i < m_TradeSkills.Length; i++)
+            {
+                writer.Write((int)m_TradeSkills[i]);
+            }
+
+            writer.Write(m_killCounter);
 
             writer.Write(NextGemOfSalvationUse);
 
