@@ -202,7 +202,7 @@ namespace Server.Mobiles
         }
     }
 
-    public class BaseCreature : Mobile, ITamable, IHonorTarget, IEngravable
+    public class BaseCreature : BaseMobile, ITamable, IHonorTarget, IEngravable
     {
         public const int MaxLoyalty = 100;
 

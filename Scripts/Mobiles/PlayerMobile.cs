@@ -117,7 +117,7 @@ namespace Server.Mobiles
     }
     #endregion
 
-    public partial class PlayerMobile : Mobile, IHonorTarget
+    public partial class PlayerMobile : BaseMobile, IHonorTarget
     {
         public static List<PlayerMobile> Instances { get; private set; }
 
