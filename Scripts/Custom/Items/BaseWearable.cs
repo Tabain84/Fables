@@ -26,10 +26,10 @@ namespace Server
 
 			if ( from.FindItemOnLayer( this.Layer ) == this ) {
 				if ( !backpack ) {
-					from.SendMessage( 35, "You have no inventory. Equip inventory bag first." );
+					from.SendMessage( MessageUtil.MessageColorPlayer, "You have no inventory. Equip inventory bag first." );
 				}
 				else if ( from.Backpack.TryDropItem( from, this, true ) ) {
-					from.SendMessage( MessageColorization ? this.Hue : 55, "You put {0} into your backpack.", this.Name != null ? this.Name : this.ItemData.Name );
+					from.SendMessage( MessageColorization ? this.Hue : MessageUtil.MessageColorPlayer, "You put {0} into your backpack.", this.Name != null ? this.Name : this.ItemData.Name );
 				}
 				return;
 			}
@@ -38,7 +38,7 @@ namespace Server
             {
 				if ( from.FindItemOnLayer( Layer.OneHanded ) != null || from.FindItemOnLayer( this.Layer ) != null ) {
 					if ( !backpack ) {
-						from.SendMessage( 35, "You have no inventory. Equip inventory bag first." );
+						from.SendMessage( MessageUtil.MessageColorPlayer, "You have no inventory. Equip inventory bag first." );
 						return;
 					}
 				}
@@ -57,7 +57,7 @@ namespace Server
 
 			if ( from.FindItemOnLayer( this.Layer ) != null ) {
 				if ( !backpack ) {
-					from.SendMessage( 35, "You have no inventory. Equip inventory bag first." );
+					from.SendMessage( MessageUtil.MessageColorPlayer, "You have no inventory. Equip inventory bag first." );
 					return;
 				}
 				Item item = from.FindItemOnLayer( this.Layer );
@@ -70,7 +70,7 @@ namespace Server
 			else {
 				from.EquipItem( this );
 				if ( from.FindItemOnLayer( this.Layer ) == this ) {
-					from.SendMessage( MessageColorization ? this.Hue : 75, "You equipped {0}.", this.Name != null ? this.Name : this.ItemData.Name );
+					from.SendMessage( MessageColorization ? this.Hue : MessageUtil.MessageColorPlayer, "You equipped {0}.", this.Name != null ? this.Name : this.ItemData.Name );
 				}
 			}
 		}
@@ -84,25 +84,25 @@ namespace Server
 		{
 			if ( secondHand == null ) {
 				if ( m_Cont == null ) {
-					m_Mobile.SendMessage( MessageColorization ? this.Hue : 49, "You swapped {0} for {1}.", this.Name != null ? this.Name : this.ItemData.Name, firstHand.Name != null ? firstHand.Name : firstHand.ItemData.Name );
+					m_Mobile.SendMessage( MessageColorization ? this.Hue : MessageUtil.MessageColorPlayer, "You swapped {0} for {1}.", this.Name != null ? this.Name : this.ItemData.Name, firstHand.Name != null ? firstHand.Name : firstHand.ItemData.Name );
 					firstHand.MoveToWorld( this.Location );
 					m_Mobile.EquipItem( this );
 				}
 				else if ( m_Cont.TryDropItem( m_Mobile, firstHand, true ) ) {
-					m_Mobile.SendMessage( MessageColorization ? this.Hue : 49, "You swapped {0} for {1}.", this.Name != null ? this.Name : this.ItemData.Name, firstHand.Name != null ? firstHand.Name : firstHand.ItemData.Name );
+					m_Mobile.SendMessage( MessageColorization ? this.Hue : MessageUtil.MessageColorPlayer, "You swapped {0} for {1}.", this.Name != null ? this.Name : this.ItemData.Name, firstHand.Name != null ? firstHand.Name : firstHand.ItemData.Name );
 					firstHand.Location = this.Location;
 					m_Mobile.EquipItem( this );
 				}
 			}
 			else {
 				if ( m_Cont == null ) {
-					m_Mobile.SendMessage( MessageColorization ? this.Hue : 49, "You swapped {0} for {1} and {2}.", this.Name != null ? this.Name : this.ItemData.Name, firstHand.Name != null ? firstHand.Name : firstHand.ItemData.Name, secondHand.Name != null ? secondHand.Name : secondHand.ItemData.Name );
+					m_Mobile.SendMessage( MessageColorization ? this.Hue : MessageUtil.MessageColorPlayer, "You swapped {0} for {1} and {2}.", this.Name != null ? this.Name : this.ItemData.Name, firstHand.Name != null ? firstHand.Name : firstHand.ItemData.Name, secondHand.Name != null ? secondHand.Name : secondHand.ItemData.Name );
 					firstHand.MoveToWorld( this.Location );
 					secondHand.MoveToWorld( this.Location );
 					m_Mobile.EquipItem( this );
 				}
 				else if ( m_Cont.TryDropItem( m_Mobile, firstHand, true ) && m_Cont.TryDropItem( m_Mobile, secondHand, true ) ) {
-					m_Mobile.SendMessage( MessageColorization ? this.Hue : 49, "You swapped {0} for {1} and {2}.", this.Name != null ? this.Name : this.ItemData.Name, firstHand.Name != null ? firstHand.Name : firstHand.ItemData.Name, secondHand.Name != null ? secondHand.Name : secondHand.ItemData.Name );
+					m_Mobile.SendMessage( MessageColorization ? this.Hue : MessageUtil.MessageColorPlayer, "You swapped {0} for {1} and {2}.", this.Name != null ? this.Name : this.ItemData.Name, firstHand.Name != null ? firstHand.Name : firstHand.ItemData.Name, secondHand.Name != null ? secondHand.Name : secondHand.ItemData.Name );
 					firstHand.Location = this.Location;
 					secondHand.Location = this.Location;
 					m_Mobile.EquipItem( this );
