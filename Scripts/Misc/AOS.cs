@@ -2214,7 +2214,7 @@ namespace Server
                     return 1002070; // Evaluate Intelligence
                 case SkillName.Forensics:
                     return 1002078; // Forensic Evaluation
-                case SkillName.Lockpicking:
+                case SkillName.TreasureHunting:
                     return 1002097; // Lockpicking
                 default:
                     return 1044060 + (int)skill;

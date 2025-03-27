@@ -3912,7 +3912,7 @@ namespace Server.Mobiles
                 return false;
             }
 
-            if (skill == SkillName.Stealth && from.Skills[SkillName.Hiding].Base < Stealth.HidingRequirement)
+            if (skill == SkillName.Hiding && from.Skills[SkillName.Hiding].Base < Stealth.HidingRequirement)
             {
                 return false;
             }

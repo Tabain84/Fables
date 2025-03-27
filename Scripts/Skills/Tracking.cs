@@ -243,7 +243,7 @@ namespace Server.SkillHandlers
                 tracking /= 2; //The 'Guide' says that it requires twice as Much tracking SKILL to track an elf.  Not the total difficulty to track.
 
             int hiding = m.Skills[SkillName.Hiding].Fixed;
-            int stealth = m.Skills[SkillName.Stealth].Fixed;
+            int stealth = m.Skills[SkillName.Hiding].Fixed;
             int divisor = hiding + stealth;
 
             // Necromancy forms affect tracking difficulty 

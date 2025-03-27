@@ -27,7 +27,7 @@ namespace Server.Engines.Craft
                 return m_CraftSystem;
             }
         }
-        public override SkillName MainSkill => SkillName.Cartography;
+        public override SkillName MainSkill => SkillName.TreasureHunting;
         public override int GumpTitleNumber => 1044008;
         public override double GetChanceAtMin(CraftItem item)
         {

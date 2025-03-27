@@ -27,7 +27,7 @@ namespace Server.SkillHandlers
 
         public static void Initialize()
         {
-            SkillInfo.Table[(int)SkillName.Stealth].Callback = OnUse;
+            SkillInfo.Table[(int)SkillName.Hiding].Callback = OnUse;
         }
 
         public static int GetArmorRating(Mobile m)
@@ -88,9 +88,9 @@ namespace Server.SkillHandlers
                     m.RevealingAction();
                     BuffInfo.RemoveBuff(m, BuffIcon.HidingAndOrStealth);
                 }
-                else if (m.CheckSkill(SkillName.Stealth, -20.0 + (armorRating * 2), 60.0 + (armorRating * 2)))
+                else if (m.CheckSkill(SkillName.Hiding, -20.0 + (armorRating * 2), 60.0 + (armorRating * 2)))
                 {
-                    int steps = (int)(m.Skills[SkillName.Stealth].Value / 5.0);
+                    int steps = (int)(m.Skills[SkillName.Hiding].Value / 5.0);
 
                     if (steps < 1)
                         steps = 1;

@@ -601,7 +601,7 @@ namespace Server.Misc
 					continue;
 				}
 
-				if (prof == Profession.Advanced && (snv.Name == SkillName.Stealth || snv.Name == SkillName.RemoveTrap || snv.Name == SkillName.Spellweaving))
+				if (prof == Profession.Advanced && (snv.Name == SkillName.Hiding || snv.Name == SkillName.TreasureHunting || snv.Name == SkillName.Spellweaving))
 				{
 					continue;
 				}
@@ -949,12 +949,13 @@ namespace Server.Misc
 
 						break;
 					}
-				case SkillName.Cartography:
+				case SkillName.TreasureHunting:
 					{
 						PackItem(m, new BlankMap());
 						PackItem(m, new BlankMap());
 						PackItem(m, new BlankMap());
 						PackItem(m, new BlankMap());
+						PackItem(m, new Lockpick(20));
 						PackItem(m, new Sextant());
 						break;
 					}
@@ -1054,11 +1055,6 @@ namespace Server.Misc
 						else if (gargoyle)
 							EquipItem(m, new SerpentStoneStaff());
 
-						break;
-					}
-				case SkillName.Lockpicking:
-					{
-						PackItem(m, new Lockpick(20));
 						break;
 					}
 				case SkillName.Lumberjacking:

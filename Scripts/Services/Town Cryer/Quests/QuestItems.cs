@@ -202,7 +202,7 @@ namespace Server.Engines.Quests
         {
             if (QuestHelper.HasQuest<TheTreasureChaseQuest>((PlayerMobile)from))
             {
-                from.CheckSkill(SkillName.Cartography, 0, 100);
+                from.CheckSkill(SkillName.TreasureHunting, 0, 100);
                 Decoder = from;
 
                 DisplayTo(from);
@@ -378,11 +378,11 @@ namespace Server.Engines.Quests
 
                 from.PlaySound(0x241);
 
-                Timer.DelayCall(TimeSpan.FromMilliseconds(200), () =>
+				Timer.DelayCall(TimeSpan.FromMilliseconds(200), (TimerCallback)(() =>
                     {
                         if (item.Locked && from.InRange(chest.GetWorldLocation(), 1))
                         {
-                            from.CheckTargetSkill(SkillName.Lockpicking, item, 0, 100);
+                            from.CheckTargetSkill((SkillName)SkillName.TreasureHunting, item, 0, 100);
 
                             // Success! Pick the lock!
                             from.PrivateOverheadMessage(MessageType.Regular, 1154, 1158252, from.NetState); // *Your recent study of Treasure Hunting helps you pick the lock...*
@@ -390,7 +390,7 @@ namespace Server.Engines.Quests
                             from.PlaySound(0x4A);
                             item.LockPick(from);
                         }
-                    });
+                    }));
             }
             else
             {

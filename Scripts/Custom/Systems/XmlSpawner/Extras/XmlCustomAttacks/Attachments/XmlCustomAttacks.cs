@@ -129,7 +129,7 @@ namespace Server.Engines.XmlSpawner2
 				SpecialAttacks.PuffOfSmoke, 0x520b, TimeSpan.FromSeconds(3.5),
 				20, 40, 0, 0,
 				0, 40, 0,
-				new SkillName[] { SkillName.Stealth, SkillName.Hiding },
+				new SkillName[] { SkillName.Hiding, SkillName.Hiding },
 				new int[] { 50, 50 },
 				new Type[] { typeof(SpidersSilk) },
 				new int[] { 2 }

@@ -81,7 +81,7 @@ namespace Server.Spells.Sixth
             int detectHidden = from.Skills[SkillName.DetectHidden].Fixed;
 
             int hiding = m.Skills[SkillName.Hiding].Fixed;
-            int stealth = m.Skills[SkillName.Stealth].Fixed;
+            int stealth = m.Skills[SkillName.Hiding].Fixed;
             int divisor = hiding + stealth;
 
             int chance;

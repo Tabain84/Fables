@@ -211,7 +211,7 @@ namespace Server.Engines.Blackthorn
             if (_Specialty == SkillName.Ninjitsu)
             {
                 SetSkill(SkillName.Hiding, 100);
-                SetSkill(SkillName.Stealth, 100);
+                SetSkill(SkillName.Hiding, 100);
             }
         }
 

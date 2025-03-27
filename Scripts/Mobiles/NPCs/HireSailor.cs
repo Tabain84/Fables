@@ -40,7 +40,7 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 65.0, 87.5);
             SetSkill(SkillName.Fencing, 65.0, 87.5);
             SetSkill(SkillName.Parry, 45.0, 60.5);
-            SetSkill(SkillName.Lockpicking, 65, 87);
+            SetSkill(SkillName.TreasureHunting, 65, 87);
             SetSkill(SkillName.Hiding, 65, 87);
             SetSkill(SkillName.Snooping, 65, 87);
             Fame = 100;

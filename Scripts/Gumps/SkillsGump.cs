@@ -426,7 +426,7 @@ namespace Server.Gumps
             {
                 SkillName.Alchemy,
                 SkillName.Blacksmith,
-                SkillName.Cartography,
+                SkillName.TreasureHunting,
                 SkillName.Carpentry,
                 SkillName.Cooking,
                 SkillName.Fletching,
@@ -463,7 +463,7 @@ namespace Server.Gumps
                 SkillName.Focus,
                 SkillName.Healing,
                 SkillName.Herding,
-                SkillName.Lockpicking,
+                SkillName.TreasureHunting,
                 SkillName.Lumberjacking,
                 SkillName.Mining,
                 SkillName.Snooping,
@@ -486,10 +486,10 @@ namespace Server.Gumps
                 SkillName.Begging,
                 SkillName.DetectHidden,
                 SkillName.Hiding,
-                SkillName.RemoveTrap,
+                SkillName.TreasureHunting,
                 SkillName.Poisoning,
                 SkillName.Stealing,
-                SkillName.Stealth,
+                SkillName.Hiding,
                 SkillName.Tracking
             }),
             new SkillsGumpGroup("Lore & Knowledge", new SkillName[]

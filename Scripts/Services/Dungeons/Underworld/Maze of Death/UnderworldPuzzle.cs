@@ -465,7 +465,7 @@ namespace Server.Items
             AddHtmlLocalized(72, 285, 170, 20, 1150180, false, false); // Command Functions: 
             AddHtml(200, 285, 100, 20, string.Format("{0}/{1}", m_Item.Attempts, m_Solution.MaxAttempts), false, false);
 
-            if (from.Skills[SkillName.Lockpicking].Base >= 100.0)
+            if (from.Skills[SkillName.TreasureHunting].Base >= 100.0)
             {
                 int locked = m_Solution.GetMatches(m_CurrentSolution);
                 AddHtmlLocalized(72, 300, 170, 20, 1150179, false, false); // Crystals Locked  : 

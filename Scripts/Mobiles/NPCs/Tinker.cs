@@ -14,8 +14,8 @@ namespace Server.Mobiles
         public Tinker()
             : base("the tinker")
         {
-            SetSkill(SkillName.Lockpicking, 60.0, 83.0);
-            SetSkill(SkillName.RemoveTrap, 75.0, 98.0);
+            SetSkill(SkillName.TreasureHunting, 60.0, 83.0);
+            SetSkill(SkillName.TreasureHunting, 75.0, 98.0);
             SetSkill(SkillName.Tinkering, 64.0, 100.0);
         }
 

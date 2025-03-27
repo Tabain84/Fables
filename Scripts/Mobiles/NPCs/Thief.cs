@@ -16,7 +16,7 @@ namespace Server.Mobiles
             SetSkill(SkillName.Archery, 65.0, 88.0);
             SetSkill(SkillName.Tracking, 65.0, 88.0);
             SetSkill(SkillName.Veterinary, 60.0, 83.0);
-            SetSkill(SkillName.RemoveTrap, 75.0, 98.0);
+            SetSkill(SkillName.TreasureHunting, 75.0, 98.0);
         }
 
         public Thief(Serial serial)

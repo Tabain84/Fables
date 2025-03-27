@@ -212,7 +212,7 @@ namespace Server.Engines.JollyRoger
                     break;
                 case MasterTitle.Assassin: // Assassin
                     SetSkill(SkillName.Hiding, MinSkill, MaxSkill);
-                    SetSkill(SkillName.Stealth, MinSkill, MaxSkill);
+                    SetSkill(SkillName.Hiding, MinSkill, MaxSkill);
                     SetSkill(SkillName.Poisoning, MinSkill, MaxSkill);
                     SetSkill(SkillName.Swords, MinSkill, MaxSkill);
                     SetSkill(SkillName.Fencing, MinSkill, MaxSkill);
@@ -231,7 +231,7 @@ namespace Server.Engines.JollyRoger
                     SetSkill(SkillName.Tactics, MinSkill, MaxSkill);
                     SetSkill(SkillName.Poisoning, MinSkill, MaxSkill);
                     SetSkill(SkillName.Hiding, MinSkill, MaxSkill);
-                    SetSkill(SkillName.Stealth, MinSkill, MaxSkill);
+                    SetSkill(SkillName.Hiding, MinSkill, MaxSkill);
                     SetAreaEffect(AreaEffect.EssenceOfDisease);
                     break;
             }
@@ -727,7 +727,7 @@ namespace Server.Engines.JollyRoger
                 PlaySound(0x22F);
                 Hidden = true;
 
-                UseSkill(SkillName.Stealth);
+                UseSkill(SkillName.Hiding);
             }
         }
 

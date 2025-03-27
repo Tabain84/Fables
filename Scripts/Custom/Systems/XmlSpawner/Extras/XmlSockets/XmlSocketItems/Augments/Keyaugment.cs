@@ -9,7 +9,7 @@ namespace Server.Items
 
 	public class KeyAugment : BaseSocketAugmentation
 	{
-		private SkillName m_RequiredSkill = SkillName.Lockpicking; // default skill required to use this augment
+		private SkillName m_RequiredSkill = SkillName.TreasureHunting; // default skill required to use this augment
 		private int m_RequiredSkillLevel = 100; // default skill level required to use this augment
 		private int m_OpenSound = 0x1F4; // default opening sound
 		private int m_KeyValue; // matched against the keyvalue of the door or container it is intended to open

@@ -38,7 +38,7 @@ namespace Server
 		Peacemaking = 9,
 		Camping = 10,
 		Carpentry = 11,
-		Cartography = 12,
+		TreasureHunting = 12,
 		Cooking = 13,
 		DetectHidden = 14,
 		Discordance = 15,
@@ -50,7 +50,7 @@ namespace Server
 		Hiding = 21,
 		Provocation = 22,
 		Inscribe = 23,
-		Lockpicking = 24,
+		LockpickingUnused = 24,
 		Magery = 25,
 		MagicResist = 26,
 		Tactics = 27,
@@ -73,8 +73,8 @@ namespace Server
 		Lumberjacking = 44,
 		Mining = 45,
 		Meditation = 46,
-		Stealth = 47,
-		RemoveTrap = 48,
+		StealthUnused = 47,
+		RemoveTrapUnused = 48,
 		Necromancy = 49,
 		Focus = 50,
 		Chivalry = 51,
@@ -802,7 +802,7 @@ namespace Server
 		public Skill Carpentry { get => this[SkillName.Carpentry]; set { } }
 
 		[CommandProperty(AccessLevel.Counselor)]
-		public Skill Cartography { get => this[SkillName.Cartography]; set { } }
+		public Skill Cartography { get => this[SkillName.TreasureHunting]; set { } }
 
 		[CommandProperty(AccessLevel.Counselor)]
 		public Skill Cooking { get => this[SkillName.Cooking]; set { } }
@@ -838,7 +838,7 @@ namespace Server
 		public Skill Inscribe { get => this[SkillName.Inscribe]; set { } }
 
 		[CommandProperty(AccessLevel.Counselor)]
-		public Skill Lockpicking { get => this[SkillName.Lockpicking]; set { } }
+		public Skill Lockpicking { get => this[SkillName.TreasureHunting]; set { } }
 
 		[CommandProperty(AccessLevel.Counselor)]
 		public Skill Magery { get => this[SkillName.Magery]; set { } }
@@ -907,10 +907,10 @@ namespace Server
 		public Skill Meditation { get => this[SkillName.Meditation]; set { } }
 
 		[CommandProperty(AccessLevel.Counselor)]
-		public Skill Stealth { get => this[SkillName.Stealth]; set { } }
+		public Skill Stealth { get => this[SkillName.Hiding]; set { } }
 
 		[CommandProperty(AccessLevel.Counselor)]
-		public Skill RemoveTrap { get => this[SkillName.RemoveTrap]; set { } }
+		public Skill RemoveTrap { get => this[SkillName.TreasureHunting]; set { } }
 
 		[CommandProperty(AccessLevel.Counselor)]
 		public Skill Necromancy { get => this[SkillName.Necromancy]; set { } }

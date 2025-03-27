@@ -12,7 +12,7 @@ namespace Server.Items
         {
             Facet = from.Map;
 
-            double skillValue = from.Skills[SkillName.Cartography].Value;
+            double skillValue = from.Skills[SkillName.TreasureHunting].Value;
             int dist = 64 + (int)(skillValue * 10);
 
             if (dist < 200)

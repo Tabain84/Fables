@@ -10,9 +10,9 @@ namespace Server.Mobiles
         public TinkerGuildmaster()
             : base("tinker")
         {
-            SetSkill(SkillName.Lockpicking, 65.0, 88.0);
+            SetSkill(SkillName.TreasureHunting, 65.0, 88.0);
             SetSkill(SkillName.Tinkering, 90.0, 100.0);
-            SetSkill(SkillName.RemoveTrap, 85.0, 100.0);
+            SetSkill(SkillName.TreasureHunting, 85.0, 100.0);
         }
 
         public TinkerGuildmaster(Serial serial)

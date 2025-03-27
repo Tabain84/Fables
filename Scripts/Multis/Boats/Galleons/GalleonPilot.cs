@@ -32,7 +32,7 @@ namespace Server.Mobiles
             foreach (Item item in Items)
                 OriginalItems.Add(item);
 
-            SetSkill(SkillName.Cartography, 100.0);
+            SetSkill(SkillName.TreasureHunting, 100.0);
         }
 
         public virtual void InitBody()

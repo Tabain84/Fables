@@ -35,7 +35,6 @@ namespace Server.Gumps
 		public ViewHuesGump( Mobile from, int index , int itemid) : base( 50, 40 )
 		{
             int PageHeight = 485;
-            int PageWidth = 522;
             this.Closable = false;
             this.Disposable = false;
             this.Dragable = true;

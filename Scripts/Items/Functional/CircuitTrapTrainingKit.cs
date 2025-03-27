@@ -40,7 +40,7 @@ namespace Server.Items
             {
                 if (Path == null || Path.Count == 0)
                 {
-                    double skill = m.Skills[SkillName.RemoveTrap].Base;
+                    double skill = m.Skills[SkillName.TreasureHunting].Base;
 
                     if (skill < 80.0)
                     {
@@ -82,7 +82,7 @@ namespace Server.Items
         {
             m.SendLocalizedMessage(1159009); // You successfully disarm the trap!
 
-            m.CheckTargetSkill(SkillName.RemoveTrap, this, 0, 100);
+            m.CheckTargetSkill(SkillName.TreasureHunting, this, 0, 100);
         }
 
         public override void OnDelete()

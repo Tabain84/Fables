@@ -55,7 +55,7 @@ namespace Server.Items
 
         public void AssignChestQuality(Mobile digger, TreasureMapChest chest)
         {
-            double skill = digger.Skills[SkillName.Cartography].Value;
+            double skill = digger.Skills[SkillName.TreasureHunting].Value;
 
             int dif;
 
@@ -889,11 +889,11 @@ namespace Server.Items
             {
                 double minSkill = GetMinSkillLevel();
 
-                if (from.Skills[SkillName.Cartography].Value < minSkill)
+                if (from.Skills[SkillName.TreasureHunting].Value < minSkill)
                 {
                     if (m_Level == 1)
                     {
-                        from.CheckSkill(SkillName.Cartography, 0, minSkill);
+                        from.CheckSkill(SkillName.TreasureHunting, 0, minSkill);
                     }
                     else
                     {
@@ -901,7 +901,7 @@ namespace Server.Items
                     }
                 }
 
-                if (!from.CheckSkill(SkillName.Cartography, minSkill - 10, minSkill + 30))
+                if (!from.CheckSkill(SkillName.TreasureHunting, minSkill - 10, minSkill + 30))
                 {
                     from.LocalOverheadMessage(MessageType.Regular, 0x3B2, 503018); // You fail to make anything of the map.
                     return;
@@ -1140,7 +1140,7 @@ namespace Server.Items
 
         protected virtual bool HasRequiredSkill(Mobile from)
         {
-            return (from.Skills[SkillName.Cartography].Value >= GetMinSkillLevel());
+            return (from.Skills[SkillName.TreasureHunting].Value >= GetMinSkillLevel());
         }
 
         protected class DigTarget : Target
@@ -1204,7 +1204,7 @@ namespace Server.Items
                     }
 
                     int maxRange;
-                    double skillValue = TreasureMapInfo.NewSystem ? from.Skills[SkillName.Cartography].Value : from.Skills[SkillName.Mining].Value;
+                    double skillValue = TreasureMapInfo.NewSystem ? from.Skills[SkillName.TreasureHunting].Value : from.Skills[SkillName.Mining].Value;
 
                     if (skillValue >= 100.0)
                     {
